@@ -1,0 +1,27 @@
+{ Analytica Model AI_improves_continuo, encoding="UTF-8" }
+SoftwareVersion 5.3.3
+
+
+
+LinkModule AI_improves_continuo
+Title: AI improves continuously
+Author: bernsjp1
+Date: Wed, Feb 5, 2020 2:47 PM
+NodeSize: 64,24
+NodeInfo: 1,,,,,,,0,,,,,,0
+DiagState: 2,-182,322,937,484,17
+NodeColor: 52425,39321,65535
+FontStyle: Arial,15
+FileInfo: 0,LinkModule AI_improves_continuo,3,2,0,0,Module\AI improves continuously.ana
+
+Objective AI_improves_continu1
+Title: AI improves continuously
+Definition: (1-Discontinuity_from_A) + (1-Discontinuity_to_AGI)~
+
+NodeLocation: 504,136,1
+NodeSize: 56,24
+DisplayInputs: Chance Discontinuity_from_1, Chance Discontinuity_to_AG1
+DisplayOutputs: Objective Humans_are_economic1
+
+Close AI_improves_continuo
+

@@ -1,0 +1,25 @@
+{ Analytica Model Synthesizing_prefere, encoding="UTF-8" }
+SoftwareVersion 5.3.3
+
+
+
+LinkModule Synthesizing_prefere
+Title: Synthesizing preferences into a utility function
+Author: bernsjp1
+Date: Thu, Feb 6, 2020 10:00 AM
+NodeSize: 64,40
+NodeInfo: 1,,,,,,,0,,,,,,0
+NodeColor: 39321,65535,52425
+FontStyle: Arial,15
+FileInfo: 0,LinkModule Synthesizing_prefere,2,2,0,0,Module\Synthesizing preferences into a utility function.ana
+
+Objective Synthesising_prefere
+Title: Synthesising preferences into a utility function
+Definition: (1-Discontinuity_from_A) + (1-Broad_basin_for_corr)
+NodeLocation: 104,64,1
+NodeSize: 56,40
+ValueState: 2,84,90,416,303,,PDFP
+DisplayInputs: Chance Discontinuity_from_1, Chance Broad_basin_for_corr
+
+Close Synthesizing_prefere
+

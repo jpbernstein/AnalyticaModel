@@ -1,0 +1,26 @@
+{ Analytica Model Many_powerful_AIs, encoding="UTF-8" }
+SoftwareVersion 5.3.3
+
+
+
+LinkModule Many_powerful_AIs
+Title: Many powerful AIs
+Author: bernsjp1
+Date: Thu, Feb 6, 2020 10:00 AM
+NodeSize: 48,32
+NodeInfo: 1,,,,,,,0,,,,,,0
+NodeColor: 52425,39321,65535
+FontStyle: Arial,15
+FileInfo: 0,LinkModule Many_powerful_AIs,3,2,0,0,Module\Many powerful AIs.ana
+DisplayOutputs: Objective Humans_are_economic1
+
+Objective Many_powerful_AIs1
+Title: Many powerful AIs
+Definition: Discontinuity_to_AGI
+NodeLocation: 96,56,1
+NodeSize: 48,32
+DisplayInputs: Chance Discontinuity_to_AG1
+DisplayOutputs: Objective Humans_are_economic1
+
+Close Many_powerful_AIs
+

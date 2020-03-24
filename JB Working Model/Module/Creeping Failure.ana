@@ -1,0 +1,30 @@
+{ Analytica Model Creeping_Failure, encoding="UTF-8" }
+SoftwareVersion 5.3.3
+
+
+
+LinkModule Creeping_Failure
+Title: Creeping Failure
+Author: bernsjp1
+Date: Thu, Feb 6, 2020 10:10 AM
+NodeSize: 48,24
+NodeInfo: 1,,,,,,,0,,,,,,0
+DiagState: 2,332,146,944,415,17
+FontStyle: Arial,15
+FileInfo: 0,LinkModule Creeping_Failure,3,2,0,0,Module\Creeping Failure.ana
+DisplayOutputs: Objective Humans_are_economic1
+
+Chance Creeping_Failure1
+Title: Creeping Failure
+Definition: Beta(2,2)
+NodeLocation: 552,208,1
+NodeSize: 64,48
+ValueState: 2,40,50,400,300,0,MIDM
+DisplayOutputs: Objective Humans_are_economic1
+
+Variable Va5
+NodeLocation: 112,64,1
+NodeSize: 48,24
+
+Close Creeping_Failure
+

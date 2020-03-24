@@ -1,0 +1,253 @@
+{ Analytica Model Primary_model, encoding="UTF-8" }
+SoftwareVersion 5.3.3
+
+
+{ System Variables with non-default values: }
+SampleSize := 10K
+TypeChecking := 1
+Checking := 1
+SaveOptions := 2
+SaveValues := 0
+{!40400|Sys_PdfSmoothMethod := 1}
+{!40400|Sys_PdfSmoothFactor := 0.5}
+{!40400|Sys_WindowsMaximized := 1}
+
+{!-50299|DiagramColor Model: 65535,65535,65535}
+{!-50299|DiagramColor Module: 65535,65535,65535}
+{!-50299|DiagramColor LinkModule: 65535,65535,65535}
+{!-50299|DiagramColor Library: 65535,65535,65535}
+{!-50299|DiagramColor LinkLibrary: 65535,65535,65535}
+{!-50299|DiagramColor Form: 65535,65535,65535}
+NodeInfo FormNode: 1,0,0,,0,0,,,,0,,,0
+{!-50299|NodeColor Text: 62258,62258,62258}
+
+
+
+Model Primary_model
+Author: englaal1
+Date: Thu, Jan 30, 2020 11:28 AM
+DiagState: 2,0,15,1071,774,17
+FontStyle: Arial,15
+FileInfo: 0,Model Primary_model,2,2,0,0,C:\Users\bernsjp1\Box\AI Forecasting\Analytica\JB working file.ana
+
+Objective Context_for_agentive
+Title: Context for agentive AGI is more secure
+Definition: Comprehensive_AI_Ser
+NodeLocation: 1656,864,1
+NodeSize: 56,40
+
+Objective Alignment_is_much_ha
+Title: Alignment is much harder than, or does not overlap much with, capability gain
+Definition: Deep_insights_needed+ML_scales_to_AGI
+NodeLocation: 2016,1032,1
+NodeSize: 80,64
+
+Objective Foundational_or__dec
+Title: Foundational or "deconfusion" research
+Definition: (1-ML_scales_to_AGI) + Deep_insights_needed + Agentive_AGI + Inconspicuous_failur
+NodeLocation: 1752,640,1
+NodeSize: 64,40
+
+Chance Mesa_optimisation
+Title: Mesa-optimisation
+Definition: beta(2,2)
+NodeLocation: 1800,440,1
+NodeSize: 64,48
+
+Chance ML_scales_to_AGI
+Title: ML scales to AGI
+Definition: beta(2,2)
+NodeLocation: 1784,896,1
+NodeSize: 64,48
+ValueState: 2,52,58,416,303,,PDFP
+
+Chance Deep_insights_needed
+Title: Deep insights needed
+Definition: (1-ML_scales_to_AGI)
+NodeLocation: 2120,704,1
+NodeSize: 64,48
+ValueState: 2,52,58,416,303,,PDFP
+
+Chance Inconspicuous_failur
+Title: Inconspicuous failure
+Definition: Agentive_AGI  + Mesa_optimisation 
+NodeLocation: 1984,592,1
+NodeSize: 64,48
+
+Chance Creeping_Failure
+Title: Creeping Failure
+Definition: Beta(2,2)
+NodeLocation: 960,1304,1
+NodeSize: 64,48
+ValueState: 2,40,50,400,300,0,MIDM
+
+Chance Broad_basin_for_corr
+Title: Broad basin for corrigibility
+Definition: beta(2,2)
+NodeLocation: 1512,1000,1
+NodeSize: 64,48
+ValueState: 2,52,58,416,303,,PDFP
+
+Objective System_becomes_incor
+Title: System becomes incorrigible
+Definition: (1-Broad_basin_for_corr) + Discontinuity_from_A
+NodeLocation: 1280,992,1
+NodeSize: 56,32
+
+Objective Many_powerful_AIs
+Title: Many powerful AIs
+Definition: Discontinuity_to_AGI
+NodeLocation: 1048,1048,1
+NodeSize: 48,32
+
+Objective AI_improves_continuo
+Title: AI improves continuously
+Definition: (1-Discontinuity_from_A) + (1-Discontinuity_to_AGI)~
+
+NodeLocation: 1240,1152,1
+NodeSize: 56,24
+
+Objective Convergent_instrumen
+Title: Convergent instrumental subgoals
+Definition: Agentive_AGI
+NodeLocation: 1472,776,1
+NodeSize: 56,32
+
+Objective Comprehensive_AI_Ser
+Title: Comprehensive AI Services (before agentive AGI)
+Definition: (1-Agentive_AGI)
+NodeLocation: 1632,744,1
+NodeSize: 72,40
+
+Objective Humans_are_economica
+Title: Humans are economically outcompeted
+Definition: Creeping_Failure + AI_improves_continuo + Agentive_AGI + Many_powerful_AIs
+NodeLocation: 1080,1200,1
+NodeSize: 56,32
+ValueState: 2,68,74,416,303,1,PDFP
+
+Objective Synthesising_prefere
+Title: Synthesising preferences into a utility function
+Definition: (1-Discontinuity_from_A) + (1-Broad_basin_for_corr)
+NodeLocation: 920,1056,1
+NodeSize: 56,40
+ValueState: 2,84,90,416,303,,PDFP
+
+Objective Use_feedback_loops_t
+Title: Use feedback loops to correct course as we go
+Definition: AI_improves_continuo + Many_powerful_AIs
+NodeLocation: 1328,1320,1
+NodeSize: 64,40
+
+Objective ML_safety_or_prosaic
+Title: ML safety or prosaic alignment
+Definition: ML_scales_to_AGI + Broad_basin_for_corr
+NodeLocation: 1736,1192,1
+NodeSize: 56,32
+
+Objective Incorrigible_goal_di
+Title: Incorrigible goal-directed superintelligence
+Definition: Convergent_instrumen + System_becomes_incor
+NodeLocation: 1424,896,1
+NodeSize: 72,32
+
+Objective Target_loading_fails
+Title: Target loading fails
+Definition: Discontinuity_from_A + Broad_basin_for_corr + Incidental_agentive_
+NodeLocation: 1552,1248,1
+NodeSize: 72,32
+
+Objective Ob2
+Title: (Near) proof-level assurance of alignment
+Definition: (1-Broad_basin_for_corr) + Inconspicuous_failur
+NodeLocation: 1856,1104,1
+NodeSize: 56,40
+
+Module Agentive_AGI1
+Title: Agentive AGI
+Author: bernsjp1
+Date: Tue, Feb 4, 2020 9:50 AM
+NodeLocation: 1352,616,1
+NodeSize: 48,32
+DiagState: 2,322,244,944,484,17
+
+Chance Modularity_over_Inte
+Title: Modularity over Integration
+Definition: Beta( 2,2)
+NodeLocation: 112,152,1
+NodeSize: 64,48
+ValueState: 2,1196,4,416,303,1,PDFP
+GraphSetup: {!40400|Sys_PdfSmoothMethod:1}~
+Att_GraphValueRange Modularity_over_Inte:|1:1,,0,,,,,0,1,0
+{!40200|Att_GraphSetupSlices: [3,1,DensityIndex,1]}
+
+Chance Current_AI_R_D_extra
+Title: Current AI R&D extrapolates to AI services
+Definition: beta(2,2)
+NodeLocation: 144,280,1
+NodeSize: 64,48
+ValueState: 2,986,127,416,303,1,PDFP
+GraphSetup: {!40400|Sys_PdfSmoothMethod:1}
+
+Chance Incentive_for_Agenti
+Title: Incentive for Agentive AI
+Definition: (1 - Current_AI_R_D_extra)  + (1 - Modularity_over_Inte) 
+NodeLocation: 552,72,1
+NodeSize: 64,48
+ValueState: 2,959,588,400,315,1,PDFP
+GraphSetup: {!40400|Sys_PdfSmoothMethod:1}
+
+Chance Convergent_rationali
+Title: Convergent rationality
+Definition: beta(2,2)
+NodeLocation: 304,376,1
+NodeSize: 64,48
+
+Chance Incidental_agentive_
+Title: Incidental agentive AGI
+Definition: Convergent_rationali + Mesa_optimisation
+NodeLocation: 608,208,1
+NodeSize: 64,48
+
+Chance Agentive_AGI
+Title: Agentive AGI
+Definition: Incentive_for_Agenti + Incidental_agentive_
+NodeLocation: 816,72,1
+NodeSize: 64,48
+ValueState: 2,1202,356,416,303,,PDFP
+GraphSetup: {!40400|Sys_PdfSmoothMethod:1}
+
+Close Agentive_AGI1
+
+Module Discontinuity
+Title: Discontinuity
+Author: bernsjp1
+Date: Tue, Feb 4, 2020 9:50 AM
+NodeLocation: 1184,752,1
+NodeSize: 64,24
+
+Chance Recursive_self_impro
+Title: Recursive self-improvement
+Definition: Agentive_AGI 
+NodeLocation: 128,288,1
+NodeSize: 64,48
+ValueState: 2,420,426,416,303,,PDFP
+
+Chance Discontinuity_to_AGI
+Title: Discontinuity to AGI
+Definition: Beta(2,2)
+NodeLocation: 384,80,1
+NodeSize: 64,48
+ValueState: 2,40,50,400,300,0,MIDM
+
+Chance Discontinuity_from_A
+Title: Discontinuity from AGI
+Definition: Discontinuity_to_AGI  + Recursive_self_impro 
+NodeLocation: 344,272,1
+NodeSize: 64,48
+ValueState: 2,52,58,416,303,,PDFP
+
+Close Discontinuity
+
+Close Primary_model
+

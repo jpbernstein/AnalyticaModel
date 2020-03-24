@@ -1,0 +1,2106 @@
+{ Analytica Model Primary_model, encoding="UTF-8" }
+SoftwareVersion 5.3.3
+
+
+{ System Variables with non-default values: }
+SampleSize := 1000
+TypeChecking := 1
+Checking := 1
+ShowUndef := 0
+SaveOptions := 2
+SaveValues := 0
+
+{!-50299|DiagramColor Model: 65535,65535,65535}
+{!-50299|DiagramColor Module: 65535,65535,65535}
+{!-50299|DiagramColor LinkModule: 65535,65535,65535}
+{!-50299|DiagramColor Library: 65535,65535,65535}
+{!-50299|DiagramColor LinkLibrary: 65535,65535,65535}
+{!-50299|DiagramColor Form: 65535,65535,65535}
+NodeInfo FormNode: 1,0,0,,0,0,,,,0,,,0
+{!-50299|NodeColor Text: 62258,62258,62258}
+
+
+
+Model Primary_model
+Author: englaal1
+Date: Thu, Jan 30, 2020 11:28 AM
+DiagState: 2,184,54,1066,498,32,,
+FontStyle: Arial,15
+FileInfo: 0,Model Primary_model,2,2,0,0,C:\Users\englaal1\Box\AI Forecasting\Analytica\JB Working Model\AL master.ana
+
+Include 0,LinkModule Discontinuities___Ta,3,2,0,0,Module\Discontinuity.ana
+
+NodeLocation Discontinuities___Ta: 312,144,1
+NodeSize Discontinuities___Ta: 80,24
+
+
+Include 0,LinkModule Synthesized_utility_,2,2,0,0,Module\Synthesizing preferences into a utility function.ana
+
+NodeLocation Synthesized_utility_: 728,208,1
+NodeSize Synthesized_utility_: 80,24
+
+
+Include 0,LinkModule Default__Correct_cou,3,2,0,0,Module\Use feedback loops to correct course as we go.ana
+
+NodeLocation Default__Correct_cou: 728,80,1
+NodeSize Default__Correct_cou: 80,24
+
+
+Include 0,LinkModule Foundational_researc,2,2,0,0,Module\Foundational or deconfusion research.ana
+
+NodeLocation Foundational_researc: 728,336,1
+NodeSize Foundational_researc: 80,24
+
+
+Include 0,LinkModule Proof_level_assuranc,2,2,0,0,Module\(Near) proof-level assurance of alignment.ana
+
+NodeLocation Proof_level_assuranc: 728,272,1
+NodeSize Proof_level_assuranc: 80,24
+
+
+Include 0,LinkModule Prosaic_Alignment,3,2,0,0,Module\ML Safety or Prosaic Alignment.ana
+
+NodeLocation Prosaic_Alignment: 728,144,1
+NodeSize Prosaic_Alignment: 80,24
+
+
+Include 0,LinkModule System_becomes_incor,3,2,0,0,Module\System becomes incorrigible.ana
+
+NodeLocation System_becomes_incor: 520,288,1
+NodeSize System_becomes_incor: 80,24
+
+
+Include 0,LinkModule AI_improves_continuo,3,2,0,0,Module\AI improves continuously.ana
+
+NodeLocation AI_improves_continuo: 520,80,1
+NodeSize AI_improves_continuo: 80,24
+
+
+Include 0,LinkModule Many_powerful_AIs,3,2,0,0,Module\Many powerful AIs.ana
+
+NodeLocation Many_powerful_AIs: 520,144,1
+NodeSize Many_powerful_AIs: 80,24
+
+
+Include 0,LinkModule Comprehensive_AI_Ser,3,2,0,0,Module\Comprehensive AI Services (before agentive AGI).ana
+
+NodeLocation Comprehensive_AI_Ser: 520,352,1
+NodeSize Comprehensive_AI_Ser: 80,24
+
+
+Include 0,LinkModule Alignment_harder_tha,3,2,0,0,Module\Alignment is much harder than, or does not overlap much with, capability gain.ana
+
+NodeLocation Alignment_harder_tha: 520,432,1
+NodeSize Alignment_harder_tha: 80,40
+
+
+Include 0,LinkModule Convergent_instrumen,3,2,0,0,Module\Convergent instrumental subgoals.ana
+
+NodeLocation Convergent_instrumen: 520,216,1
+NodeSize Convergent_instrumen: 80,32
+
+
+Include 0,LinkModule Humans_economically_,3,2,0,0,Module\Humans are economically outcompeted.ana
+
+NodeLocation Humans_economically_: 936,248,1
+NodeSize Humans_economically_: 80,32
+
+
+Include 0,LinkModule Target_loading_fails,3,2,0,0,Module\Target loading fails.ana
+
+NodeLocation Target_loading_fails: 936,168,1
+NodeSize Target_loading_fails: 80,32
+
+
+Include 0,LinkModule Incorrigible_Superin,3,2,0,0,Module\Incorrigible goal-directed superintelligence.ana
+
+NodeLocation Incorrigible_Superin: 936,88,1
+NodeSize Incorrigible_Superin: 80,32
+
+
+Module Paths_to_Transformat
+Title: Paths to Transformative AI
+Author: englaal1
+Date: Mon, Mar 23, 2020 6:48 AM
+NodeLocation: 312,80,1
+NodeSize: 80,24
+DiagState: 2,728,278,752,376,17
+
+Include 0,LinkModule Agentive_AGI,3,2,0,0,Module\Agentive AGI.ana
+
+NodeLocation Agentive_AGI: 104,48,1
+NodeSize Agentive_AGI: 64,24
+
+
+Include 0,LinkModule ML_scales_to_AGI,3,2,0,0,Module\ML scales to AGI.ana
+
+NodeLocation ML_scales_to_AGI: 104,128,1
+NodeSize ML_scales_to_AGI: 64,24
+
+
+Include 0,LinkModule Deep_insights_needed,3,2,0,0,Module\Deep insights needed.ana
+
+NodeLocation Deep_insights_needed: 104,208,1
+NodeSize Deep_insights_needed: 64,24
+
+
+Close Paths_to_Transformat
+
+Module Failure_Modes
+Title: Failure Modes
+Author: englaal1
+Date: Mon, Mar 23, 2020 6:48 AM
+NodeLocation: 312,208,1
+NodeSize: 80,24
+DiagState: 2,0,0,447,213,17
+
+Include 0,LinkModule Creeping_Failure,3,2,0,0,Module\Creeping Failure.ana
+
+NodeLocation Creeping_Failure: 112,48,1
+NodeSize Creeping_Failure: 64,24
+
+
+Include 0,LinkModule Corrigibility_basin,2,2,0,0,Module\Corrigibility.ana
+
+NodeLocation Corrigibility_basin: 112,136,1
+NodeSize Corrigibility_basin: 64,24
+
+
+Include 0,LinkModule Mesa_optimization,2,2,0,0,Module\Mesa-optimization.ana
+
+NodeLocation Mesa_optimization: 288,48,1
+NodeSize Mesa_optimization: 64,24
+
+
+Include 0,LinkModule Inconspicuous_failur,3,2,0,0,Module\Inconspicuous failure.ana
+
+NodeLocation Inconspicuous_failur: 288,136,1
+NodeSize Inconspicuous_failur: 72,24
+
+
+Close Failure_Modes
+
+Module Other_Factors
+Title: Other Factors
+Author: englaal1
+Date: Mon, Mar 23, 2020 6:48 AM
+NodeLocation: 312,272,1
+NodeSize: 80,24
+
+Close Other_Factors
+
+Module Meta_Uncertainties
+Title: Meta-Uncertainties
+Author: englaal1
+Date: Mon, Mar 23, 2020 6:48 AM
+NodeLocation: 312,336,1
+NodeSize: 80,24
+
+Close Meta_Uncertainties
+
+Text Te1791309629
+Title: Uncertainties
+NodeLocation: 312,200,-1
+NodeSize: 96,176
+NodeInfo: 1,,,,1,,,,,,,,1
+
+Text Te254097213
+Title: Disasters
+NodeLocation: 936,160,-1
+NodeSize: 96,136
+NodeInfo: 1,,,,1,,,,,,,,1
+NodeColor: 19661,33649,65535
+
+Text Te174405437
+Title: Research Agendas
+NodeLocation: 728,200,-1
+NodeSize: 96,176
+NodeInfo: 1,,,,1,,,,,,,,1
+NodeColor: 19661,33649,65535
+
+Text Te603273021
+Title: Scenarios
+NodeLocation: 520,256,-1
+NodeSize: 96,232
+NodeInfo: 1,,,,1,,,,,,,,1
+NodeColor: 19661,33649,65535
+
+Module All_Uncertainty_Modu
+Title: All uncertainty modules (list)
+Author: englaal1
+Date: Mon, Mar 23, 2020 8:20 AM
+NodeLocation: 112,272,1
+NodeSize: 80,24
+NodeColor: 65535,42597,19661
+
+Close All_Uncertainty_Modu
+
+Module Map_of_all_modules
+Title: Map of all modules
+Author: englaal1
+Date: Mon, Mar 23, 2020 11:57 AM
+NodeLocation: 112,144,1
+NodeSize: 80,24
+NodeColor: 65535,42597,19661
+
+Close Map_of_all_modules
+
+Module Map_of_all_nodes
+Title: Map of all nodes
+Author: englaal1
+Date: Mon, Mar 23, 2020 11:57 AM
+NodeLocation: 112,208,1
+NodeSize: 80,24
+NodeColor: 65535,42597,19661
+
+Close Map_of_all_nodes
+
+Text Te1289064253
+Title: Navigation
+NodeLocation: 112,172,-1
+NodeSize: 88,148
+NodeInfo: 1,,,,1,,,,,,,,1
+
+Module High_level_map
+Title: High-level map
+Author: englaal1
+Date: Mon, Mar 23, 2020 3:56 PM
+NodeLocation: 112,80,1
+NodeSize: 80,24
+DiagState: 2,3,2,1202,665,17
+NodeColor: 65535,42597,19661
+
+Module Agentive_AGI1
+Title: Agentive AGI
+Author: bernsjp1
+Date: Tue, Feb 4, 2020 1:06 PM
+NodeLocation: 592,200,1
+NodeSize: 80,24
+NodeInfo: 1,,,,,,,0,,,,,,0
+DiagState: 2,422,186,773,527,17
+NodeColor: 19661,33649,65535
+FontStyle: Arial,15
+
+Chance Agentive_AGI2
+Title: Agentive AGI
+Definition: Incentive_for_Agent2 + Incidental_agentive2
+NodeLocation: 680,264,1
+NodeSize: 64,48
+ValueState: 2,1202,356,416,303,,PDFP
+GraphSetup: {!40400|Sys_PdfSmoothMethod:1}
+
+Chance Convergent_rational2
+Title: Convergent rationality
+Definition: beta(2,2)
+NodeLocation: 72,440,1
+NodeSize: 64,48
+DisplayOutputs: Chance Incidental_agentive2
+
+Chance Current_AI_R_D_extr2
+Title: Current AI R&D extrapolates to AI services
+Definition: beta(2,2)
+NodeLocation: 104,312,1
+NodeSize: 64,48
+ValueState: 2,986,127,416,303,1,PDFP
+GraphSetup: {!40400|Sys_PdfSmoothMethod:1}
+
+Chance Incentive_for_Agent2
+Title: Incentive for Agentive AI
+Definition: (1 - Current_AI_R_D_extr2)  + (1 - Modularity_over_Int2) 
+NodeLocation: 400,184,1
+NodeSize: 64,48
+ValueState: 2,959,588,400,315,1,PDFP
+Aliases: Alias Al2117357373
+GraphSetup: {!40400|Sys_PdfSmoothMethod:1}
+DisplayInputs: Chance Mesa_optimizers_can1
+
+Chance Incidental_agentive2
+Title: Incidental agentive AGI
+Definition: Convergent_rational1 + Mesa_optimisation
+NodeLocation: 408,368,1
+NodeSize: 64,48
+DisplayInputs: Chance Convergent_rational2
+
+Chance Modularity_over_Int2
+Title: Modularity over Integration
+Definition: Beta( 2,2)
+NodeLocation: 72,184,1
+NodeSize: 64,48
+ValueState: 2,1196,4,416,303,1,PDFP
+GraphSetup: {!40400|Sys_PdfSmoothMethod:1}~
+Att_GraphValueRange Modularity_over_Int2:|1:1,,0,,,,,0,1,0
+{!40200|Att_GraphSetupSlices: [3,1,DensityIndex,1]}
+
+Text Te34885437
+Title: No
+NodeLocation: 192,292,-1
+NodeSize: 24,12
+
+Text Te1108627261
+Title: No
+NodeLocation: 152,156,-1
+NodeSize: 24,12
+
+Text Te571756349
+Description: The current version of this node is identical to the Shah/Cottier chart, minus the mesa-optimization node.
+NodeLocation: 104,40,-1
+NodeSize: 104,40
+NodeInfo: 1,,,,1
+
+Variable Va15
+NodeLocation: 624,64,1
+NodeSize: 48,24
+Aliases: Alias Al1196183357
+
+Variable Va24
+NodeLocation: 624,64,1
+NodeSize: 48,24
+Aliases: Alias Al1483493181
+
+Variable Va25
+NodeLocation: 624,64,1
+NodeSize: 48,24
+Aliases: Alias Al778850109
+
+Close Agentive_AGI1
+
+Module AI_improves_continu2
+Title: AI improves continuously
+Author: bernsjp1
+Date: Wed, Feb 5, 2020 2:47 PM
+NodeLocation: 584,432,1
+NodeSize: 80,24
+NodeInfo: 1,,,,,,,0,,,,,,0
+DiagState: 2,-182,322,937,484,17
+NodeColor: 52425,39321,65535
+FontStyle: Arial,15
+
+Objective AI_improves_continu3
+Title: AI improves continuously
+Definition: (1-{Discontinuity_from_A}) + (1-{Discontinuity_to_AGI})~
+
+NodeLocation: 504,136,1
+NodeSize: 56,24
+DisplayOutputs: Objective Use_feedback_loops_2, Objective Humans_are_economic2
+
+Alias Al1917603645
+Title: Va14
+Definition: 1
+NodeLocation: 112,64,1
+NodeSize: 48,24
+Original: Va14
+
+Close AI_improves_continu2
+
+Module Alignment_harder_th1
+Title: Alignment harder than / doesn't overlap with capability gain
+Author: bernsjp1
+Date: Thu, Feb 6, 2020 10:14 AM
+NodeLocation: 1408,128,1
+NodeSize: 80,40
+NodeInfo: 1,,,,,,,0,,,,,,0
+NodeColor: 52425,39321,65535
+FontStyle: Arial,15
+
+Objective Alignment_is_much_h2
+Title: Alignment is much harder than, or does not overlap much with, capability gain
+Definition: Deep_insights_neede1+ML_scales_to_AGI1
+NodeLocation: 128,88,1
+NodeSize: 80,64
+
+Alias Al1250709309
+Title: Va9
+Definition: 1
+NodeLocation: 240,64,1
+NodeSize: 48,24
+Original: Va9
+
+Alias Al1519144765
+Title: Va10
+Definition: 1
+NodeLocation: 496,64,1
+NodeSize: 48,24
+Original: Va10
+
+Close Alignment_harder_th1
+
+Module Both_scenario_and_s2
+Title: Both scenario and solution
+Author: bernsjp1
+Date: Tue, Feb 11, 2020 2:32 PM
+NodeLocation: 296,680,1
+NodeSize: 80,24
+NodeColor: 1,34407,39321
+
+Close Both_scenario_and_s2
+
+Module Comprehensive_AI_Se2
+Title: Comprehensive AI Services
+Author: bernsjp1
+Date: Thu, Feb 6, 2020 10:21 AM
+NodeLocation: 240,328,1
+NodeSize: 80,24
+NodeInfo: 1,,,,,,,0,,,,,,0
+DiagState: 2,0,0,752,376,17
+NodeColor: 1,34407,39321
+FontStyle: Arial,15
+
+Objective Comprehensive_AI_Se3
+Title: Comprehensive AI Services (before agentive AGI)
+Definition: (1-Agentive_AGI2)
+NodeLocation: 120,64,1
+NodeSize: 72,40
+
+Variable Va2
+NodeLocation: 112,192,1
+NodeSize: 48,24
+
+Close Comprehensive_AI_Se2
+
+Module Convergent_instrume2
+Title: Convergent instrumental subgoals
+Author: bernsjp1
+Date: Thu, Feb 6, 2020 10:27 AM
+NodeLocation: 296,224,1
+NodeSize: 80,32
+NodeInfo: 1,,,,,,,0,,,,,,0
+DiagState: 2,0,0,752,376,17
+NodeColor: 52425,39321,65535
+FontStyle: Arial,15
+
+Objective Convergent_instrume3
+Title: Convergent instrumental subgoals
+Definition: Agentive_AGI2
+NodeLocation: 104,56,1
+NodeSize: 56,32
+Aliases: Alias Al1779715901
+NodeColor: 52425,39321,65535
+
+Alias Al1108627261
+Title: Incorrigible goal-directed superintelligence
+Definition: 0
+NodeLocation: 320,56,1
+NodeSize: 72,32
+Original: Incorrigible_goal_d2
+
+Close Convergent_instrume2
+
+Module Corrigibility_basin1
+Title: Corrigibility basin
+Author: bernsjp1
+Date: Wed, Feb 5, 2020 9:44 AM
+NodeLocation: 704,64,1
+NodeSize: 80,24
+NodeInfo: 1,,,,,,,0,,,,,,0
+DiagState: 2,0,0,1349,574,17
+NodeColor: 19661,33649,65535
+FontStyle: Arial,15
+Att__DiagramPrintSca: 100,1,1,1,1,1,2794,2159,15,0
+
+Chance Corrigibility_leads1
+Title: Corrigibility leads to intent alignment
+Definition: beta(2,2)
+NodeLocation: 1136,88,1
+NodeSize: 64,48
+ValueState: 2,52,58,416,303,,PDFP
+DisplayInputs: Chance Robust_corrigibilit1, Chance Value_drift_during_1
+DisplayOutputs: Objective System_becomes_inco3
+
+Chance Corrigibility_can_b2
+Title: Corrigibility can be achieved. (b)
+NodeLocation: 680,296,1
+NodeSize: 56,32
+DisplayInputs: Chance Corrigibility_can_b3, Chance Agent_cannot_hide_m1, Chance Oversight_of_agent_1, Chance AI_can_grasp_moral_1, Chance AI_can_hold_a_meta_1, Chance AI_can_determine_si1
+DisplayOutputs: Chance Corrigibility_does_1, Chance Robust_corrigibilit1
+
+Chance Instrumental_corrig1
+Title: Instrumental corrigibility can be achieved.
+NodeLocation: 432,76,1
+NodeSize: 64,28
+
+Chance Corrigibility_can_b3
+Title: Corrigibility can be formalized.
+NodeLocation: 328,184,1
+NodeSize: 64,24
+DisplayOutputs: Chance Corrigibility_can_b2
+
+Chance Corrigibility_does_1
+Title: Corrigibility does not significantly impede AI performance.
+NodeLocation: 1136,264,1
+NodeSize: 64,64
+DisplayInputs: Chance Corrigibility_can_b2
+DisplayOutputs: Objective System_becomes_inco3
+
+Chance AIs_can_be_risk_sen1
+Title: AIs can be risk sensitive.
+NodeLocation: 1128,448,1
+NodeSize: 48,32
+DisplayInputs: Chance AI_can_determine_si1
+
+Text Te1645498173
+Description: (b) A corrigible agent cooperates with creator intervention according to <a href="https://intelligence.org/files/Corrigibility.pdf">MIRI</a>. Alternative definition can be found on the <a href="https://www.alignmentforum.org/posts/fkLYhTQteAu5SinAc/corrigibility">AIAF</a>.
+NodeLocation: 184,44,-1
+NodeSize: 176,36
+NodeInfo: 1,,,,1
+
+Text Te303320893
+Description: TBD: How they fit in the chart
+NodeLocation: 432,60,-1
+NodeSize: 72,52
+NodeInfo: 1,,,,1
+
+Chance Agent_can_be_design1
+Title: Agent can be designed in a way to not influence programmer.
+Definition: beta(2,2)
+NodeLocation: 96,360,1
+NodeSize: 72,40
+ValueState: 2,1068,78,416,303,,PDFP
+DisplayOutputs: Chance Agent_cannot_hide_m1
+
+Chance Agent_cannot_hide_m1
+Title: Agent cannot hide motives nor be deceptive
+NodeLocation: 296,352,1
+NodeSize: 64,40
+DisplayInputs: Chance Agent_can_be_design1, Chance Agents_cannot_prote1
+DisplayOutputs: Chance Corrigibility_can_b2
+
+Chance Agents_cannot_prote1
+Title: Agents cannot protect utility functions from modification
+NodeLocation: 136,480,1
+NodeSize: 64,40
+DisplayOutputs: Chance Agent_cannot_hide_m1
+
+Module Goal_Clarity1
+Title: Goal Clarity
+Author: bernsjp1
+Date: Fri, Mar 13, 2020 10:09 AM
+NodeLocation: 240,256,1
+NodeSize: 48,24
+DiagState: 2,723,66,824,469,17
+
+Chance Agents_prefer_to_bu1
+Title: Agents prefer to build subagents with the overseer's preferences (d)
+NodeLocation: 400,136,1
+NodeSize: 80,56
+DisplayOutputs: Chance Oversight_of_agent_1
+
+Chance Humans_can_share_th1
+Title: Humans can share their preferences in an intelligible way to agent.
+NodeLocation: 192,376,1
+NodeSize: 72,56
+DisplayOutputs: Chance Preferences_can_be_1
+
+Chance AI_s_predicted_resu1
+Title: AI's predicted result can be safely communicated to the operator.
+NodeLocation: 120,184,1
+NodeSize: 80,56
+DisplayOutputs: Chance Oversight_of_agent_1
+
+Chance Oversight_of_agent_1
+Title: Oversight of agent development can be scalable.
+NodeLocation: 624,232,1
+NodeSize: 56,56
+DisplayInputs: Chance Agents_prefer_to_bu1, Chance AI_s_predicted_resu1, Chance Preferences_can_be_1
+DisplayOutputs: Chance Corrigibility_can_b2
+
+Chance Preferences_can_be_1
+Title: Preferences can be optimized
+NodeLocation: 296,272,1
+NodeSize: 56,32
+DisplayInputs: Chance Humans_can_share_th1
+DisplayOutputs: Chance Oversight_of_agent_1
+
+Chance AI_can_grasp_moral_1
+Title: AI can grasp moral uncertainty
+NodeLocation: 560,80,1
+NodeSize: 56,32
+DisplayOutputs: Chance Corrigibility_can_b2
+
+Chance AI_can_hold_a_meta_1
+Title: AI can hold a meta-utility function
+NodeLocation: 448,376,1
+NodeSize: 48,40
+DisplayOutputs: Chance Corrigibility_can_b2
+
+Text Te1377062717
+Description: (d) As opposed to an agent building subagents with its (the agent's) preferences.
+NodeLocation: 76,48,-1
+NodeSize: 76,48
+
+Close Goal_Clarity1
+
+Module Impact_Clarity1
+Title: Impact Clarity
+Author: bernsjp1
+Date: Fri, Mar 13, 2020 10:09 AM
+NodeLocation: 408,448,1
+NodeSize: 48,24
+DiagState: 2,371,62,824,469,17
+
+Chance AI_can_determine_si1
+Title: AI can determine side effects of action
+NodeLocation: 416,232,1
+NodeSize: 56,40
+DisplayInputs: Chance AI_can_reason_inter1, Chance An_impact_regulariz1
+DisplayOutputs: Chance Corrigibility_can_b2, Chance AIs_can_be_risk_sen1
+
+Chance AI_can_reason_inter1
+Title: AI can reason internally from programmer's external view (c)
+NodeLocation: 424,72,1
+NodeSize: 64,56
+DisplayOutputs: Chance AI_can_determine_si1
+
+Chance An_impact_regulariz1
+Title: An impact regularizer can be created. (a)
+NodeLocation: 280,168,1
+NodeSize: 64,32
+DisplayInputs: Chance Impact_measurement_1
+DisplayOutputs: Chance AI_can_determine_si1
+
+Chance Impact_measurement_1
+Title: Impact measurement can be created
+NodeLocation: 88,160,1
+NodeSize: 64,32
+DisplayOutputs: Chance An_impact_regulariz1
+
+Text Te840191805
+Description: (a) An impact regularizer is a way of penalizing changes to the environment so that agents can minimize side effects from their decisions.~
+(c) This simplifies how the AI would interact with the programmer. See <a href="https://www.alignmentforum.org/posts/tDXFRfkvijTzs2Mmr/where-s-the-turing-machine-a-step-towards-ontology">here and its sublinks</a>.
+NodeLocation: 172,60,-1
+NodeSize: 172,60
+NodeInfo: 1,,,,1
+
+Close Impact_Clarity1
+
+Module Act_based_corrigibi2
+Title: Act-based corrigibility can be achieved
+Author: bernsjp1
+Date: Fri, Mar 13, 2020 10:09 AM
+NodeLocation: 600,176,1
+NodeSize: 56,40
+DiagState: 2,307,125,824,469,17
+
+Chance Combination_of_beni1
+Title: Combination of benign agents creates a benign agent
+NodeLocation: 120,192,1
+NodeSize: 64,40
+DisplayInputs: Variable Benign_act_based_ag3
+DisplayOutputs: Chance Benign_act_based_ag2
+
+Chance Benign_act_based_ag2
+Title: Benign act-based agents converge
+NodeLocation: 104,328,1
+NodeSize: 56,40
+DisplayInputs: Chance Combination_of_beni1
+DisplayOutputs: Chance Robust_corrigibilit1
+
+Variable Benign_act_based_ag3
+Title: Benign act-based agent can be created
+NodeLocation: 144,64,1
+NodeSize: 64,32
+NodeColor: 65535,42597,19661
+DisplayOutputs: Chance Combination_of_beni1
+
+Close Act_based_corrigibi2
+
+Module Broad_Basin_for_Cor1
+Title: Broad Basin for Corrigibility
+Author: bernsjp1
+Date: Fri, Mar 13, 2020 10:09 AM
+NodeLocation: 952,152,1
+NodeSize: 56,32
+DiagState: 2,631,145,824,469,17
+
+Chance Robust_corrigibilit1
+Title: Robust corrigibility can be achieved.
+NodeLocation: 272,232,1
+NodeSize: 56,40
+DisplayInputs: Chance Corrigibility_can_b2, Chance Benign_act_based_ag2, Chance Agent_can_seek_to_p1, Chance Test_mechanisms_tha1, Chance In_place_safety_mec1, Chance Agent_combine_diffe1, Chance Agents_help_figure_1
+DisplayOutputs: Chance Corrigibility_leads1
+
+Chance Agent_can_seek_to_p1
+Title: Agent can seek to preserve corrigibility
+NodeLocation: 128,224,1
+NodeSize: 56,40
+DisplayOutputs: Chance Robust_corrigibilit1
+
+Chance Test_mechanisms_tha1
+Title: Test mechanisms that target corrigibility can be created.
+NodeLocation: 400,144,1
+NodeSize: 56,64
+DisplayOutputs: Chance Robust_corrigibilit1
+
+Chance In_place_safety_mec1
+Title: In-place safety mechanisms can be self-repaired.
+NodeLocation: 400,304,1
+NodeSize: 56,56
+DisplayOutputs: Chance Robust_corrigibilit1
+
+Chance Agent_combine_diffe1
+Title: Agent combine different utility functions in safe manner (e)
+NodeLocation: 240,360,1
+NodeSize: 64,56
+DisplayOutputs: Chance Robust_corrigibilit1
+
+Chance Value_drift_during_1
+Title: Value drift during capability amplification can be prevented
+NodeLocation: 88,120,1
+NodeSize: 72,40
+DisplayOutputs: Chance Corrigibility_leads1
+
+Chance Agents_help_figure_1
+Title: Agents help figure out how to aid with the correction process
+NodeLocation: 88,344,1
+NodeSize: 72,56
+DisplayOutputs: Chance Robust_corrigibilit1
+
+Text Te1913933629
+Description: (e) Otherwise, utility function merging may result in being knocked out of the corrigible behavior.
+NodeLocation: 152,32,-1
+NodeSize: 152,32
+NodeInfo: 1,,,,1
+
+Alias Al571756349
+Title: Human supervision can be sufficient for teaching preferences
+Definition: 1
+NodeLocation: 600,72,1
+NodeSize: 72,56
+Original: Human_supervision_c1
+
+Close Broad_Basin_for_Cor1
+
+Chance Human_supervision_c1
+Title: Human supervision can be sufficient for teaching preferences
+NodeLocation: 712,72,1
+NodeSize: 72,56
+Aliases: Alias Al571756349
+
+Variable Va16
+NodeLocation: 880,64,1
+NodeSize: 48,24
+Aliases: Alias Al181161789
+
+Variable Va17
+NodeLocation: 1008,64,1
+NodeSize: 48,24
+Aliases: Alias Al1881952061
+
+Variable Va19
+NodeLocation: 1264,64,1
+NodeSize: 48,24
+Aliases: Alias Al1420578621
+
+Variable Va23
+NodeLocation: 1392,64,1
+NodeSize: 48,24
+Aliases: Alias Al497831741
+
+Variable Va26
+NodeLocation: 112,128,1
+NodeSize: 48,24
+Aliases: Alias Al1701596989
+
+Close Corrigibility_basin1
+
+Module Creeping_Failure2
+Title: Creeping Failure
+Author: bernsjp1
+Date: Thu, Feb 6, 2020 10:10 AM
+NodeLocation: 512,48,1
+NodeSize: 80,24
+NodeInfo: 1,,,,,,,0,,,,,,0
+DiagState: 2,332,146,944,415,17
+NodeColor: 19661,33649,65535
+FontStyle: Arial,15
+DisplayOutputs: Objective Humans_are_economic2
+
+Chance Creeping_Failure3
+Title: Creeping Failure
+Definition: Beta(2,2)
+NodeLocation: 552,208,1
+NodeSize: 64,48
+ValueState: 2,40,50,400,300,0,MIDM
+
+Variable Va3
+NodeLocation: 112,64,1
+NodeSize: 48,24
+
+Close Creeping_Failure2
+
+Module Deep_insights_neede2
+Title: Deep insights needed
+Author: bernsjp1
+Date: Thu, Feb 6, 2020 10:28 AM
+NodeLocation: 1112,120,1
+NodeSize: 80,24
+NodeInfo: 1,,,,,,,0,,,,,,0
+DiagState: 2,405,58,761,452,17
+NodeColor: 19661,33649,65535
+FontStyle: Arial,15
+
+Chance Deep_insights_neede3
+Title: Deep insights needed
+Definition: (1-ML_scales_to_AGI1)
+NodeLocation: 728,312,1
+NodeSize: 64,48
+ValueState: 2,52,58,416,303,,PDFP
+DisplayInputs: Chance AI_development_para1, Chance Currently_developed1, Chance Meta_Learning_canno1, Chance AI_cannot_resolve_g1, Chance Machines_cannot_rea1, Chance Human_safety_can_be1
+
+Chance AI_development_para1
+Title: AI development paradigm gap/shift are required for AGI.
+NodeLocation: 208,328,1
+NodeSize: 56,64
+DisplayOutputs: Chance Deep_insights_neede3
+
+Chance Currently_developed1
+Title: Currently developed technical solutions are irrelevant.
+NodeLocation: 400,144,1
+NodeSize: 72,56
+DisplayInputs: Chance ML_can_scale_to_AGI1
+DisplayOutputs: Chance Deep_insights_neede3
+
+Chance Meta_Learning_canno1
+Title: Meta-Learning cannot be leveraged.
+NodeLocation: 296,232,1
+NodeSize: 48,40
+DisplayOutputs: Chance Deep_insights_neede3
+
+Chance AI_cannot_resolve_g1
+Title: AI cannot resolve goal ambiguity.
+NodeLocation: 312,416,1
+NodeSize: 56,32
+DisplayOutputs: Chance Deep_insights_neede3
+
+Chance Machines_cannot_rea1
+Title: Machines cannot reason with counterfactuals.
+NodeLocation: 568,152,1
+NodeSize: 72,40
+DisplayOutputs: Chance Deep_insights_neede3
+
+Text Te169103165
+Description: Each of these require further decomposition (as they all could function as scenarios by themselves.)
+NodeLocation: 84,48,-1
+NodeSize: 84,48
+NodeInfo: 1,,,,1
+
+Chance Human_safety_can_be1
+Title: Human safety can be modeled
+NodeLocation: 488,472,1
+NodeSize: 56,32
+DisplayOutputs: Chance Deep_insights_neede3
+
+Alias Al1645498173
+Title: ML can scale to AGI.
+Definition: 1
+NodeLocation: 96,160,1
+NodeSize: 64,48
+NodeColor: 65535,42597,19661
+Original: ML_can_scale_to_AGI1
+
+Text Te1242844989
+Title: No
+NodeLocation: 216,148,-1
+NodeSize: 24,12
+
+Variable Va9
+NodeLocation: 1016,40,1
+NodeSize: 48,24
+Aliases: Alias Al1250709309
+
+Variable Va13
+NodeLocation: 1016,40,1
+NodeSize: 48,24
+Aliases: Alias Al1703694141
+
+Close Deep_insights_neede2
+
+Module Default__Correct_co1
+Title: Default: Correct course as we go
+Author: bernsjp1
+Date: Thu, Feb 6, 2020 10:01 AM
+NodeLocation: 680,536,1
+NodeSize: 80,24
+NodeInfo: 1,,,,,,,0,,,,,,0
+DiagState: 2,0,0,752,376,17
+NodeColor: 39321,65535,52425
+FontStyle: Arial,15
+
+Objective Use_feedback_loops_2
+Title: Use feedback loops to correct course as we go
+Definition: AI_improves_continu1 + {Many_powerful_AIs1}
+NodeLocation: 112,64,1
+NodeSize: 64,40
+DisplayInputs: Objective AI_improves_continu3
+
+Alias Al181161789
+Title: Va16
+Definition: 1
+NodeLocation: 880,64,1
+NodeSize: 48,24
+Original: Va16
+
+Close Default__Correct_co1
+
+Module Discontinuities___T1
+Title: Discontinuities & Takeoff Speeds
+Author: bernsjp1
+Date: Tue, Feb 4, 2020 12:54 PM
+NodeLocation: 592,288,1
+NodeSize: 80,24
+NodeInfo: 1,,,,,,,0,,,,,,0
+DiagState: 2,64,30,1104,527,17
+NodeColor: 19661,33649,65535
+FontStyle: Arial,15
+
+Chance Discontinuity_from_1
+Title: Discontinuity from AGI
+NodeLocation: 1016,544,1
+NodeSize: 64,48
+ValueState: 2,52,58,416,303,,PDFP
+DisplayInputs: Chance AGI_recursively_sel1
+DisplayOutputs: Objective System_becomes_inco3
+
+Chance Discontinuity_to_AG1
+Title: Discontinuity to AGI
+NodeLocation: 1008,296,1
+NodeSize: 64,48
+ValueState: 2,40,50,400,300,0,MIDM
+DisplayInputs: Chance Outside_view__proba1, Chance Inside_view__probab1, Chance Weight_of_outside_o1
+DisplayOutputs: Objective Many_powerful_AIs1, Objective Many_powerful_AIs3
+
+Chance AGI_recursively_sel1
+Title: AGI recursively self-improves
+Definition: Agentive_AGI2 
+NodeLocation: 640,544,1
+NodeSize: 64,48
+WindState: 2,0,0,720,350
+ValueState: 2,420,426,416,303,,PDFP
+DisplayInputs: Variable Possible_to_special1
+DisplayOutputs: Chance Discontinuity_from_1
+
+Chance Only_a_few_key_brea1
+Title: Only a few key breakthroughs needed
+NodeLocation: 328,464,1
+NodeSize: 64,40
+WindState: 2,0,0,720,350
+Aliases: Alias Al840191805
+DisplayInputs: Variable Human_evidence_sugg3
+DisplayOutputs: Variable Possible_to_special1
+
+Variable One_company_can_sec1
+Title: One company can secretly get to AGI
+NodeLocation: 640,400,1
+NodeSize: 64,40
+NodeColor: 65535,42597,19661
+DisplayInputs: Variable Possible_to_special1
+DisplayOutputs: Chance Inside_view__probab1
+
+Chance Outside_view__proba1
+Title: Outside view: probability of discontinuity to AGI
+NodeLocation: 824,232,1
+NodeSize: 56,56
+Aliases: Alias Al303320893, Alias Al1377062717, Alias Al1913933629, Alias Al169103165
+DisplayInputs: Variable Historical_disconti1, Chance Probability_based_o5
+DisplayOutputs: Chance Discontinuity_to_AG1
+
+Module Probability_based_o3
+Title: Probability based on technological discontinuities
+Author: englaal1
+Date: Mon, Mar 16, 2020 7:57 AM
+NodeLocation: 640,184,1
+NodeSize: 72,40
+DiagState: 2,0,0,752,376,17
+
+Alias Al303320893
+Title: Outside view says don't expect discontinuity
+Definition: 0
+NodeLocation: 1048,144,1
+NodeSize: 56,40
+Original: Outside_view__proba1
+
+Alias Al1377062717
+Title: Outside view says don't expect discontinuity
+Definition: 0
+NodeLocation: 1048,144,1
+NodeSize: 56,40
+Original: Outside_view__proba1
+
+Variable Historical_disconti1
+Title: Historical discontinuity rate
+NodeLocation: 808,136,1
+NodeSize: 56,32
+DisplayOutputs: Chance Outside_view__proba1
+
+Close Probability_based_o3
+
+Variable Possible_to_special1
+Title: Possible to specialize in learning ability
+NodeLocation: 480,464,1
+NodeSize: 56,40
+NodeColor: 65535,42597,19661
+DisplayInputs: Chance Only_a_few_key_brea1
+DisplayOutputs: Chance AGI_recursively_sel1, Variable One_company_can_sec1
+
+Module Human_evidence_sugg2
+Title: Human evidence suggests few breakthroughs needed
+Author: englaal1
+Date: Mon, Mar 16, 2020 7:57 AM
+NodeLocation: 160,464,1
+NodeSize: 72,56
+DiagState: 2,0,0,752,376,17
+
+Variable Human_evidence_sugg3
+Title: Human evidence suggests few breakthroughs needed
+NodeLocation: 400,240,1
+NodeSize: 64,56
+DisplayOutputs: Chance Only_a_few_key_brea1
+
+Alias Al840191805
+Title: Only a few key breakthroughs needed
+Definition: 0
+NodeLocation: 664,248,1
+NodeSize: 64,40
+Original: Only_a_few_key_brea1
+
+Close Human_evidence_sugg2
+
+Module Probability_based_o4
+Title: Probability based on history of AI research
+Author: englaal1
+Date: Mon, Mar 16, 2020 7:57 AM
+NodeLocation: 640,280,1
+NodeSize: 72,40
+DiagState: 2,0,0,752,374,17
+
+Alias Al1913933629
+Title: Outside view says don't expect discontinuity
+Definition: 0
+NodeLocation: 520,152,1
+NodeSize: 56,40
+Original: Outside_view__proba1
+
+Alias Al169103165
+Title: Outside view says don't expect discontinuity
+Definition: 0
+NodeLocation: 520,152,1
+NodeSize: 56,40
+Original: Outside_view__proba1
+
+Chance Probability_based_o5
+Title: Probability based on history of AI research
+NodeLocation: 280,152,1
+NodeSize: 56,40
+DisplayOutputs: Chance Outside_view__proba1
+
+Close Probability_based_o4
+
+Chance Inside_view__probab1
+Title: Inside view: probability of discontinuity to AGI
+NodeLocation: 824,352,1
+NodeSize: 56,40
+DisplayInputs: Variable One_company_can_sec1
+DisplayOutputs: Chance Discontinuity_to_AG1
+
+Module Module2
+Title: Module
+Author: englaal1
+Date: Mon, Mar 16, 2020 7:57 AM
+NodeLocation: 296,104,1
+NodeSize: 56,32
+
+Close Module2
+
+Chance For_elicitation1
+Title: For elicitation
+NodeLocation: 152,184,1
+NodeSize: 56,32
+
+Variable Variable_that_is_a_1
+Title: Variable that is a function of inputs
+NodeLocation: 296,184,1
+NodeSize: 56,32
+NodeColor: 65535,42597,19661
+
+Text Te705974077
+Title: KEY
+NodeLocation: 156,108,-1
+NodeSize: 28,12
+
+Chance Weight_of_outside_o1
+Title: Weight of outside over inside view
+NodeLocation: 824,120,1
+NodeSize: 56,32
+DisplayOutputs: Chance Discontinuity_to_AG1
+
+Variable Va14
+NodeLocation: 1096,48,1
+NodeSize: 48,24
+Aliases: Alias Al1917603645
+
+Variable Va18
+NodeLocation: 1096,48,1
+NodeSize: 48,24
+Aliases: Alias Al841764669
+
+Variable Va27
+NodeLocation: 1096,48,1
+NodeSize: 48,24
+Aliases: Alias Al1802260285
+
+Close Discontinuities___T1
+
+Module Foundational_resear1
+Title: Foundational research
+Author: bernsjp1
+Date: Thu, Feb 6, 2020 10:21 AM
+NodeLocation: 1240,336,1
+NodeSize: 80,24
+NodeInfo: 1,,,,,,,0,,,,,,0
+NodeColor: 39321,65535,52425
+FontStyle: Arial,15
+
+Objective Foundational_or__de1
+Title: Foundational or "deconfusion" research
+Definition: (1-ML_scales_to_AGI) + Deep_insights_needed + Agentive_AGI2 + Inconspicuous_failur
+NodeLocation: 112,64,1
+NodeSize: 64,40
+
+Alias Al1242844989
+Title: Va22
+Definition: 1
+NodeLocation: 752,64,1
+NodeSize: 48,24
+Original: Va6
+
+Alias Al965496637
+Title: Va11
+Definition: 1
+NodeLocation: 624,64,1
+NodeSize: 48,24
+Original: Va11
+
+Alias Al1703694141
+Title: Va13
+Definition: 1
+NodeLocation: 624,64,1
+NodeSize: 48,24
+Original: Va13
+
+Alias Al1483493181
+Title: Va24
+Definition: 1
+NodeLocation: 496,64,1
+NodeSize: 48,24
+Original: Va24
+
+Close Foundational_resear1
+
+Module Humans_economically1
+Title: Humans economically outcompeted
+Author: bernsjp1
+Date: Thu, Feb 6, 2020 9:59 AM
+NodeLocation: 256,448,1
+NodeSize: 80,32
+NodeInfo: 1,,,,,,,0,,,,,,0
+NodeColor: 65535,19661,38773
+FontStyle: Arial,15
+
+Objective Humans_are_economic2
+Title: Humans are economically outcompeted
+Definition: Creeping_Failure + AI_improves_continuo + Agentive_AGI2 + Many_powerful_AIs
+NodeLocation: 104,56,1
+NodeSize: 56,32
+ValueState: 2,68,74,416,303,1,PDFP
+DisplayInputs: Objective AI_improves_continu3, Module Creeping_Failure2, Module Many_powerful_AIs2
+
+Alias Al1196183357
+Title: Va15
+Definition: 1
+NodeLocation: 368,64,1
+NodeSize: 48,24
+Original: Va15
+
+Close Humans_economically1
+
+Module Hypothesis2
+Title: Hypothesis
+Author: bernsjp1
+Date: Tue, Feb 11, 2020 2:32 PM
+NodeLocation: 120,616,1
+NodeSize: 80,24
+NodeColor: 19661,33649,65535
+FontStyle: Arial,15
+
+Close Hypothesis2
+
+Module Inconspicuous_failu1
+Title: Inconspicuous failure
+Author: bernsjp1
+Date: Thu, Feb 6, 2020 10:28 AM
+NodeLocation: 976,208,1
+NodeSize: 80,24
+NodeInfo: 1,,,,,,,0,,,,,,0
+DiagState: 2,75,180,907,481,17
+NodeColor: 19661,33649,65535
+FontStyle: Arial,15
+
+Chance Failure_can_be_unde2
+Title: Failure can be understood retrospectively.
+Definition: Agentive_AGI3  + Mesa_optimisation
+NodeLocation: 640,256,1
+NodeSize: 64,40
+DisplayInputs: Chance AI_system_component3, Chance AI_system_component4, Chance AI_system_component5
+
+Chance AI_system_component3
+Title: AI-system components' results can be verified.
+NodeLocation: 344,256,1
+NodeSize: 64,40
+DisplayInputs: Chance AI_can_be_formalize1
+DisplayOutputs: Chance Failure_can_be_unde2, Chance Failure_can_be_unde3
+
+Chance Failure_can_be_unde3
+Title: Failure can be understood at the time of occurence.
+NodeLocation: 632,88,1
+NodeSize: 64,40
+DisplayInputs: Chance AI_system_component3, Chance AI_system_component4, Chance AI_system_component5
+
+Text Te1779715901
+Description: How difficult will it be to understand AI systems' failures?
+NodeLocation: 208,20,-1
+NodeSize: 200,12
+NodeInfo: 1,,,,1
+
+Chance AI_can_be_formalize1
+Title: AI can be formalized.
+NodeLocation: 56,264,1
+NodeSize: 56,24
+DisplayOutputs: Chance AI_system_component3
+
+Chance Three_claims_of__Ci1
+Title: Three claims of "Circuits" article can be confirmed true.
+Description: https://www.alignmentforum.org/posts/MG4ZjWQDrdpgeu8wG/zoom-in-an-introduction-to-circuits~
+DIscusses assumptions needed in order to describe NN's in terms of circuits.
+NodeLocation: 80,104,1
+NodeSize: 72,40
+DisplayOutputs: Chance AI_system_component5
+
+Chance AI_system_component4
+Title: AI-system components are transparent
+Description: https://www.alignmentforum.org/posts/rSMbGFfsLMB3GWZtX/what-is-interpretability~
+Inner workings are understood.
+NodeLocation: 336,392,1
+NodeSize: 56,40
+WindState: 2,98,82,720,350
+DisplayOutputs: Chance Failure_can_be_unde2, Chance Failure_can_be_unde3
+
+Module Interpretability1
+Title: Interpretability
+Author: englaal1
+Date: Fri, Mar 20, 2020 11:48 AM
+NodeLocation: 344,104,1
+NodeSize: 72,24
+DiagState: 2,187,32,824,469,17
+
+Chance AI_system_component5
+Title: AI-system components results' can be interpreted.
+NodeLocation: 552,200,1
+NodeSize: 64,40
+DisplayInputs: Chance Three_claims_of__Ci1, Chance Behavior_can_be_pre1, Chance Properties_of_behav1, Chance Persuasion_of_prope1, Chance Can_determine_areas1, Chance Can_determine_bugs_1
+DisplayOutputs: Chance Failure_can_be_unde2, Chance Failure_can_be_unde3
+
+Chance Behavior_can_be_pre1
+Title: Behavior can be predicted
+Description: https://www.alignmentforum.org/posts/rSMbGFfsLMB3GWZtX/what-is-interpretability
+NodeLocation: 224,128,1
+NodeSize: 48,32
+DisplayOutputs: Chance AI_system_component5
+
+Chance Properties_of_behav1
+Title: Properties of behavior can be assured 
+Description: https://www.alignmentforum.org/posts/rSMbGFfsLMB3GWZtX/what-is-interpretability
+NodeLocation: 216,224,1
+NodeSize: 56,32
+DisplayOutputs: Chance AI_system_component5
+
+Chance Persuasion_of_prope1
+Title: Persuasion of properties
+Description: https://www.alignmentforum.org/posts/rSMbGFfsLMB3GWZtX/what-is-interpretability~
+Explicability to layperson of properties.
+NodeLocation: 216,328,1
+NodeSize: 56,32
+DisplayOutputs: Chance AI_system_component5
+
+Chance Can_determine_areas1
+Title: Can determine areas of improvement
+Description: https://www.alignmentforum.org/posts/rSMbGFfsLMB3GWZtX/what-is-interpretability~
+Can the model determine potential areas where it could be improved upon?
+NodeLocation: 288,40,1
+NodeSize: 56,40
+DisplayOutputs: Chance AI_system_component5
+
+Chance Can_determine_bugs_1
+Title: Can determine bugs/errors
+Description: https://www.alignmentforum.org/posts/rSMbGFfsLMB3GWZtX/what-is-interpretability~
+Model can determine if certain pieces are deviating from expectation/erroneous/aligned with what the user had in mind.
+NodeLocation: 288,416,1
+NodeSize: 56,32
+DisplayOutputs: Chance AI_system_component5
+
+Close Interpretability1
+
+Variable Va4
+NodeLocation: 840,448,1
+NodeSize: 48,24
+Aliases: Alias Al370429757
+
+Variable Va6
+NodeLocation: 840,448,1
+NodeSize: 48,24
+Aliases: Alias Al1242844989
+
+Alias Al2058637117
+Title: Va8
+Definition: 1
+NodeLocation: 840,448,1
+NodeSize: 48,24
+Original: Va8
+
+Close Inconspicuous_failu1
+
+Module Incorrigible_Superi1
+Title: Incorrigible Superintelligence
+Author: bernsjp1
+Date: Thu, Feb 6, 2020 10:21 AM
+NodeLocation: 112,168,1
+NodeSize: 80,32
+NodeInfo: 1,,,,,,,0,,,,,,0
+DiagState: 2,671,29,750,469,17
+NodeColor: 65535,19661,38773
+FontStyle: Arial,15
+
+Objective Incorrigible_goal_d2
+Title: Incorrigible goal-directed superintelligence
+Definition: Convergent_instrume3+System_becomes_inco3
+NodeLocation: 792,176,1
+NodeSize: 72,32
+Aliases: Alias Al1108627261, Alias Al1444171581
+
+Alias Al1779715901
+Title: Convergent instrumental subgoals
+Definition: 1
+NodeLocation: 624,136,1
+NodeSize: 56,32
+NodeColor: 52425,39321,65535
+Original: Convergent_instrume3
+
+Alias Al437538621
+Title: System becomes incorrigible
+Definition: 1
+NodeLocation: 632,280,1
+NodeSize: 56,32
+NodeColor: 52425,39321,65535
+Original: System_becomes_inco3
+
+Close Incorrigible_Superi1
+
+Module Many_powerful_AIs2
+Title: Many powerful AIs
+Author: bernsjp1
+Date: Thu, Feb 6, 2020 10:00 AM
+NodeLocation: 488,368,1
+NodeSize: 80,24
+NodeInfo: 1,,,,,,,0,,,,,,0
+NodeColor: 52425,39321,65535
+FontStyle: Arial,15
+DisplayOutputs: Objective Humans_are_economic2
+
+Objective Many_powerful_AIs3
+Title: Many powerful AIs
+Definition: {Discontinuity_to_AGI}
+NodeLocation: 96,56,1
+NodeSize: 48,32
+DisplayInputs: Chance Discontinuity_to_AG1
+
+Close Many_powerful_AIs2
+
+Module Mesa_optimization1
+Title: Mesa-optimization
+Author: bernsjp1
+Date: Thu, Feb 6, 2020 10:28 AM
+NodeLocation: 912,64,1
+NodeSize: 80,24
+NodeInfo: 1,,,,,,,0,,,,,,0
+DiagState: 2,-2,3,1205,666,17
+NodeColor: 19661,33649,65535
+FontStyle: Arial,15
+
+Chance Mesa_optimization_i1
+Title: Mesa-optimization is safe. (a)
+Definition: beta(2,2)
+NodeLocation: 944,464,1
+NodeSize: 64,48
+Aliases: Alias Al101994301, Alias Al1175736125, Alias Al638865213, Alias Al1712607037
+DisplayInputs: Chance Mesa_optimizer_can_2, Chance Mesa_optimizers_can1, Chance Systems_can_force_a1, Chance Systems_can_control1, Chance Subsystem_can_safel1, Variable Agent_and_subagents2, Chance Mesa_optimizer_is_i1, Chance Mesa_objective_can_1, Chance Can_be_determined_i1
+
+Text Te437538621
+Description: <a href="https://www.alignmentforum.org/s/r9tYkB2a8Fp4DN8yB/p/FkgsxrGf3QxhfLWHG">Mesa-optimizers</a> are optimizers  created from learned models.~
+(a) Relative to regular optimization, i.e., a mesa-optimizer will not push forward objectives that do not match those of the base optimizer.~
+(b) <a href="https://www.alignmentforum.org/posts/aqhMLqaoHb7uob7fr/if-i-were-a-well-intentioned-ai-iv-mesa-optimising">It is better to align an optimizer than to control it.</a>
+NodeLocation: 120,84,-1
+NodeSize: 120,84
+NodeInfo: 1,,,,1
+
+Chance Mesa_optimizer_can_2
+Title: Mesa-optimizer can not be smarter than base
+NodeLocation: 832,648,1
+NodeSize: 64,40
+DisplayOutputs: Chance Mesa_optimization_i1
+
+Module Mesa_Optimization_E1
+Title: Mesa-Optimization Existence
+Author: bernsjp1
+Date: Mon, Mar 16, 2020 8:13 AM
+NodeLocation: 488,544,1
+NodeSize: 64,32
+DiagState: 2,64,97,824,469,17
+
+Chance Subcomponents_can_e2
+Title: Subcomponents can enable self-reasoning
+NodeLocation: 400,136,1
+NodeSize: 72,32
+DisplayOutputs: Chance Mesa_optimizers_can1
+
+Chance Subcomponents_can_e3
+Title: Subcomponents can enable self-modification
+NodeLocation: 344,304,1
+NodeSize: 72,32
+DisplayOutputs: Chance Mesa_optimizers_can1
+
+Chance Mesa_optimizers_can1
+Title: Mesa-optimizers can exist.
+NodeLocation: 672,216,1
+NodeSize: 56,40
+DisplayInputs: Chance Subcomponents_can_e2, Chance Subcomponents_can_e3
+DisplayOutputs: Chance Incentive_for_Agent2, Chance Mesa_optimization_i1
+
+Close Mesa_Optimization_E1
+
+Module System_control_of_s1
+Title: System control of subsystems
+Author: bernsjp1
+Date: Mon, Mar 16, 2020 8:13 AM
+NodeLocation: 472,424,1
+NodeSize: 56,32
+DiagState: 2,329,51,824,469,17
+
+Chance Systems_can_force_a1
+Title: Systems can force alignment of subsystems.
+Description: Forcing alignment of subsystem means the only concern deals with the overall alignment.
+NodeLocation: 408,304,1
+NodeSize: 64,40
+DisplayInputs: Chance Mesa_optimization_d1
+DisplayOutputs: Chance Mesa_optimization_i1
+
+Chance Systems_can_control1
+Title: Systems can control mesa-optimizer (b)
+NodeLocation: 504,184,1
+NodeSize: 56,32
+DisplayInputs: Chance Mesa_optimizer_can_3, Chance Mesa_optimization_d1
+DisplayOutputs: Chance Mesa_optimization_i1
+
+Chance Mesa_optimizer_can_3
+Title: Mesa-optimizer can be corrigible
+NodeLocation: 312,112,1
+NodeSize: 56,40
+DisplayOutputs: Chance Systems_can_control1
+
+Alias Al2048151357
+Title: Alternative methods of subsystem generation beyond search
+Definition: 1
+NodeLocation: 192,256,1
+NodeSize: 64,56
+Original: Alternative_methods1
+
+Close System_control_of_s1
+
+Chance Subsystem_can_safel1
+Title: Subsystem can safely reduce the problem needing to be solved
+Description: https://www.alignmentforum.org/s/Rm6oQRJJmhGCcLvxh/p/ChierESmenTtCQqZy ~
+The whole purpose of subagents is to simplify the problem -- is there a way to reduce the problem that gives enough information for the subagent to act safely?
+NodeLocation: 432,264,1
+NodeSize: 56,64
+DisplayOutputs: Chance Mesa_optimization_i1
+
+Module Formalization1
+Title: Formalization
+Author: bernsjp1
+Date: Mon, Mar 16, 2020 9:19 AM
+NodeLocation: 168,512,1
+NodeSize: 64,24
+
+Chance Optimization_defini1
+Title: Optimization definition can be formalized.
+NodeLocation: 104,80,1
+NodeSize: 56,40
+DisplayOutputs: Chance Mesa_optimization_d1
+
+Chance Mesa_optimization_d1
+Title: Mesa-optimization definition can be formalized.
+NodeLocation: 256,80,1
+NodeSize: 56,56
+DisplayInputs: Chance Optimization_defini1
+DisplayOutputs: Chance Systems_can_force_a1, Chance Systems_can_control1
+
+Variable Va7
+NodeLocation: 368,64,1
+NodeSize: 48,24
+
+Close Formalization1
+
+Module Robust_to_Scale1
+Title: Robust to Scale
+Author: bernsjp1
+Date: Mon, Mar 16, 2020 9:19 AM
+NodeLocation: 584,624,1
+NodeSize: 48,24
+DiagState: 2,0,0,824,469,17
+
+Chance Subagents_robust_to3
+Title: Subagents robust to scaling up
+Description: https://www.alignmentforum.org/s/Rm6oQRJJmhGCcLvxh/p/ChierESmenTtCQqZy~
+If a subsystem gains resources
+NodeLocation: 360,64,1
+NodeSize: 48,32
+DisplayOutputs: Variable Agent_and_subagents2
+
+Chance Subagents_robust_to4
+Title: Subagents robust to scaling down
+Description: https://www.alignmentforum.org/s/Rm6oQRJJmhGCcLvxh/p/ChierESmenTtCQqZy~
+If resources are taken away, does the agent remain functioning? I.e. if maximizing a function results in alignment, does approximately maximizing it still result in alignment?
+NodeLocation: 336,176,1
+NodeSize: 48,40
+WindState: 2,98,82,720,350
+DisplayOutputs: Variable Agent_and_subagents2
+
+Chance Subagents_robust_to5
+Title: Subagents robust to relative scale
+Description: https://www.alignmentforum.org/s/Rm6oQRJJmhGCcLvxh/p/ChierESmenTtCQqZy~
+If one subsystem gains resources, and another subsystem does not, does this result in faulty behavior? How imbalanced can a pair of subsystems be before they fall apart?
+NodeLocation: 376,296,1
+NodeSize: 48,40
+DisplayOutputs: Variable Agent_and_subagents2
+
+Variable Agent_and_subagents2
+Title: Agent and subagents are robust to scale (Goodhart's Law)
+Description: https://www.alignmentforum.org/s/Rm6oQRJJmhGCcLvxh/p/ChierESmenTtCQqZy~
+This is a combination of the previous three nodes linking into it.
+NodeLocation: 672,192,1
+NodeSize: 64,56
+DisplayInputs: Chance Subagents_robust_to3, Chance Subagents_robust_to4, Chance Subagents_robust_to5
+DisplayOutputs: Chance Mesa_optimization_i1
+
+Alias Al101994301
+Title: Mesa-optimization is safe. (a)
+Definition: 0
+NodeLocation: 872,360,1
+NodeSize: 64,48
+Original: Mesa_optimization_i1
+
+Alias Al1175736125
+Title: Mesa-optimization is safe. (a)
+Definition: 0
+NodeLocation: 872,360,1
+NodeSize: 64,48
+Original: Mesa_optimization_i1
+
+Alias Al638865213
+Title: Mesa-optimization is safe. (a)
+Definition: 0
+NodeLocation: 872,360,1
+NodeSize: 64,48
+Original: Mesa_optimization_i1
+
+Close Robust_to_Scale1
+
+Chance Alternative_methods1
+Title: Alternative methods of subsystem generation beyond search
+Description: https://www.alignmentforum.org/s/Rm6oQRJJmhGCcLvxh/p/ChierESmenTtCQqZy~
+A large part of the dangers in sub-agent alignment comes from the need to search through a space. If there is another way to generate subsystems beyond search, then perhaps safety would come along with it.
+NodeLocation: 224,360,1
+NodeSize: 64,56
+WindState: 2,689,492,720,349
+Aliases: Alias Al2048151357
+DisplayInputs: Chance Counterfactual_reas1
+
+Chance Mesa_optimizer_is_i1
+Title: Mesa-optimizer is intentionally created
+Description: As opposed to unintentionally created subagents. https://www.alignmentforum.org/s/Rm6oQRJJmhGCcLvxh/p/i3BTagvt3HbPMx6PN
+NodeLocation: 544,176,1
+NodeSize: 56,40
+DisplayOutputs: Chance Mesa_optimization_i1
+
+Chance Counterfactual_reas1
+Title: Counterfactual reasoning can be feasible
+Description: Counterfactual reasoning may provide an avenue to alternate ways of generating subsystems. https://www.alignmentforum.org/s/Rm6oQRJJmhGCcLvxh/p/i3BTagvt3HbPMx6PN
+NodeLocation: 104,440,1
+NodeSize: 64,32
+WindState: 2,486,95,720,350
+DisplayOutputs: Chance Alternative_methods1
+
+Chance Mesa_objective_can_1
+Title: Mesa-objective can be transparently communicated
+Description: https://www.lesswrong.com/s/r9tYkB2a8Fp4DN8yB/p/FkgsxrGf3QxhfLWHG~
+The mesa-objective is different than the base-objective (mesa-objective could be anything potentially instrumental towards base-objective)
+NodeLocation: 816,112,1
+NodeSize: 64,40
+DisplayOutputs: Chance Mesa_optimization_i1
+
+Text Te1511280445
+Title: Note: Need to structure the nodes properly
+NodeLocation: 324,60,-1
+NodeSize: 84,60
+
+Chance Model_space_express1
+Title: Model space expressivity can be measured
+Description: https://www.lesswrong.com/s/r9tYkB2a8Fp4DN8yB/p/q2rCMHNXazALgQpGH~
+How much can the algorithm due based off of the expressiveness of the space it is searching, i.e. search space complexity/detail/granularity.
+NodeLocation: 968,176,1
+NodeSize: 56,40
+
+Chance Mesa_optimizer_bias1
+Title: Mesa-optimizer bias can be managed effectively
+Description: https://www.lesswrong.com/s/r9tYkB2a8Fp4DN8yB/p/q2rCMHNXazALgQpGH~
+simplicity bias, i.e., tendency for simple model (or low time complexity, low space complexity, etc)
+NodeLocation: 1072,264,1
+NodeSize: 64,40
+
+Module Inner_alignment1
+Title: Inner alignment
+Author: bernsjp1
+Date: Fri, Mar 20, 2020 12:18 PM
+NodeLocation: 672,152,1
+NodeSize: 48,24
+
+Chance Can_be_determined_i1
+Title: Can be determined if MO is pseudo-aligned
+Description: pseudo-alignment means it is aligned for training set, not for out of sample datapoints.
+NodeLocation: 368,296,1
+NodeSize: 64,40
+DisplayOutputs: Chance Mesa_optimization_i1
+
+Chance Can_determine_appro1
+Title: Can determine approximate alignment
+Description: Ubase = Umesa to some degree of certainty. https://www.lesswrong.com/s/r9tYkB2a8Fp4DN8yB/p/pL56xPoniLvtMDQ4J
+NodeLocation: 144,224,1
+NodeSize: 56,40
+
+Chance Can_determine_subop1
+Title: Can determine suboptimal alignment
+Description: Aligned on training set, but a deficiency causes misalignment outside of training. https://www.lesswrong.com/s/r9tYkB2a8Fp4DN8yB/p/pL56xPoniLvtMDQ4J
+NodeLocation: 392,120,1
+NodeSize: 48,40
+
+Alias Al1712607037
+Title: Mesa-optimization is safe. (a)
+Definition: 0
+NodeLocation: 904,464,1
+NodeSize: 64,48
+Original: Mesa_optimization_i1
+
+Chance Can_determine_proxy1
+Title: Can determine proxy alignment
+Description: https://www.lesswrong.com/s/r9tYkB2a8Fp4DN8yB/p/pL56xPoniLvtMDQ4J~
+Proxy alignment occurs when the MO aligns for some proxy of the base target instead of the target itself.
+NodeLocation: 200,120,1
+NodeSize: 48,40
+
+Close Inner_alignment1
+
+Module Mesa_Optimization_a1
+Title: Mesa-Optimization arises
+Author: englaal1
+Date: Fri, Mar 20, 2020 12:35 PM
+NodeLocation: 1136,464,1
+NodeSize: 64,32
+
+Chance Hard_coded_mesa_opt1
+Title: Hard-coded mesa-optimizer can be safe
+Description: https://www.lesswrong.com/s/r9tYkB2a8Fp4DN8yB/p/pL56xPoniLvtMDQ4J~
+If the algorithm in question deliberately creates a mesa-optimizer
+NodeLocation: 552,264,1
+NodeSize: 64,40
+
+Chance Size_of_algorithmic1
+Title: Size of algorithmic range
+Description: https://www.lesswrong.com/s/r9tYkB2a8Fp4DN8yB/p/pL56xPoniLvtMDQ4J~
+Clarity needed on this.
+NodeLocation: 256,168,1
+NodeSize: 48,32
+
+Alias Al2117357373
+Title: Incentive for Agentive AI
+Definition: 0
+NodeLocation: 400,184,1
+NodeSize: 64,48
+Original: Incentive_for_Agent2
+
+Close Mesa_Optimization_a1
+
+Variable Va8
+NodeLocation: 1208,40,1
+NodeSize: 48,24
+Aliases: Alias Al2058637117
+
+Close Mesa_optimization1
+
+Module ML_scales_to_AGI1
+Title: ML scales to AGI
+Author: bernsjp1
+Date: Thu, Feb 6, 2020 10:22 AM
+NodeLocation: 1200,48,1
+NodeSize: 80,24
+NodeInfo: 1,,,,,,,0,,,,,,0
+DiagState: 2,17,-17,1317,584,17
+NodeColor: 19661,33649,65535
+FontStyle: Arial,15
+
+Chance ML_can_scale_to_AGI1
+Title: ML can scale to AGI.
+Definition: beta(2,2)
+NodeLocation: 1280,480,1
+NodeSize: 64,48
+ValueState: 2,52,58,416,303,,PDFP
+Aliases: Alias Al1645498173
+DisplayInputs: Chance RL_can_scale_to_AGI1, Chance There_is_a_gap_betw1, Chance One__or_zero_shot_l1, Chance AI_can_be_robust_to1, Chance Deep_Learning_s_abs1, Variable Online_learning_can2
+DisplayOutputs: Chance Currently_developed1, Chance ML_based_AGI_can_be1
+
+Chance RL_can_scale_to_AGI1
+Title: RL can scale to AGI.
+NodeLocation: 640,472,1
+NodeSize: 48,32
+DisplayInputs: Chance MDP_can_sufficientl1
+DisplayOutputs: Chance ML_can_scale_to_AGI1
+
+Chance There_is_a_gap_betw1
+Title: There is a gap between ML and AGI that can be closed with a finite increase in computation. (a)
+NodeLocation: 584,328,1
+NodeSize: 64,80
+DisplayOutputs: Chance ML_can_scale_to_AGI1
+
+Chance MDP_can_sufficientl1
+Title: MDP can sufficiently describe the world.
+NodeLocation: 496,472,1
+NodeSize: 56,40
+DisplayInputs: Chance Discrete_spaces_can1
+DisplayOutputs: Chance RL_can_scale_to_AGI1
+
+Chance Discrete_spaces_can1
+Title: Discrete spaces can effectively characterize continuous spaces.
+NodeLocation: 328,472,1
+NodeSize: 72,56
+DisplayInputs: Chance Environment_complex1
+DisplayOutputs: Chance MDP_can_sufficientl1
+
+Chance One__or_zero_shot_l1
+Title: One- or zero-shot learning can be feasible (b)
+NodeLocation: 592,608,1
+NodeSize: 56,56
+DisplayOutputs: Chance ML_can_scale_to_AGI1
+
+Chance Environment_complex1
+Title: Environment complexity can be measured. (c)
+NodeLocation: 128,472,1
+NodeSize: 64,40
+DisplayOutputs: Chance Discrete_spaces_can1
+
+Chance AI_can_be_robust_to1
+Title: AI can be robust to distributional shifts of the data.
+NodeLocation: 704,184,1
+NodeSize: 56,56
+DisplayOutputs: Chance ML_can_scale_to_AGI1
+
+Chance Narrow_view_optimiz1
+Title: Narrow view optimization leads to broad view catastrophe (d)
+NodeLocation: 1192,320,1
+NodeSize: 72,56
+DisplayOutputs: Chance ML_based_AGI_can_be1
+
+Chance ML_based_AGI_can_be1
+Title: ML-based AGI can be safe.
+NodeLocation: 1456,280,1
+NodeSize: 56,32
+DisplayInputs: Chance ML_can_scale_to_AGI1, Chance Narrow_view_optimiz1, Chance ML_systems_can_avoi1, Chance Mechanistic_Transpa1, Variable Inverse_Reinforceme2
+
+Text Te974409533
+Title: No
+NodeLocation: 1296,292,-1
+NodeSize: 24,12
+
+Chance ML_systems_can_avoi1
+Title: ML systems can avoid reward hacking.
+NodeLocation: 1352,88,1
+NodeSize: 56,40
+DisplayOutputs: Chance ML_based_AGI_can_be1
+
+Text Te2048151357
+Description: (a) This can be further decomposed; requires exploration of what that gap qualitatively consists of.~
+(b) These three nodes are actively being researched, and require decomposition based off specifics of that domain knowledge.~
+(c) Environment complexity measurements could foreseeably ease the difficulty of characterizing continuous spaces, by introducing a quantifiable term to optimize.~
+(d) Certainly applies outside of ML, too.
+NodeLocation: 192,92,-1
+NodeSize: 192,92
+NodeInfo: 1,,,,1
+
+Chance Mechanistic_Transpa1
+Title: Mechanistic Transparency can be achieved (e)
+NodeLocation: 1144,200,1
+NodeSize: 64,40
+DisplayOutputs: Chance ML_based_AGI_can_be1
+
+Chance Deep_Learning_s_abs1
+Title: Deep Learning's abstractions can link to reality in a generalizable fashion.
+NodeLocation: 888,776,1
+NodeSize: 80,56
+DisplayOutputs: Chance ML_can_scale_to_AGI1
+
+Variable Inverse_Reinforceme2
+Title: Inverse Reinforcement Learning can assist learning (b)
+NodeLocation: 1168,80,1
+NodeSize: 64,56
+DisplayOutputs: Chance ML_based_AGI_can_be1
+
+Variable Online_learning_can2
+Title: Online learning can be effective for feature learning (b)
+NodeLocation: 720,704,1
+NodeSize: 72,40
+DisplayOutputs: Chance ML_can_scale_to_AGI1
+
+Variable Va10
+NodeLocation: 448,40,1
+NodeSize: 48,24
+Aliases: Alias Al1519144765
+
+Variable Va11
+NodeLocation: 448,40,1
+NodeSize: 48,24
+Aliases: Alias Al965496637
+
+Variable Va21
+NodeLocation: 448,40,1
+NodeSize: 48,24
+Aliases: Alias Al715935549
+
+Close ML_scales_to_AGI1
+
+Module Problem_leading_to_2
+Title: Problem leading to catastrophe
+Author: bernsjp1
+Date: Tue, Feb 11, 2020 2:32 PM
+NodeLocation: 472,648,1
+NodeSize: 80,32
+NodeColor: 65535,19661,38773
+
+Close Problem_leading_to_2
+
+Module Proof_level_assuran1
+Title: Proof-level assurance
+Author: bernsjp1
+Date: Thu, Feb 6, 2020 10:14 AM
+NodeLocation: 1056,392,1
+NodeSize: 80,24
+NodeInfo: 1,,,,,,,0,,,,,,0
+NodeColor: 39321,65535,52425
+FontStyle: Arial,15
+
+Objective Ob1
+Title: (Near) proof-level assurance of alignment
+Definition: (1-Broad_basin_for_corr) + Inconspicuous_failu1
+NodeLocation: 104,64,1
+NodeSize: 56,40
+
+Alias Al370429757
+Title: Va20
+Definition: 1
+NodeLocation: 496,64,1
+NodeSize: 48,24
+Original: Va4
+
+Alias Al497831741
+Title: Va23
+Definition: 1
+NodeLocation: 1392,64,1
+NodeSize: 48,24
+Original: Va23
+
+Close Proof_level_assuran1
+
+Module Prosaic_Alignment1
+Title: Prosaic Alignment
+Author: bernsjp1
+Date: Thu, Feb 6, 2020 10:14 AM
+NodeLocation: 1336,240,1
+NodeSize: 80,24
+NodeInfo: 1,,,,,,,0,,,,,,0
+NodeColor: 39321,65535,52425
+FontStyle: Arial,15
+
+Objective ML_safety_or_prosai2
+Title: ML safety or prosaic alignment
+Definition: ML_scales_to_AGI1 + Broad_basin_for_corr
+NodeLocation: 104,56,1
+NodeSize: 56,32
+
+Alias Al1420578621
+Title: Va19
+Definition: 1
+NodeLocation: 1264,64,1
+NodeSize: 48,24
+Original: Va19
+
+Alias Al715935549
+Title: Va21
+Definition: 1
+NodeLocation: 752,64,1
+NodeSize: 48,24
+Original: Va21
+
+Close Prosaic_Alignment1
+
+Module Scenario__Concept__2
+Title: Scenario, Concept, Model
+Author: bernsjp1
+Date: Tue, Feb 11, 2020 2:32 PM
+NodeLocation: 296,616,1
+NodeSize: 80,24
+NodeColor: 52425,39321,65535
+
+Close Scenario__Concept__2
+
+Module Solution__Agenda__P2
+Title: Solution, Agenda, Proposal
+Author: bernsjp1
+Date: Tue, Feb 11, 2020 2:32 PM
+NodeLocation: 120,680,1
+NodeSize: 80,24
+NodeColor: 39321,65535,52425
+
+Close Solution__Agenda__P2
+
+Module Synthesized_utility1
+Title: Synthesized utility function
+Author: bernsjp1
+Date: Thu, Feb 6, 2020 10:00 AM
+NodeLocation: 840,488,1
+NodeSize: 80,24
+NodeInfo: 1,,,,,,,0,,,,,,0
+NodeColor: 39321,65535,52425
+FontStyle: Arial,15
+
+Objective Synthesising_prefer1
+Title: Synthesising preferences into a utility function
+Definition: (1-Discontinuity_from_A) + (1-{Broad_Basin_for_Corr})
+NodeLocation: 104,64,1
+NodeSize: 56,40
+ValueState: 2,84,90,416,303,,PDFP
+
+Alias Al1881952061
+Title: Va17
+Definition: 1
+NodeLocation: 1008,64,1
+NodeSize: 48,24
+Original: Va17
+
+Alias Al841764669
+Title: Va18
+Definition: 1
+NodeLocation: 496,64,1
+NodeSize: 48,24
+Original: Va18
+
+Close Synthesized_utility1
+
+Module System_becomes_inco2
+Title: System becomes incorrigible
+Author: bernsjp1
+Date: Wed, Feb 5, 2020 2:44 PM
+NodeLocation: 336,136,1
+NodeSize: 80,24
+NodeInfo: 1,,,,,,,0,,,,,,0
+DiagState: 2,0,0,752,376,17
+NodeColor: 52425,39321,65535
+FontStyle: Arial,15
+
+Objective System_becomes_inco3
+Title: System becomes incorrigible
+Definition: (1-{Broad_Basin_for_Corr}) + Discontinuity_from_A
+NodeLocation: 104,56,1
+NodeSize: 56,32
+Aliases: Alias Al437538621
+NodeColor: 52425,39321,65535
+DisplayInputs: Chance Corrigibility_leads1, Chance Corrigibility_does_1, Chance Discontinuity_from_1
+
+Alias Al1444171581
+Title: Incorrigible goal-directed superintelligence
+Definition: 0
+NodeLocation: 320,56,1
+NodeSize: 72,32
+Original: Incorrigible_goal_d2
+
+Close System_becomes_inco2
+
+Module Target_loading_fail2
+Title: Target loading fails
+Author: bernsjp1
+Date: Thu, Feb 6, 2020 10:04 AM
+NodeLocation: 1040,512,1
+NodeSize: 80,32
+NodeInfo: 1,,,,,,,0,,,,,,0
+NodeColor: 65535,19661,38773
+FontStyle: Arial,15
+
+Objective Target_loading_fail3
+Title: Target loading fails
+Definition: Discontinuity_from_A + {Broad_Basin_for_Corr} + Incidental_agentive_
+NodeLocation: 120,56,1
+NodeSize: 72,32
+
+Alias Al907300669
+Title: Va28
+Definition: 1
+NodeLocation: 1392,64,1
+NodeSize: 48,24
+Original: Va28
+
+Alias Al778850109
+Title: Va25
+Definition: 1
+NodeLocation: 624,64,1
+NodeSize: 48,24
+Original: Va25
+
+Alias Al1701596989
+Title: Va26
+Definition: 1
+NodeLocation: 112,128,1
+NodeSize: 48,24
+Original: Va26
+
+Alias Al1802260285
+Title: Va27
+Definition: 1
+NodeLocation: 624,64,1
+NodeSize: 48,24
+Original: Va27
+
+Close Target_loading_fail2
+
+Text Te1167216445
+Title: Key
+NodeLocation: 296,640,-1
+NodeSize: 272,80
+NodeInfo: 1,,,,1,,,,,,,,1
+
+Close High_level_map
+
+Close Primary_model
+

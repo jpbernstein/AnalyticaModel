@@ -1,0 +1,34 @@
+{ Analytica Model System_becomes_incor, encoding="UTF-8" }
+SoftwareVersion 5.3.3
+
+
+
+LinkModule System_becomes_incor
+Title: System becomes incorrigible
+Author: bernsjp1
+Date: Wed, Feb 5, 2020 2:44 PM
+NodeSize: 80,24
+NodeInfo: 1,,,,,,,0,,,,,,0
+DiagState: 2,0,0,752,376,17
+NodeColor: 52425,39321,65535
+FontStyle: Arial,15
+FileInfo: 0,LinkModule System_becomes_incor,3,2,0,0,Module\System becomes incorrigible.ana
+
+Objective System_becomes_inco1
+Title: System becomes incorrigible
+Definition: (1-{Broad_Basin_for_Corr}) + Discontinuity_from_A
+NodeLocation: 104,56,1
+NodeSize: 56,32
+Aliases: Alias Al486356797
+NodeColor: 52425,39321,65535
+DisplayInputs: Chance Discontinuity_from_A, Chance Corrigibility_leads_, Chance Corrigibility_does_n
+
+Alias Al1772959549
+Title: Incorrigible goal-directed superintelligence
+Definition: 0
+NodeLocation: 320,56,1
+NodeSize: 72,32
+Original: Incorrigible_goal_d1
+
+Close System_becomes_incor
+

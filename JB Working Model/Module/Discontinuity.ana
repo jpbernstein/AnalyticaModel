@@ -1,0 +1,197 @@
+{ Analytica Model Discontinuities___Ta, encoding="UTF-8" }
+SoftwareVersion 5.3.3
+
+
+
+LinkModule Discontinuities___Ta
+Title: Discontinuities & Takeoff Speeds
+Author: bernsjp1
+Date: Tue, Feb 4, 2020 12:54 PM
+NodeSize: 80,24
+NodeInfo: 1,,,,,,,0,,,,,,0
+DiagState: 2,64,30,1104,527,17
+FontStyle: Arial,15
+FileInfo: 0,LinkModule Discontinuities___Ta,3,2,0,0,Module\Discontinuity.ana
+
+Chance Discontinuity_from_A
+Title: Discontinuity from AGI
+NodeLocation: 1016,544,1
+NodeSize: 64,48
+ValueState: 2,52,58,416,303,,PDFP
+Aliases: Alias Al788739901
+DisplayInputs: Chance AGI_recursively_self
+DisplayOutputs: Objective System_becomes_inco1
+
+Chance Discontinuity_to_AGI
+Title: Discontinuity to AGI
+NodeLocation: 1008,296,1
+NodeSize: 64,48
+ValueState: 2,40,50,400,300,0,MIDM
+DisplayInputs: Chance Outside_view__probab, Chance Inside_view__probabi, Chance Weight_of_outside_ov
+
+Chance AGI_recursively_self
+Title: AGI recursively self-improves
+Definition: Agentive_AGI2 
+NodeLocation: 640,544,1
+NodeSize: 64,48
+WindState: 2,0,0,720,350
+ValueState: 2,420,426,416,303,,PDFP
+DisplayInputs: Variable Possible_to_speciali
+DisplayOutputs: Chance Discontinuity_from_A
+
+Chance Only_a_few_key_break
+Title: Only a few key breakthroughs needed
+NodeLocation: 328,464,1
+NodeSize: 64,40
+WindState: 2,0,0,720,350
+Aliases: Alias Al71478077
+DisplayInputs: Variable Human_evidence_sugg1
+DisplayOutputs: Variable Possible_to_speciali
+
+Variable One_company_can_secr
+Title: One company can secretly get to AGI
+NodeLocation: 640,400,1
+NodeSize: 64,40
+NodeColor: 65535,42597,19661
+DisplayInputs: Variable Possible_to_speciali
+DisplayOutputs: Chance Inside_view__probabi
+
+Chance Outside_view__probab
+Title: Outside view: probability of discontinuity to AGI
+NodeLocation: 824,232,1
+NodeSize: 56,56
+Aliases: Alias Al1123855165, Alias Al1929161533, Alias Al1438182205, Alias Al2109270845
+DisplayInputs: Variable Historical_disconti2, Chance Probability_based_o2
+DisplayOutputs: Chance Discontinuity_to_AGI
+
+Module Probability_based_on
+Title: Probability based on technological discontinuities
+Author: englaal1
+Date: Mon, Mar 16, 2020 7:57 AM
+NodeLocation: 640,184,1
+NodeSize: 72,40
+DiagState: 2,0,0,752,376,17
+
+Alias Al1123855165
+Title: Outside view says don't expect discontinuity
+Definition: 0
+NodeLocation: 1048,144,1
+NodeSize: 56,40
+Original: Outside_view__probab
+
+Alias Al1929161533
+Title: Outside view says don't expect discontinuity
+Definition: 0
+NodeLocation: 1048,144,1
+NodeSize: 56,40
+Original: Outside_view__probab
+
+Variable Historical_disconti2
+Title: Historical discontinuity rate
+NodeLocation: 808,136,1
+NodeSize: 56,32
+DisplayOutputs: Chance Outside_view__probab
+
+Close Probability_based_on
+
+Variable Possible_to_speciali
+Title: Possible to specialize in learning ability
+NodeLocation: 480,464,1
+NodeSize: 56,40
+NodeColor: 65535,42597,19661
+DisplayInputs: Chance Only_a_few_key_break
+DisplayOutputs: Chance AGI_recursively_self, Variable One_company_can_secr
+
+Module Human_evidence_sugge
+Title: Human evidence suggests few breakthroughs needed
+Author: englaal1
+Date: Mon, Mar 16, 2020 7:57 AM
+NodeLocation: 160,464,1
+NodeSize: 72,56
+DiagState: 2,0,0,752,376,17
+
+Variable Human_evidence_sugg1
+Title: Human evidence suggests few breakthroughs needed
+NodeLocation: 400,240,1
+NodeSize: 64,56
+DisplayOutputs: Chance Only_a_few_key_break
+
+Alias Al71478077
+Title: Only a few key breakthroughs needed
+Definition: 0
+NodeLocation: 664,248,1
+NodeSize: 64,40
+Original: Only_a_few_key_break
+
+Close Human_evidence_sugge
+
+Module Probability_based_o1
+Title: Probability based on history of AI research
+Author: englaal1
+Date: Mon, Mar 16, 2020 7:57 AM
+NodeLocation: 640,280,1
+NodeSize: 72,40
+DiagState: 2,0,0,752,374,17
+
+Alias Al1438182205
+Title: Outside view says don't expect discontinuity
+Definition: 0
+NodeLocation: 520,152,1
+NodeSize: 56,40
+Original: Outside_view__probab
+
+Alias Al2109270845
+Title: Outside view says don't expect discontinuity
+Definition: 0
+NodeLocation: 520,152,1
+NodeSize: 56,40
+Original: Outside_view__probab
+
+Chance Probability_based_o2
+Title: Probability based on history of AI research
+NodeLocation: 280,152,1
+NodeSize: 56,40
+DisplayOutputs: Chance Outside_view__probab
+
+Close Probability_based_o1
+
+Chance Inside_view__probabi
+Title: Inside view: probability of discontinuity to AGI
+NodeLocation: 824,352,1
+NodeSize: 56,40
+DisplayInputs: Variable One_company_can_secr
+DisplayOutputs: Chance Discontinuity_to_AGI
+
+Module Module1
+Title: Module
+Author: englaal1
+Date: Mon, Mar 16, 2020 7:57 AM
+NodeLocation: 296,104,1
+NodeSize: 56,32
+
+Close Module1
+
+Chance For_elicitation
+Title: For elicitation
+NodeLocation: 152,184,1
+NodeSize: 56,32
+
+Variable Variable_that_is_a_f
+Title: Variable that is a function of inputs
+NodeLocation: 296,184,1
+NodeSize: 56,32
+NodeColor: 65535,42597,19661
+
+Text Te1059384125
+Title: KEY
+NodeLocation: 156,108,-1
+NodeSize: 28,12
+
+Chance Weight_of_outside_ov
+Title: Weight of outside over inside view
+NodeLocation: 824,120,1
+NodeSize: 56,32
+DisplayOutputs: Chance Discontinuity_to_AGI
+
+Close Discontinuities___Ta
+

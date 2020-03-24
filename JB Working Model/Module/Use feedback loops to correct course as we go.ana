@@ -1,0 +1,25 @@
+{ Analytica Model Default__Correct_cou, encoding="UTF-8" }
+SoftwareVersion 5.3.3
+
+
+
+LinkModule Default__Correct_cou
+Title: Default: Correct course as we go
+Author: bernsjp1
+Date: Thu, Feb 6, 2020 10:01 AM
+NodeSize: 80,24
+NodeInfo: 1,,,,,,,0,,,,,,0
+DiagState: 2,0,0,752,376,17
+NodeColor: 39321,65535,52425
+FontStyle: Arial,15
+FileInfo: 0,LinkModule Default__Correct_cou,3,2,0,0,Module\Use feedback loops to correct course as we go.ana
+
+Objective Use_feedback_loops_1
+Title: Use feedback loops to correct course as we go
+Definition: AI_improves_continu1 + {Many_powerful_AIs1}
+NodeLocation: 112,64,1
+NodeSize: 64,40
+DisplayInputs: Objective AI_improves_continu1
+
+Close Default__Correct_cou
+

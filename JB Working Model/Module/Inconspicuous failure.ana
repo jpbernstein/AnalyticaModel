@@ -1,0 +1,138 @@
+{ Analytica Model Inconspicuous_failur, encoding="UTF-8" }
+SoftwareVersion 5.3.3
+
+
+
+LinkModule Inconspicuous_failur
+Title: Inconspicuous failure
+Author: bernsjp1
+Date: Thu, Feb 6, 2020 10:28 AM
+NodeSize: 72,24
+NodeInfo: 1,,,,,,,0,,,,,,0
+DiagState: 2,0,0,907,481,17
+FontStyle: Arial,15
+FileInfo: 0,LinkModule Inconspicuous_failur,3,2,0,0,Module\Inconspicuous failure.ana
+
+Chance Failure_can_be_unde1
+Title: Failure can be understood retrospectively.
+Definition: Agentive_AGI3  + Mesa_optimisation
+NodeLocation: 640,256,1
+NodeSize: 64,40
+DisplayInputs: Chance AI_system_components, Chance AI_system_component2, Chance AI_system_component1
+
+Chance AI_system_components
+Title: AI-system components' results can be verified.
+NodeLocation: 344,256,1
+NodeSize: 64,40
+DisplayInputs: Chance AI_can_be_formalized
+DisplayOutputs: Chance Failure_can_be_unde1, Chance Failure_can_be_under
+
+Chance Failure_can_be_under
+Title: Failure can be understood at the time of occurence.
+NodeLocation: 632,88,1
+NodeSize: 64,40
+DisplayInputs: Chance AI_system_components, Chance AI_system_component2, Chance AI_system_component1
+
+Text Te1868125501
+Description: How difficult will it be to understand AI systems' failures?
+NodeLocation: 208,20,-1
+NodeSize: 200,12
+NodeInfo: 1,,,,1
+
+Chance AI_can_be_formalized
+Title: AI can be formalized.
+NodeLocation: 56,264,1
+NodeSize: 56,24
+DisplayOutputs: Chance AI_system_components
+
+Chance Three_claims_of__Cir
+Title: Three claims of "Circuits" article can be confirmed true.
+Description: https://www.alignmentforum.org/posts/MG4ZjWQDrdpgeu8wG/zoom-in-an-introduction-to-circuits~
+DIscusses assumptions needed in order to describe NN's in terms of circuits.
+NodeLocation: 80,104,1
+NodeSize: 72,40
+DisplayOutputs: Chance AI_system_component1
+
+Chance AI_system_component2
+Title: AI-system components are transparent
+Description: https://www.alignmentforum.org/posts/rSMbGFfsLMB3GWZtX/what-is-interpretability~
+Inner workings are understood.
+NodeLocation: 336,392,1
+NodeSize: 56,40
+WindState: 2,98,82,720,350
+DisplayOutputs: Chance Failure_can_be_unde1, Chance Failure_can_be_under
+
+Module Interpretability
+Title: Interpretability
+Author: englaal1
+Date: Fri, Mar 20, 2020 11:48 AM
+NodeLocation: 344,104,1
+NodeSize: 72,24
+DiagState: 2,187,32,824,469,17
+
+Chance AI_system_component1
+Title: AI-system components results' can be interpreted.
+NodeLocation: 552,200,1
+NodeSize: 64,40
+DisplayInputs: Chance Three_claims_of__Cir, Chance Behavior_can_be_pred, Chance Properties_of_behavi, Chance Persuasion_of_proper, Chance Can_determine_areas_, Chance Can_determine_bugs_e
+DisplayOutputs: Chance Failure_can_be_unde1, Chance Failure_can_be_under
+
+Chance Behavior_can_be_pred
+Title: Behavior can be predicted
+Description: https://www.alignmentforum.org/posts/rSMbGFfsLMB3GWZtX/what-is-interpretability
+NodeLocation: 224,128,1
+NodeSize: 48,32
+DisplayOutputs: Chance AI_system_component1
+
+Chance Properties_of_behavi
+Title: Properties of behavior can be assured 
+Description: https://www.alignmentforum.org/posts/rSMbGFfsLMB3GWZtX/what-is-interpretability
+NodeLocation: 216,224,1
+NodeSize: 56,32
+DisplayOutputs: Chance AI_system_component1
+
+Chance Persuasion_of_proper
+Title: Persuasion of properties
+Description: https://www.alignmentforum.org/posts/rSMbGFfsLMB3GWZtX/what-is-interpretability~
+Explicability to layperson of properties.
+NodeLocation: 216,328,1
+NodeSize: 56,32
+DisplayOutputs: Chance AI_system_component1
+
+Chance Can_determine_areas_
+Title: Can determine areas of improvement
+Description: https://www.alignmentforum.org/posts/rSMbGFfsLMB3GWZtX/what-is-interpretability~
+Can the model determine potential areas where it could be improved upon?
+NodeLocation: 288,40,1
+NodeSize: 56,40
+DisplayOutputs: Chance AI_system_component1
+
+Chance Can_determine_bugs_e
+Title: Can determine bugs/errors
+Description: https://www.alignmentforum.org/posts/rSMbGFfsLMB3GWZtX/what-is-interpretability~
+Model can determine if certain pieces are deviating from expectation/erroneous/aligned with what the user had in mind.
+NodeLocation: 288,416,1
+NodeSize: 56,32
+DisplayOutputs: Chance AI_system_component1
+
+Close Interpretability
+
+Variable Va20
+NodeLocation: 496,64,1
+NodeSize: 48,24
+Aliases: Alias Al1088132925
+
+Variable Va22
+NodeLocation: 752,64,1
+NodeSize: 48,24
+Aliases: Alias Al1054578493
+
+Alias Al1128765245
+Title: Va35
+Definition: 1
+NodeLocation: 624,64,1
+NodeSize: 48,24
+Original: Va35
+
+Close Inconspicuous_failur
+

@@ -1,0 +1,83 @@
+{ Analytica Model Agentive_AGI, encoding="UTF-8" }
+SoftwareVersion 5.3.3
+
+
+
+LinkModule Agentive_AGI
+Title: Agentive AGI
+Author: bernsjp1
+Date: Tue, Feb 4, 2020 1:06 PM
+NodeSize: 48,24
+NodeInfo: 1,,,,,,,0,,,,,,0
+DiagState: 2,41,44,773,527,17
+FontStyle: Arial,15
+FileInfo: 0,LinkModule Agentive_AGI,3,2,0,0,Module\Agentive AGI.ana
+
+Chance Agentive_AGI3
+Title: Agentive AGI
+Definition: Incentive_for_Agent1 + Incidental_agentive1
+NodeLocation: 680,264,1
+NodeSize: 64,48
+ValueState: 2,1202,356,416,303,,PDFP
+Aliases: Alias Al37959485
+GraphSetup: {!40400|Sys_PdfSmoothMethod:1}
+DisplayOutputs: Objective Convergent_instrume1
+
+Chance Convergent_rational1
+Title: Convergent rationality
+Definition: beta(2,2)
+NodeLocation: 72,440,1
+NodeSize: 64,48
+DisplayOutputs: Chance Incidental_agentive1
+
+Chance Current_AI_R_D_extr1
+Title: Current AI R&D extrapolates to AI services
+Definition: beta(2,2)
+NodeLocation: 104,312,1
+NodeSize: 64,48
+ValueState: 2,986,127,416,303,1,PDFP
+GraphSetup: {!40400|Sys_PdfSmoothMethod:1}
+
+Chance Incentive_for_Agent1
+Title: Incentive for Agentive AI
+Definition: (1 - Current_AI_R_D_extr1)  + (1 - Modularity_over_Int1) 
+NodeLocation: 400,184,1
+NodeSize: 64,48
+ValueState: 2,959,588,400,315,1,PDFP
+GraphSetup: {!40400|Sys_PdfSmoothMethod:1}
+
+Chance Incidental_agentive1
+Title: Incidental agentive AGI
+Definition: Convergent_rational1 + Mesa_optimisation
+NodeLocation: 408,368,1
+NodeSize: 64,48
+DisplayInputs: Chance Convergent_rational1
+
+Chance Modularity_over_Int1
+Title: Modularity over Integration
+Definition: Beta( 2,2)
+NodeLocation: 72,184,1
+NodeSize: 64,48
+ValueState: 2,1196,4,416,303,1,PDFP
+GraphSetup: {!40400|Sys_PdfSmoothMethod:1}~
+Att_GraphValueRange Modularity_over_Int1:|1:1,,0,,,,,0,1,0
+{!40200|Att_GraphSetupSlices: [3,1,DensityIndex,1]}
+
+Text Te808457533
+Title: No
+NodeLocation: 192,292,-1
+NodeSize: 24,12
+
+Text Te1941001533
+Title: No
+NodeLocation: 152,156,-1
+NodeSize: 24,12
+
+Text Te2008110397
+Description: The current version of this node is identical to the Shah/Cottier chart, minus the mesa-optimization node.
+NodeLocation: 104,40,-1
+NodeSize: 104,40
+NodeInfo: 1,,,,1
+
+Close Agentive_AGI
+

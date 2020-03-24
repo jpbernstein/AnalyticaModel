@@ -1,0 +1,296 @@
+{ Analytica Model Corrigibility_basin, encoding="UTF-8" }
+SoftwareVersion 5.3.3
+
+
+
+LinkModule Corrigibility_basin
+Title: Corrigibility basin
+Author: bernsjp1
+Date: Wed, Feb 5, 2020 9:44 AM
+NodeSize: 64,24
+NodeInfo: 1,,,,,,,0,,,,,,0
+DiagState: 2,0,0,1349,574,17
+FontStyle: Arial,15
+FileInfo: 0,LinkModule Corrigibility_basin,2,2,0,0,Module\Corrigibility.ana
+Att__DiagramPrintSca: 100,1,1,1,1,1,2794,2159,15,0
+
+Chance Corrigibility_leads_
+Title: Corrigibility leads to intent alignment
+Definition: beta(2,2)
+NodeLocation: 1136,88,1
+NodeSize: 64,48
+ValueState: 2,52,58,416,303,,PDFP
+DisplayInputs: Chance Robust_corrigibility, Chance Value_drift_during_c
+DisplayOutputs: Objective System_becomes_inco1
+
+Chance Corrigibility_can_b1
+Title: Corrigibility can be achieved. (b)
+NodeLocation: 680,296,1
+NodeSize: 56,32
+DisplayInputs: Chance Corrigibility_can_be, Chance Agent_cannot_hide_mo, Chance Oversight_of_agent_d, Chance AI_can_grasp_moral_u, Chance AI_can_hold_a_meta_u, Chance AI_can_determine_sid
+DisplayOutputs: Chance Corrigibility_does_n, Chance Robust_corrigibility
+
+Chance Instrumental_corrigi
+Title: Instrumental corrigibility can be achieved.
+NodeLocation: 432,76,1
+NodeSize: 64,28
+
+Chance Corrigibility_can_be
+Title: Corrigibility can be formalized.
+NodeLocation: 328,184,1
+NodeSize: 64,24
+DisplayOutputs: Chance Corrigibility_can_b1
+
+Chance Corrigibility_does_n
+Title: Corrigibility does not significantly impede AI performance.
+NodeLocation: 1136,264,1
+NodeSize: 64,64
+DisplayInputs: Chance Corrigibility_can_b1
+DisplayOutputs: Objective System_becomes_inco1
+
+Chance AIs_can_be_risk_sens
+Title: AIs can be risk sensitive.
+NodeLocation: 1128,448,1
+NodeSize: 48,32
+DisplayInputs: Chance AI_can_determine_sid
+
+Text Te1195382077
+Description: (b) A corrigible agent cooperates with creator intervention according to <a href="https://intelligence.org/files/Corrigibility.pdf">MIRI</a>. Alternative definition can be found on the <a href="https://www.alignmentforum.org/posts/fkLYhTQteAu5SinAc/corrigibility">AIAF</a>.
+NodeLocation: 184,44,-1
+NodeSize: 176,36
+NodeInfo: 1,,,,1
+
+Text Te1101616445
+Description: TBD: How they fit in the chart
+NodeLocation: 432,60,-1
+NodeSize: 72,52
+NodeInfo: 1,,,,1
+
+Chance Agent_can_be_designe
+Title: Agent can be designed in a way to not influence programmer.
+Definition: beta(2,2)
+NodeLocation: 96,360,1
+NodeSize: 72,40
+ValueState: 2,1068,78,416,303,,PDFP
+DisplayOutputs: Chance Agent_cannot_hide_mo
+
+Chance Agent_cannot_hide_mo
+Title: Agent cannot hide motives nor be deceptive
+NodeLocation: 296,352,1
+NodeSize: 64,40
+DisplayInputs: Chance Agent_can_be_designe, Chance Agents_cannot_protec
+DisplayOutputs: Chance Corrigibility_can_b1
+
+Chance Agents_cannot_protec
+Title: Agents cannot protect utility functions from modification
+NodeLocation: 136,480,1
+NodeSize: 64,40
+DisplayOutputs: Chance Agent_cannot_hide_mo
+
+Module Goal_Clarity
+Title: Goal Clarity
+Author: bernsjp1
+Date: Fri, Mar 13, 2020 10:09 AM
+NodeLocation: 240,256,1
+NodeSize: 48,24
+DiagState: 2,723,66,824,469,17
+
+Chance Agents_prefer_to_bui
+Title: Agents prefer to build subagents with the overseer's preferences (d)
+NodeLocation: 400,136,1
+NodeSize: 80,56
+DisplayOutputs: Chance Oversight_of_agent_d
+
+Chance Humans_can_share_the
+Title: Humans can share their preferences in an intelligible way to agent.
+NodeLocation: 192,376,1
+NodeSize: 72,56
+DisplayOutputs: Chance Preferences_can_be_o
+
+Chance AI_s_predicted_resul
+Title: AI's predicted result can be safely communicated to the operator.
+NodeLocation: 120,184,1
+NodeSize: 80,56
+DisplayOutputs: Chance Oversight_of_agent_d
+
+Chance Oversight_of_agent_d
+Title: Oversight of agent development can be scalable.
+NodeLocation: 624,232,1
+NodeSize: 56,56
+DisplayInputs: Chance Agents_prefer_to_bui, Chance AI_s_predicted_resul, Chance Preferences_can_be_o
+DisplayOutputs: Chance Corrigibility_can_b1
+
+Chance Preferences_can_be_o
+Title: Preferences can be optimized
+NodeLocation: 296,272,1
+NodeSize: 56,32
+DisplayInputs: Chance Humans_can_share_the
+DisplayOutputs: Chance Oversight_of_agent_d
+
+Chance AI_can_grasp_moral_u
+Title: AI can grasp moral uncertainty
+NodeLocation: 560,80,1
+NodeSize: 56,32
+DisplayOutputs: Chance Corrigibility_can_b1
+
+Chance AI_can_hold_a_meta_u
+Title: AI can hold a meta-utility function
+NodeLocation: 448,376,1
+NodeSize: 48,40
+DisplayOutputs: Chance Corrigibility_can_b1
+
+Text Te9759549
+Description: (d) As opposed to an agent building subagents with its (the agent's) preferences.
+NodeLocation: 76,48,-1
+NodeSize: 76,48
+
+Close Goal_Clarity
+
+Module Impact_Clarity
+Title: Impact Clarity
+Author: bernsjp1
+Date: Fri, Mar 13, 2020 10:09 AM
+NodeLocation: 408,448,1
+NodeSize: 48,24
+DiagState: 2,371,62,824,469,17
+
+Chance AI_can_determine_sid
+Title: AI can determine side effects of action
+NodeLocation: 416,232,1
+NodeSize: 56,40
+DisplayInputs: Chance AI_can_reason_intern, Chance An_impact_regularize
+DisplayOutputs: Chance Corrigibility_can_b1, Chance AIs_can_be_risk_sens
+
+Chance AI_can_reason_intern
+Title: AI can reason internally from programmer's external view (c)
+NodeLocation: 424,72,1
+NodeSize: 64,56
+DisplayOutputs: Chance AI_can_determine_sid
+
+Chance An_impact_regularize
+Title: An impact regularizer can be created. (a)
+NodeLocation: 280,168,1
+NodeSize: 64,32
+DisplayInputs: Chance Impact_measurement_c
+DisplayOutputs: Chance AI_can_determine_sid
+
+Chance Impact_measurement_c
+Title: Impact measurement can be created
+NodeLocation: 88,160,1
+NodeSize: 64,32
+DisplayOutputs: Chance An_impact_regularize
+
+Text Te39119677
+Description: (a) An impact regularizer is a way of penalizing changes to the environment so that agents can minimize side effects from their decisions.~
+(c) This simplifies how the AI would interact with the programmer. See <a href="https://www.alignmentforum.org/posts/tDXFRfkvijTzs2Mmr/where-s-the-turing-machine-a-step-towards-ontology">here and its sublinks</a>.
+NodeLocation: 172,60,-1
+NodeSize: 172,60
+NodeInfo: 1,,,,1
+
+Close Impact_Clarity
+
+Module Act_based_corrigibi1
+Title: Act-based corrigibility can be achieved
+Author: bernsjp1
+Date: Fri, Mar 13, 2020 10:09 AM
+NodeLocation: 600,176,1
+NodeSize: 56,40
+DiagState: 2,307,125,824,469,17
+
+Chance Combination_of_benig
+Title: Combination of benign agents creates a benign agent
+NodeLocation: 120,192,1
+NodeSize: 64,40
+DisplayInputs: Variable Benign_act_based_age
+DisplayOutputs: Chance Benign_act_based_ag1
+
+Chance Benign_act_based_ag1
+Title: Benign act-based agents converge
+NodeLocation: 104,328,1
+NodeSize: 56,40
+DisplayInputs: Chance Combination_of_benig
+DisplayOutputs: Chance Robust_corrigibility
+
+Variable Benign_act_based_age
+Title: Benign act-based agent can be created
+NodeLocation: 144,64,1
+NodeSize: 64,32
+NodeColor: 65535,42597,19661
+DisplayOutputs: Chance Combination_of_benig
+
+Close Act_based_corrigibi1
+
+Module Broad_Basin_for_Corr
+Title: Broad Basin for Corrigibility
+Author: bernsjp1
+Date: Fri, Mar 13, 2020 10:09 AM
+NodeLocation: 952,152,1
+NodeSize: 56,32
+DiagState: 2,631,145,824,469,17
+
+Chance Robust_corrigibility
+Title: Robust corrigibility can be achieved.
+NodeLocation: 272,232,1
+NodeSize: 56,40
+DisplayInputs: Chance Corrigibility_can_b1, Chance Benign_act_based_ag1, Chance Agent_can_seek_to_pr, Chance Test_mechanisms_that, Chance In_place_safety_mech, Chance Agent_combine_differ, Chance Agents_help_figure_o
+DisplayOutputs: Chance Corrigibility_leads_
+
+Chance Agent_can_seek_to_pr
+Title: Agent can seek to preserve corrigibility
+NodeLocation: 128,224,1
+NodeSize: 56,40
+DisplayOutputs: Chance Robust_corrigibility
+
+Chance Test_mechanisms_that
+Title: Test mechanisms that target corrigibility can be created.
+NodeLocation: 400,144,1
+NodeSize: 56,64
+DisplayOutputs: Chance Robust_corrigibility
+
+Chance In_place_safety_mech
+Title: In-place safety mechanisms can be self-repaired.
+NodeLocation: 400,304,1
+NodeSize: 56,56
+DisplayOutputs: Chance Robust_corrigibility
+
+Chance Agent_combine_differ
+Title: Agent combine different utility functions in safe manner (e)
+NodeLocation: 240,360,1
+NodeSize: 64,56
+DisplayOutputs: Chance Robust_corrigibility
+
+Chance Value_drift_during_c
+Title: Value drift during capability amplification can be prevented
+NodeLocation: 88,120,1
+NodeSize: 72,40
+DisplayOutputs: Chance Corrigibility_leads_
+
+Chance Agents_help_figure_o
+Title: Agents help figure out how to aid with the correction process
+NodeLocation: 88,344,1
+NodeSize: 72,56
+DisplayOutputs: Chance Robust_corrigibility
+
+Text Te60091197
+Description: (e) Otherwise, utility function merging may result in being knocked out of the corrigible behavior.
+NodeLocation: 152,32,-1
+NodeSize: 152,32
+NodeInfo: 1,,,,1
+
+Alias Al1169484605
+Title: Human supervision can be sufficient for teaching preferences
+Definition: 1
+NodeLocation: 600,72,1
+NodeSize: 72,56
+Original: Human_supervision_ca
+
+Close Broad_Basin_for_Corr
+
+Chance Human_supervision_ca
+Title: Human supervision can be sufficient for teaching preferences
+NodeLocation: 712,72,1
+NodeSize: 72,56
+Aliases: Alias Al1169484605
+
+Close Corrigibility_basin
+

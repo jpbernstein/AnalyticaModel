@@ -1,0 +1,331 @@
+{ Analytica Model Mesa_optimization, encoding="UTF-8" }
+SoftwareVersion 5.3.3
+
+
+
+LinkModule Mesa_optimization
+Title: Mesa-optimization
+Author: bernsjp1
+Date: Thu, Feb 6, 2020 10:28 AM
+NodeSize: 56,24
+NodeInfo: 1,,,,,,,0,,,,,,0
+DiagState: 2,0,0,1550,845,17
+FontStyle: Arial,15
+FileInfo: 0,LinkModule Mesa_optimization,2,2,0,0,Module\Mesa-optimization.ana
+
+Chance Mesa_optimization_is
+Title: Mesa-optimization is safe. (a)
+Definition: beta(2,2)
+NodeLocation: 904,464,1
+NodeSize: 64,48
+Aliases: Alias Al1181678397, Alias Al1450113853, Alias Al1852767037, Alias Al446404413
+DisplayInputs: Chance Mesa_optimizer_can_n, Chance Mesa_optimizers_can_, Chance Systems_can_force_al, Chance Systems_can_control_, Chance Subsystem_can_safely, Variable Agent_and_subagents1, Chance Mesa_optimizer_is_in, Chance Mesa_objective_can_b, Chance Can_be_determined_if
+
+Text Te236541245
+Description: <a href="https://www.alignmentforum.org/s/r9tYkB2a8Fp4DN8yB/p/FkgsxrGf3QxhfLWHG">Mesa-optimizers</a> are optimizers  created from learned models.~
+(a) Relative to regular optimization, i.e., a mesa-optimizer will not push forward objectives that do not match those of the base optimizer.~
+(b) <a href="https://www.alignmentforum.org/posts/aqhMLqaoHb7uob7fr/if-i-were-a-well-intentioned-ai-iv-mesa-optimising">It is better to align an optimizer than to control it.</a>
+NodeLocation: 120,84,-1
+NodeSize: 120,84
+NodeInfo: 1,,,,1
+
+Chance Mesa_optimizer_can_n
+Title: Mesa-optimizer can not be smarter than base
+NodeLocation: 448,784,1
+NodeSize: 64,40
+DisplayOutputs: Chance Mesa_optimization_is
+
+Module Mesa_Optimization_Ex
+Title: Mesa-Optimization Existence
+Author: bernsjp1
+Date: Mon, Mar 16, 2020 8:13 AM
+NodeLocation: 424,544,1
+NodeSize: 64,32
+DiagState: 2,376,110,824,469,17
+
+Chance Subcomponents_can_en
+Title: Subcomponents can enable self-reasoning
+NodeLocation: 400,136,1
+NodeSize: 72,32
+DisplayOutputs: Chance Mesa_optimizers_can_
+
+Chance Subcomponents_can_e1
+Title: Subcomponents can enable self-modification
+NodeLocation: 344,304,1
+NodeSize: 72,32
+DisplayOutputs: Chance Mesa_optimizers_can_
+
+Chance Mesa_optimizers_can_
+Title: Mesa-optimizers can exist.
+NodeLocation: 672,216,1
+NodeSize: 56,40
+DisplayInputs: Chance Subcomponents_can_en, Chance Subcomponents_can_e1
+DisplayOutputs: Chance Mesa_optimization_is
+
+Close Mesa_Optimization_Ex
+
+Module System_control_of_su
+Title: System control of subsystems
+Author: bernsjp1
+Date: Mon, Mar 16, 2020 8:13 AM
+NodeLocation: 416,424,1
+NodeSize: 56,32
+DiagState: 2,329,51,824,469,17
+
+Chance Systems_can_force_al
+Title: Systems can force alignment of subsystems.
+Description: Forcing alignment of subsystem means the only concern deals with the overall alignment.
+NodeLocation: 408,304,1
+NodeSize: 64,40
+DisplayInputs: Chance Mesa_optimization_de
+DisplayOutputs: Chance Mesa_optimization_is
+
+Chance Systems_can_control_
+Title: Systems can control mesa-optimizer (b)
+NodeLocation: 504,184,1
+NodeSize: 56,32
+DisplayInputs: Chance Mesa_optimizer_can_1, Chance Mesa_optimization_de
+DisplayOutputs: Chance Mesa_optimization_is
+
+Chance Mesa_optimizer_can_1
+Title: Mesa-optimizer can be corrigible
+NodeLocation: 312,112,1
+NodeSize: 56,40
+DisplayOutputs: Chance Systems_can_control_
+
+Alias Al1954511677
+Title: Alternative methods of subsystem generation beyond search
+Definition: 1
+NodeLocation: 192,256,1
+NodeSize: 64,56
+Original: Alternative_methods_
+
+Close System_control_of_su
+
+Chance Subsystem_can_safely
+Title: Subsystem can safely reduce the problem needing to be solved
+Description: https://www.alignmentforum.org/s/Rm6oQRJJmhGCcLvxh/p/ChierESmenTtCQqZy ~
+The whole purpose of subagents is to simplify the problem -- is there a way to reduce the problem that gives enough information for the subagent to act safely?
+NodeLocation: 432,264,1
+NodeSize: 56,64
+DisplayOutputs: Chance Mesa_optimization_is
+
+Module Formalization
+Title: Formalization
+Author: bernsjp1
+Date: Mon, Mar 16, 2020 9:19 AM
+NodeLocation: 168,512,1
+NodeSize: 64,24
+
+Chance Optimization_definit
+Title: Optimization definition can be formalized.
+NodeLocation: 104,80,1
+NodeSize: 56,40
+DisplayOutputs: Chance Mesa_optimization_de
+
+Chance Mesa_optimization_de
+Title: Mesa-optimization definition can be formalized.
+NodeLocation: 256,80,1
+NodeSize: 56,56
+DisplayInputs: Chance Optimization_definit
+DisplayOutputs: Chance Systems_can_force_al, Chance Systems_can_control_
+
+Variable Va1
+NodeLocation: 368,64,1
+NodeSize: 48,24
+
+Close Formalization
+
+Module Robust_to_Scale
+Title: Robust to Scale
+Author: bernsjp1
+Date: Mon, Mar 16, 2020 9:19 AM
+NodeLocation: 424,632,1
+NodeSize: 48,24
+DiagState: 2,0,0,824,469,17
+
+Chance Subagents_robust_to_
+Title: Subagents robust to scaling up
+Description: https://www.alignmentforum.org/s/Rm6oQRJJmhGCcLvxh/p/ChierESmenTtCQqZy~
+If a subsystem gains resources
+NodeLocation: 360,64,1
+NodeSize: 48,32
+DisplayOutputs: Variable Agent_and_subagents1
+
+Chance Subagents_robust_to1
+Title: Subagents robust to scaling down
+Description: https://www.alignmentforum.org/s/Rm6oQRJJmhGCcLvxh/p/ChierESmenTtCQqZy~
+If resources are taken away, does the agent remain functioning? I.e. if maximizing a function results in alignment, does approximately maximizing it still result in alignment?
+NodeLocation: 336,176,1
+NodeSize: 48,40
+WindState: 2,98,82,720,350
+DisplayOutputs: Variable Agent_and_subagents1
+
+Chance Subagents_robust_to2
+Title: Subagents robust to relative scale
+Description: https://www.alignmentforum.org/s/Rm6oQRJJmhGCcLvxh/p/ChierESmenTtCQqZy~
+If one subsystem gains resources, and another subsystem does not, does this result in faulty behavior? How imbalanced can a pair of subsystems be before they fall apart?
+NodeLocation: 376,296,1
+NodeSize: 48,40
+DisplayOutputs: Variable Agent_and_subagents1
+
+Variable Agent_and_subagents1
+Title: Agent and subagents are robust to scale (Goodhart's Law)
+Description: https://www.alignmentforum.org/s/Rm6oQRJJmhGCcLvxh/p/ChierESmenTtCQqZy~
+This is a combination of the previous three nodes linking into it.
+NodeLocation: 672,192,1
+NodeSize: 64,56
+DisplayInputs: Chance Subagents_robust_to_, Chance Subagents_robust_to1, Chance Subagents_robust_to2
+DisplayOutputs: Chance Mesa_optimization_is
+
+Alias Al1181678397
+Title: Mesa-optimization is safe. (a)
+Definition: 0
+NodeLocation: 872,360,1
+NodeSize: 64,48
+Original: Mesa_optimization_is
+
+Alias Al1450113853
+Title: Mesa-optimization is safe. (a)
+Definition: 0
+NodeLocation: 872,360,1
+NodeSize: 64,48
+Original: Mesa_optimization_is
+
+Alias Al1852767037
+Title: Mesa-optimization is safe. (a)
+Definition: 0
+NodeLocation: 872,360,1
+NodeSize: 64,48
+Original: Mesa_optimization_is
+
+Close Robust_to_Scale
+
+Chance Alternative_methods_
+Title: Alternative methods of subsystem generation beyond search
+Description: https://www.alignmentforum.org/s/Rm6oQRJJmhGCcLvxh/p/ChierESmenTtCQqZy~
+A large part of the dangers in sub-agent alignment comes from the need to search through a space. If there is another way to generate subsystems beyond search, then perhaps safety would come along with it.
+NodeLocation: 224,360,1
+NodeSize: 64,56
+WindState: 2,689,492,720,349
+Aliases: Alias Al1954511677
+DisplayInputs: Chance Counterfactual_reaso
+
+Chance Mesa_optimizer_is_in
+Title: Mesa-optimizer is intentionally created
+Description: As opposed to unintentionally created subagents. https://www.alignmentforum.org/s/Rm6oQRJJmhGCcLvxh/p/i3BTagvt3HbPMx6PN
+NodeLocation: 544,176,1
+NodeSize: 56,40
+DisplayOutputs: Chance Mesa_optimization_is
+
+Chance Counterfactual_reaso
+Title: Counterfactual reasoning can be feasible
+Description: Counterfactual reasoning may provide an avenue to alternate ways of generating subsystems. https://www.alignmentforum.org/s/Rm6oQRJJmhGCcLvxh/p/i3BTagvt3HbPMx6PN
+NodeLocation: 104,440,1
+NodeSize: 64,32
+WindState: 2,486,95,720,350
+DisplayOutputs: Chance Alternative_methods_
+
+Chance Mesa_objective_can_b
+Title: Mesa-objective can be transparently communicated
+Description: https://www.lesswrong.com/s/r9tYkB2a8Fp4DN8yB/p/FkgsxrGf3QxhfLWHG~
+The mesa-objective is different than the base-objective (mesa-objective could be anything potentially instrumental towards base-objective)
+NodeLocation: 744,48,1
+NodeSize: 64,40
+DisplayOutputs: Chance Mesa_optimization_is
+
+Text Te1471846205
+Title: Note: Need to structure the nodes properly
+NodeLocation: 324,60,-1
+NodeSize: 84,60
+
+Chance Model_space_expressi
+Title: Model space expressivity can be measured
+Description: https://www.lesswrong.com/s/r9tYkB2a8Fp4DN8yB/p/q2rCMHNXazALgQpGH~
+How much can the algorithm due based off of the expressiveness of the space it is searching, i.e. search space complexity/detail/granularity.
+NodeLocation: 928,104,1
+NodeSize: 56,40
+
+Chance Mesa_optimizer_bias_
+Title: Mesa-optimizer bias can be managed effectively
+Description: https://www.lesswrong.com/s/r9tYkB2a8Fp4DN8yB/p/q2rCMHNXazALgQpGH~
+simplicity bias, i.e., tendency for simple model (or low time complexity, low space complexity, etc)
+NodeLocation: 1032,192,1
+NodeSize: 64,40
+
+Module Inner_alignment
+Title: Inner alignment
+Author: bernsjp1
+Date: Fri, Mar 20, 2020 12:18 PM
+NodeLocation: 672,152,1
+NodeSize: 48,24
+
+Chance Can_be_determined_if
+Title: Can be determined if MO is pseudo-aligned
+Description: pseudo-alignment means it is aligned for training set, not for out of sample datapoints.
+NodeLocation: 368,296,1
+NodeSize: 64,40
+DisplayOutputs: Chance Mesa_optimization_is
+
+Chance Can_determine_approx
+Title: Can determine approximate alignment
+Description: Ubase = Umesa to some degree of certainty. https://www.lesswrong.com/s/r9tYkB2a8Fp4DN8yB/p/pL56xPoniLvtMDQ4J
+NodeLocation: 144,224,1
+NodeSize: 56,40
+
+Chance Can_determine_subopt
+Title: Can determine suboptimal alignment
+Description: Aligned on training set, but a deficiency causes misalignment outside of training. https://www.lesswrong.com/s/r9tYkB2a8Fp4DN8yB/p/pL56xPoniLvtMDQ4J
+NodeLocation: 392,120,1
+NodeSize: 48,40
+
+Alias Al446404413
+Title: Mesa-optimization is safe. (a)
+Definition: 0
+NodeLocation: 904,464,1
+NodeSize: 64,48
+Original: Mesa_optimization_is
+
+Chance Can_determine_proxy_
+Title: Can determine proxy alignment
+Description: https://www.lesswrong.com/s/r9tYkB2a8Fp4DN8yB/p/pL56xPoniLvtMDQ4J~
+Proxy alignment occurs when the MO aligns for some proxy of the base target instead of the target itself.
+NodeLocation: 200,120,1
+NodeSize: 48,40
+
+Close Inner_alignment
+
+Module Mesa_Optimization_ar
+Title: Mesa-Optimization arises
+Author: englaal1
+Date: Fri, Mar 20, 2020 12:35 PM
+NodeLocation: 1192,480,1
+NodeSize: 64,32
+
+Chance Hard_coded_mesa_opti
+Title: Hard-coded mesa-optimizer can be safe
+Description: https://www.lesswrong.com/s/r9tYkB2a8Fp4DN8yB/p/pL56xPoniLvtMDQ4J~
+If the algorithm in question deliberately creates a mesa-optimizer
+NodeLocation: 552,264,1
+NodeSize: 64,40
+
+Chance Size_of_algorithmic_
+Title: Size of algorithmic range
+Description: https://www.lesswrong.com/s/r9tYkB2a8Fp4DN8yB/p/pL56xPoniLvtMDQ4J~
+Clarity needed on this.
+NodeLocation: 256,168,1
+NodeSize: 48,32
+
+Close Mesa_Optimization_ar
+
+Variable Va34
+NodeLocation: 496,64,1
+NodeSize: 48,24
+
+Variable Va35
+NodeLocation: 624,64,1
+NodeSize: 48,24
+Aliases: Alias Al1128765245
+
+Close Mesa_optimization
+

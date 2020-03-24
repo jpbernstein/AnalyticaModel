@@ -1,0 +1,24 @@
+{ Analytica Model System_becomes_incor, encoding="UTF-8" }
+SoftwareVersion 5.3.3
+
+
+
+LinkModule System_becomes_incor
+Title: System becomes incorrigible
+Author: bernsjp1
+Date: Wed, Feb 5, 2020 2:44 PM
+NodeSize: 72,32
+NodeInfo: 1,,,,,,,0,,,,,,0
+NodeColor: 52425,39321,65535
+FontStyle: Arial,15
+FileInfo: 0,LinkModule System_becomes_incor,3,2,0,0,Module\System becomes incorrigible.ana
+
+Objective System_becomes_inco1
+Title: System becomes incorrigible
+Definition: (1-Broad_basin_for_corr) + Discontinuity_from_A
+NodeLocation: 104,56,1
+NodeSize: 56,32
+DisplayInputs: Chance Discontinuity_from_1, Chance Broad_basin_for_corr
+
+Close System_becomes_incor
+

@@ -1,0 +1,23 @@
+{ Analytica Model Incorrigible_goal_di, encoding="UTF-8" }
+SoftwareVersion 5.3.3
+
+
+
+LinkModule Incorrigible_goal_di
+Title: Incorrigible goal-directed superintelligence
+Author: bernsjp1
+Date: Thu, Feb 6, 2020 10:21 AM
+NodeSize: 80,32
+NodeInfo: 1,,,,,,,0,,,,,,0
+NodeColor: 65535,19661,38773
+FontStyle: Arial,15
+FileInfo: 0,LinkModule Incorrigible_goal_di,3,2,0,0,Module\Incorrigible goal-directed superintelligence.ana
+
+Objective Incorrigible_goal_d1
+Title: Incorrigible goal-directed superintelligence
+Definition: Convergent_instrume1 + System_becomes_inco1
+NodeLocation: 120,56,1
+NodeSize: 72,32
+
+Close Incorrigible_goal_di
+

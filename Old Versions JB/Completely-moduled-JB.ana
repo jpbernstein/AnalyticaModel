@@ -1,0 +1,724 @@
+{ Analytica Model Primary_model, encoding="UTF-8" }
+SoftwareVersion 5.3.3
+
+
+{ System Variables with non-default values: }
+SampleSize := 10K
+TypeChecking := 1
+Checking := 1
+SaveOptions := 2
+SaveValues := 0
+{!40400|Sys_PdfSmoothMethod := 1}
+{!40400|Sys_PdfSmoothFactor := 0.5}
+
+{!-50299|DiagramColor Model: 65535,65535,65535}
+{!-50299|DiagramColor Module: 65535,65535,65535}
+{!-50299|DiagramColor LinkModule: 65535,65535,65535}
+{!-50299|DiagramColor Library: 65535,65535,65535}
+{!-50299|DiagramColor LinkLibrary: 65535,65535,65535}
+{!-50299|DiagramColor Form: 65535,65535,65535}
+NodeInfo FormNode: 1,0,0,,0,0,,,,0,,,0
+{!-50299|NodeColor Text: 62258,62258,62258}
+
+
+
+Model Primary_model
+Author: englaal1
+Date: Thu, Jan 30, 2020 11:28 AM
+DiagState: 2,0,38,1888,751,17
+FontStyle: Arial,15
+FileInfo: 0,Model Primary_model,2,2,0,0,C:\Users\bernsjp1\Box\AI Forecasting\Analytica\Backup-JBwork.ana
+
+Objective Context_for_agentive
+Title: Context for agentive AGI is more secure
+Definition: Comprehensive_AI_Ser*W36
+NodeLocation: 1656,864,1
+NodeSize: 56,40
+
+Objective Alignment_is_much_ha
+Title: Alignment is much harder than, or does not overlap much with, capability gain
+Definition: W37*Deep_insights_needed+W38*ML_scales_to_AGI
+NodeLocation: 2008,920,1
+NodeSize: 80,64
+
+Objective Foundational_or__dec
+Title: Foundational or "deconfusion" research
+Definition: (1-ML_scales_to_AGI)*W34 + Deep_insights_needed*W35 + Agentive_AGI*W32 + Inconspicuous_failur*W33
+NodeLocation: 1848,712,1
+NodeSize: 64,40
+
+Module Modularity_over_Int1
+Title: Modularity over Integration?
+NodeLocation: 1016,552,1
+NodeSize: 56,32
+
+Chance Modularity_over_Inte
+Title: Modularity over Integration
+Definition: Beta( 2,2)
+NodeLocation: 112,72,1
+NodeSize: 64,48
+ValueState: 2,1196,4,416,303,1,PDFP
+GraphSetup: {!40400|Sys_PdfSmoothMethod:1}~
+Att_GraphValueRange Modularity_over_Inte:|1:1,,0,,,,,0,1,0
+{!40200|Att_GraphSetupSlices: [3,1,DensityIndex,1]}
+
+Chance W1
+Title: W1
+Definition: beta(5,5)
+NodeLocation: 288,216,1
+NodeSize: 48,24
+NodeColor: 19661,48336,65535
+
+Close Modularity_over_Int1
+
+Module Current_AI_R_D_extr1
+Title: Current AI R&D extrapolates to AI services?
+NodeLocation: 1200,384,1
+NodeSize: 64,56
+
+Chance Current_AI_R_D_extra
+Title: Current AI R&D extrapolates to AI services
+Definition: beta(2,2)
+NodeLocation: 200,72,1
+NodeSize: 64,48
+ValueState: 2,986,127,416,303,1,PDFP
+GraphSetup: {!40400|Sys_PdfSmoothMethod:1}
+
+Chance W2
+Title: W2
+Definition: beta(5,5)
+NodeLocation: 96,160,1
+NodeSize: 48,24
+NodeColor: 19661,48336,65535
+
+Close Current_AI_R_D_extr1
+
+Module Incentive_for_Agent1
+Title: Incentive for Agentive AI?
+NodeLocation: 1192,552,1
+NodeSize: 48,40
+
+Chance Incentive_for_Agenti
+Title: Incentive for Agentive AI
+Definition: (1 - Current_AI_R_D_extra)  * W2 + (1 - Modularity_over_Inte) * W1
+NodeLocation: 112,72,1
+NodeSize: 64,48
+ValueState: 2,959,588,400,315,1,PDFP
+GraphSetup: {!40400|Sys_PdfSmoothMethod:1}
+
+Chance W5
+Title: W5
+Definition: beta(5,5)
+NodeLocation: 296,104,1
+NodeSize: 48,24
+NodeColor: 19661,48336,65535
+
+Close Incentive_for_Agent1
+
+Module Convergent_Rational1
+Title: Convergent Rationality?
+NodeLocation: 1440,440,1
+NodeSize: 56,24
+
+Chance Convergent_rationali
+Title: Convergent rationality
+Definition: beta(2,2)
+NodeLocation: 112,72,1
+NodeSize: 64,48
+
+Chance W3
+Title: W3
+Definition: beta(5,5)
+NodeLocation: 304,168,1
+NodeSize: 48,24
+NodeColor: 19661,48336,65535
+
+Close Convergent_Rational1
+
+Module Mesa_Optimization_
+Title: Mesa-Optimization?
+NodeLocation: 1768,424,1
+NodeSize: 64,24
+
+Chance Mesa_optimisation
+Title: Mesa-optimisation
+Definition: beta(2,2)
+NodeLocation: 232,72,1
+NodeSize: 64,48
+
+Chance W4
+Title: W4
+Definition: beta(5,5)
+NodeLocation: 96,152,1
+NodeSize: 48,24
+NodeColor: 19661,48336,65535
+
+Chance W11
+Title: W11
+Definition: beta(5,5)
+NodeLocation: 120,488,1
+NodeSize: 48,24
+NodeColor: 19661,48336,65535
+
+Close Mesa_Optimization_
+
+Module Incidental_Agentive1
+Title: Incidental Agentive AGI?
+NodeLocation: 1616,504,1
+NodeSize: 48,32
+
+Chance Incidental_agentive_
+Title: Incidental agentive AGI
+Definition: Convergent_rationali*W3 + Mesa_optimisation*W4
+NodeLocation: 472,72,1
+NodeSize: 64,48
+
+Chance W6
+Title: W6
+Definition: beta(5,5)
+NodeLocation: 96,144,1
+NodeSize: 48,24
+NodeColor: 19661,48336,65535
+
+Chance W25
+Title: W25
+Definition: beta(5,5)
+NodeLocation: 464,240,1
+NodeSize: 48,24
+NodeColor: 19661,48336,65535
+
+Close Incidental_Agentive1
+
+Module Agentive_AGI1
+Title: Agentive AGI
+NodeLocation: 1488,568,1
+NodeSize: 48,24
+
+Chance Agentive_AGI
+Title: Agentive AGI
+Definition: Incentive_for_Agenti*W5 + Incidental_agentive_*W6
+NodeLocation: 112,72,1
+NodeSize: 64,48
+ValueState: 2,1202,356,416,303,,PDFP
+GraphSetup: {!40400|Sys_PdfSmoothMethod:1}
+
+Chance W7
+Title: W7
+Definition: beta(5,5)
+NodeLocation: 368,128,1
+NodeSize: 48,24
+NodeColor: 19661,48336,65535
+
+Chance W10
+Title: W10
+Definition: beta(5,5)
+NodeLocation: 232,248,1
+NodeSize: 48,24
+NodeColor: 19661,48336,65535
+
+Chance W16
+Title: W16
+Definition: beta(5,5)
+NodeLocation: 280,48,1
+NodeSize: 48,24
+NodeColor: 19661,48336,65535
+
+Chance W32
+Title: W32
+Definition: beta(5,5)
+NodeLocation: 88,216,1
+NodeSize: 48,24
+NodeColor: 19661,48336,65535
+
+Chance W39
+Title: W39
+Definition: beta(5,5)
+NodeLocation: 232,152,1
+NodeSize: 48,24
+NodeColor: 19661,48336,65535
+
+Chance W43
+Title: W43
+Definition: beta(5,5)
+NodeLocation: 96,48,1
+NodeSize: 48,24
+NodeColor: 19661,48336,65535
+
+Close Agentive_AGI1
+
+Module ML_scales_to_AGI_
+Title: ML scales to AGI?
+NodeLocation: 1840,832,1
+NodeSize: 48,24
+
+Chance ML_scales_to_AGI
+Title: ML scales to AGI
+Definition: beta(2,2)
+NodeLocation: 592,72,1
+NodeSize: 64,48
+ValueState: 2,52,58,416,303,,PDFP
+
+Chance W28
+Title: W28
+Definition: beta(5,5)
+NodeLocation: 96,1144,1
+NodeSize: 48,24
+NodeColor: 19661,48336,65535
+
+Chance W34
+Title: W34
+Definition: beta(5,5)
+NodeLocation: 768,1016,1
+NodeSize: 48,24
+NodeColor: 19661,48336,65535
+
+Chance W38
+Title: W38
+Definition: beta(5,5)
+NodeLocation: 824,440,1
+NodeSize: 48,24
+NodeColor: 19661,48336,65535
+
+Chance W40
+Title: W40
+Definition: beta(5,5)
+NodeLocation: 792,216,1
+NodeSize: 48,24
+NodeColor: 19661,48336,65535
+
+Close ML_scales_to_AGI_
+
+Module Deep_insights_neede1
+Title: Deep insights needed?
+NodeLocation: 1984,784,1
+NodeSize: 48,32
+
+Chance Deep_insights_needed
+Title: Deep insights needed
+Definition: W40*(1-ML_scales_to_AGI)
+NodeLocation: 112,72,1
+NodeSize: 64,48
+ValueState: 2,52,58,416,303,,PDFP
+
+Chance W35
+Title: W35
+Definition: beta(5,5)
+NodeLocation: 264,56,1
+NodeSize: 48,24
+NodeColor: 19661,48336,65535
+
+Chance W37
+Title: W37
+Definition: beta(5,5)
+NodeLocation: 96,48,1
+NodeSize: 48,24
+NodeColor: 19661,48336,65535
+
+Close Deep_insights_neede1
+
+Module Inconspicuous_failu1
+Title: Inconspicuous failure
+NodeLocation: 1784,576,1
+NodeSize: 72,24
+
+Chance Inconspicuous_failur
+Title: Inconspicuous failure
+Definition: Agentive_AGI * W10 + Mesa_optimisation * W11
+NodeLocation: 112,72,1
+NodeSize: 64,48
+
+Chance W31
+Title: W31
+Definition: beta(5,5)
+NodeLocation: 96,48,1
+NodeSize: 48,24
+NodeColor: 19661,48336,65535
+
+Chance W33
+Title: W33
+Definition: beta(5,5)
+NodeLocation: 96,48,1
+NodeSize: 48,24
+NodeColor: 19661,48336,65535
+
+Close Inconspicuous_failu1
+
+Module Recursive_self_impr1
+Title: Recursive self improvement?
+NodeLocation: 1224,752,1
+NodeSize: 80,32
+
+Chance Recursive_self_impro
+Title: Recursive self-improvement
+Definition: Agentive_AGI * W7
+NodeLocation: 112,72,1
+NodeSize: 64,48
+ValueState: 2,420,426,416,303,,PDFP
+
+Chance W9
+Title: W9
+Definition: beta(5,5)
+NodeLocation: 96,48,1
+NodeSize: 48,24
+NodeColor: 19661,48336,65535
+
+Close Recursive_self_impr1
+
+Module Discontinuity_to_AG1
+Title: Discontinuity to AGI?
+NodeLocation: 984,856,1
+NodeSize: 64,24
+
+Chance Discontinuity_to_AGI
+Title: Discontinuity to AGI
+Definition: Beta(2,2)
+NodeLocation: 112,72,1
+NodeSize: 64,48
+ValueState: 2,40,50,400,300,0,MIDM
+
+Chance W8
+Title: W8
+Definition: beta(5,5)
+NodeLocation: 336,232,1
+NodeSize: 48,24
+NodeColor: 19661,48336,65535
+
+Chance W12
+Title: W12
+Definition: beta(5,5)
+NodeLocation: 208,448,1
+NodeSize: 48,24
+NodeColor: 19661,48336,65535
+
+Chance W17
+Title: W17
+Definition: beta(5,5)
+NodeLocation: 888,752,1
+NodeSize: 48,24
+NodeColor: 19661,48336,65535
+
+Close Discontinuity_to_AG1
+
+Module Discontinuity_from_1
+Title: Discontinuity from AGI?
+NodeLocation: 1184,848,1
+NodeSize: 64,24
+
+Chance Discontinuity_from_A
+Title: Discontinuity from AGI
+Definition: Discontinuity_to_AGI * W8 + Recursive_self_impro * W9
+NodeLocation: 304,72,1
+NodeSize: 64,48
+ValueState: 2,52,58,416,303,,PDFP
+
+Chance W13
+Title: W13
+Definition: beta(5,5)
+NodeLocation: 216,192,1
+NodeSize: 48,24
+NodeColor: 19661,48336,65535
+
+Chance W20
+Title: W20
+Definition: beta(5,5)
+NodeLocation: 96,680,1
+NodeSize: 48,24
+NodeColor: 19661,48336,65535
+
+Chance W23
+Title: W23
+Definition: beta(5,5)
+NodeLocation: 1008,1448,1
+NodeSize: 48,24
+NodeColor: 19661,48336,65535
+
+Chance W42
+Title: W42
+Definition: beta(5,5)
+NodeLocation: 784,256,1
+NodeSize: 48,24
+NodeColor: 19661,48336,65535
+
+Close Discontinuity_from_1
+
+Module Creeping_Failure1
+Title: Creeping Failure
+NodeLocation: 928,1368,1
+NodeSize: 48,24
+
+Chance Creeping_Failure
+Title: Creeping Failure
+Definition: Beta(2,2)
+NodeLocation: 112,72,1
+NodeSize: 64,48
+ValueState: 2,40,50,400,300,0,MIDM
+
+Chance W14
+Title: W14
+Definition: beta(5,5)
+NodeLocation: 264,672,1
+NodeSize: 48,24
+NodeColor: 19661,48336,65535
+
+Close Creeping_Failure1
+
+Module Broad_basin_for_cor1
+Title: Broad basin for corrigibility?
+NodeLocation: 1400,1160,1
+NodeSize: 64,32
+
+Chance Broad_basin_for_corr
+Title: Broad basin for corrigibility
+Definition: beta(2,2)
+NodeLocation: 728,72,1
+NodeSize: 64,48
+ValueState: 2,52,58,416,303,,PDFP
+
+Chance W19
+Title: W19
+Definition: beta(5,5)
+NodeLocation: 96,896,1
+NodeSize: 48,24
+WindState: 2,98,82,720,350
+NodeColor: 19661,48336,65535
+
+Chance W24
+Title: W24
+Definition: beta(5,5)
+NodeLocation: 992,1328,1
+NodeSize: 48,24
+NodeColor: 19661,48336,65535
+
+Chance W29
+Title: W29
+Definition: beta(5,5)
+NodeLocation: 920,1000,1
+NodeSize: 48,24
+NodeColor: 19661,48336,65535
+
+Chance W30
+Title: W30
+Definition: beta(5,5)
+NodeLocation: 1272,968,1
+NodeSize: 48,24
+NodeColor: 19661,48336,65535
+
+Chance W41
+Title: W41
+Definition: beta(5,5)
+NodeLocation: 832,176,1
+NodeSize: 48,24
+NodeColor: 19661,48336,65535
+
+Close Broad_basin_for_cor1
+
+Module System_becomes_inco1
+Title: System becomes incorrigible
+NodeLocation: 1256,968,1
+NodeSize: 56,32
+
+Objective System_becomes_incor
+Title: System becomes incorrigible
+Definition: (1-Broad_basin_for_corr)*W41 + Discontinuity_from_A*W42
+NodeLocation: 104,56,1
+NodeSize: 56,32
+
+Chance W22
+Title: W22
+Definition: beta(5,5)
+NodeLocation: 96,48,1
+NodeSize: 48,24
+NodeColor: 19661,48336,65535
+
+Close System_becomes_inco1
+
+Module Many_powerful_AIs1
+Title: Many powerful AIs
+NodeLocation: 1040,1064,1
+NodeSize: 48,32
+
+Objective Many_powerful_AIs
+Title: Many powerful AIs
+Definition: Discontinuity_to_AGI*W17
+NodeLocation: 600,56,1
+NodeSize: 48,32
+
+Chance W18
+Title: W18
+Definition: beta(5,5)
+NodeLocation: 96,728,1
+NodeSize: 48,24
+NodeColor: 19661,48336,65535
+
+Chance W27
+Title: W27
+Definition: beta(5,5)
+NodeLocation: 472,312,1
+NodeSize: 48,24
+NodeColor: 19661,48336,65535
+
+Close Many_powerful_AIs1
+
+Module AI_improves_continu1
+Title: AI improves continuously
+NodeLocation: 832,1088,1
+NodeSize: 64,24
+
+Objective AI_improves_continuo
+Title: AI improves continuously
+Definition: (1-Discontinuity_from_A)*W13 + (1-Discontinuity_to_AGI)*W12~
+
+NodeLocation: 104,48,1
+NodeSize: 56,24
+
+Chance W15
+Title: W15
+Definition: beta(5,5)
+NodeLocation: 168,776,1
+NodeSize: 48,24
+NodeColor: 19661,48336,65535
+
+Chance W26
+Title: W26
+Definition: beta(5,5)
+NodeLocation: 456,432,1
+NodeSize: 48,24
+NodeColor: 19661,48336,65535
+
+Close AI_improves_continu1
+
+Module Convergent_instrume1
+Title: Convergent instrumental subgoals
+NodeLocation: 1480,768,1
+NodeSize: 64,32
+
+Objective Convergent_instrumen
+Title: Convergent instrumental subgoals
+Definition: Agentive_AGI*W43
+NodeLocation: 104,56,1
+NodeSize: 56,32
+
+Chance W21
+Title: W21
+Definition: beta(5,5)
+NodeLocation: 96,48,1
+NodeSize: 48,24
+NodeColor: 19661,48336,65535
+
+Close Convergent_instrume1
+
+Module Comprehensive_AI_Se1
+Title: Comprehensive AI Services (before agentive AGI)
+NodeLocation: 1672,736,1
+NodeSize: 72,40
+
+Objective Comprehensive_AI_Ser
+Title: Comprehensive AI Services (before agentive AGI)
+Definition: (1-Agentive_AGI)*W39
+NodeLocation: 120,64,1
+NodeSize: 72,40
+
+Chance W36
+Title: W36
+Definition: beta(5,5)
+NodeLocation: 96,48,1
+NodeSize: 48,24
+NodeColor: 19661,48336,65535
+
+Close Comprehensive_AI_Se1
+
+Module Humans_are_economic1
+Title: Humans are economically outcompeted
+NodeLocation: 936,1296,1
+NodeSize: 64,32
+
+Objective Humans_are_economica
+Title: Humans are economically outcompeted
+Definition: Creeping_Failure*W14 + AI_improves_continuo*W15 + Agentive_AGI*W16 + W18*Many_powerful_AIs
+NodeLocation: 104,56,1
+NodeSize: 56,32
+ValueState: 2,68,74,416,303,1,PDFP
+
+Close Humans_are_economic1
+
+Module Synthesizing_prefere
+Title: Synthesizing preferences into a utility function
+NodeLocation: 800,1232,1
+NodeSize: 64,40
+
+Objective Synthesising_prefere
+Title: Synthesising preferences into a utility function
+Definition: (1-Discontinuity_from_A)*W20 + (1-Broad_basin_for_corr)*W19
+NodeLocation: 104,64,1
+NodeSize: 56,40
+ValueState: 2,84,90,416,303,,PDFP
+
+Close Synthesizing_prefere
+
+Module Use_feedback_loops_1
+Title: Use feedback loops to corect course as we go
+NodeLocation: 1176,1288,1
+NodeSize: 64,40
+
+Objective Use_feedback_loops_t
+Title: Use feedback loops to correct course as we go
+Definition: AI_improves_continuo*W26 + Many_powerful_AIs*W27
+NodeLocation: 112,64,1
+NodeSize: 64,40
+
+Close Use_feedback_loops_1
+
+Module ML_safety_or_prosai1
+Title: ML safety or prosaic alignment
+NodeLocation: 1464,960,1
+NodeSize: 48,32
+
+Objective ML_safety_or_prosaic
+Title: ML safety or prosaic alignment
+Definition: ML_scales_to_AGI*W28 + Broad_basin_for_corr*W29
+NodeLocation: 104,56,1
+NodeSize: 56,32
+
+Close ML_safety_or_prosai1
+
+Module Incorrigible_goal_d1
+Title: Incorrigible goal-directed superintelligence
+NodeLocation: 1216,1128,1
+NodeSize: 80,32
+
+Objective Incorrigible_goal_di
+Title: Incorrigible goal-directed superintelligence
+Definition: Convergent_instrumen*W21 + System_becomes_incor*W22
+NodeLocation: 120,56,1
+NodeSize: 72,32
+
+Close Incorrigible_goal_d1
+
+Module Target_loading_fail1
+Title: Target loading fails
+NodeLocation: 1536,1072,1
+NodeSize: 48,32
+
+Objective Target_loading_fails
+Title: Target loading fails
+Definition: Discontinuity_from_A*W23 + Broad_basin_for_corr*W24 + Incidental_agentive_*W25
+NodeLocation: 120,56,1
+NodeSize: 72,32
+
+Close Target_loading_fail1
+
+Module Mo2
+Title: (Near) proof-level assurance of alignment
+NodeLocation: 1688,1024,1
+NodeSize: 64,40
+
+Objective Ob2
+Title: (Near) proof-level assurance of alignment
+Definition: (1-Broad_basin_for_corr)*W30 + Inconspicuous_failur*W31
+NodeLocation: 104,64,1
+NodeSize: 56,40
+
+Close Mo2
+
+Close Primary_model
+

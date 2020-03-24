@@ -1,0 +1,41 @@
+{ Analytica Model Discontinuity, encoding="UTF-8" }
+SoftwareVersion 5.3.3
+
+
+
+LinkModule Discontinuity
+Title: Discontinuity
+Author: bernsjp1
+Date: Tue, Feb 4, 2020 12:54 PM
+NodeSize: 64,24
+NodeInfo: 1,,,,,,,0,,,,,,0
+DiagState: 2,97,193,944,548,17
+FontStyle: Arial,15
+FileInfo: 0,LinkModule Discontinuity,3,2,0,0,Discontinuity.ana
+
+Chance Discontinuity_from_1
+Title: Discontinuity from AGI
+Definition: Discontinuity_to_AG1  + Recursive_self_impr1 
+NodeLocation: 488,376,1
+NodeSize: 64,48
+ValueState: 2,52,58,416,303,,PDFP
+DisplayOutputs: Objective Synthesising_prefere, Objective Target_loading_fails, Objective System_becomes_inco1, Objective AI_improves_continu1
+
+Chance Discontinuity_to_AG1
+Title: Discontinuity to AGI
+Definition: Beta(2,2)
+NodeLocation: 528,184,1
+NodeSize: 64,48
+ValueState: 2,40,50,400,300,0,MIDM
+DisplayOutputs: Objective Many_powerful_AIs, Objective AI_improves_continu1
+
+Chance Recursive_self_impr1
+Title: Recursive self-improvement
+Definition: Agentive_AGI2 
+NodeLocation: 272,392,1
+NodeSize: 64,48
+ValueState: 2,420,426,416,303,,PDFP
+DisplayInputs: Chance Agentive_AGI3
+
+Close Discontinuity
+

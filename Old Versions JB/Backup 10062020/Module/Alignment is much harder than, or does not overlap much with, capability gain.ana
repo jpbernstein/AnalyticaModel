@@ -1,0 +1,23 @@
+{ Analytica Model Alignment_is_much_ha, encoding="UTF-8" }
+SoftwareVersion 5.3.3
+
+
+
+LinkModule Alignment_is_much_ha
+Title: Alignment is much harder than, or does not overlap much with, capability gain
+Author: bernsjp1
+Date: Thu, Feb 6, 2020 10:14 AM
+NodeSize: 72,64
+NodeInfo: 1,,,,,,,0,,,,,,0
+NodeColor: 52425,39321,65535
+FontStyle: Arial,15
+FileInfo: 0,LinkModule Alignment_is_much_ha,3,2,0,0,Module\Alignment is much harder than, or does not overlap much with, capability gain.ana
+
+Objective Alignment_is_much_h1
+Title: Alignment is much harder than, or does not overlap much with, capability gain
+Definition: Deep_insights_neede1+ML_scales_to_AGI1
+NodeLocation: 128,88,1
+NodeSize: 80,64
+
+Close Alignment_is_much_ha
+

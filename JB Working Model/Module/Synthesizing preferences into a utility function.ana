@@ -1,0 +1,24 @@
+{ Analytica Model Synthesized_utility_, encoding="UTF-8" }
+SoftwareVersion 5.3.3
+
+
+
+LinkModule Synthesized_utility_
+Title: Synthesized utility function
+Author: bernsjp1
+Date: Thu, Feb 6, 2020 10:00 AM
+NodeSize: 80,24
+NodeInfo: 1,,,,,,,0,,,,,,0
+NodeColor: 39321,65535,52425
+FontStyle: Arial,15
+FileInfo: 0,LinkModule Synthesized_utility_,2,2,0,0,Module\Synthesizing preferences into a utility function.ana
+
+Objective Synthesising_prefere
+Title: Synthesising preferences into a utility function
+Definition: (1-Discontinuity_from_A) + (1-{Broad_Basin_for_Corr})
+NodeLocation: 104,64,1
+NodeSize: 56,40
+ValueState: 2,84,90,416,303,,PDFP
+
+Close Synthesized_utility_
+

@@ -1,0 +1,22 @@
+{ Analytica Model Mesa_optimization, encoding="UTF-8" }
+SoftwareVersion 5.3.3
+
+
+
+LinkModule Mesa_optimization
+Title: Mesa-optimization
+Author: bernsjp1
+Date: Thu, Feb 6, 2020 10:28 AM
+NodeSize: 56,24
+NodeInfo: 1,,,,,,,0,,,,,,0
+FontStyle: Arial,15
+FileInfo: 0,LinkModule Mesa_optimization,2,2,0,0,Module\Mesa-optimization.ana
+
+Chance Mesa_optimisation
+Title: Mesa-optimisation
+Definition: beta(2,2)
+NodeLocation: 112,72,1
+NodeSize: 64,48
+
+Close Mesa_optimization
+

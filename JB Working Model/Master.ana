@@ -1,0 +1,224 @@
+{ Analytica Model Primary_model, encoding="UTF-8" }
+SoftwareVersion 5.3.3
+
+
+{ System Variables with non-default values: }
+SampleSize := 1000
+TypeChecking := 1
+Checking := 1
+SaveOptions := 2
+SaveValues := 0
+
+{!-50299|DiagramColor Model: 65535,65535,65535}
+{!-50299|DiagramColor Module: 65535,65535,65535}
+{!-50299|DiagramColor LinkModule: 65535,65535,65535}
+{!-50299|DiagramColor Library: 65535,65535,65535}
+{!-50299|DiagramColor LinkLibrary: 65535,65535,65535}
+{!-50299|DiagramColor Form: 65535,65535,65535}
+{!-50299|NodeColor Text: 62258,62258,62258}
+
+
+
+Model Primary_model
+Author: englaal1
+Date: Thu, Jan 30, 2020 11:28 AM
+DiagState: 2,116,56,1334,605,17
+FontStyle: Arial,15
+FileInfo: 0,Model Primary_model,2,2,0,0,C:\Users\englaal1\Box\AI Forecasting\Analytica\JB Working Model\Master.ana
+
+Include 0,LinkModule Discontinuities___Ta,3,2,0,0,Module\Discontinuity.ana
+
+NodeLocation Discontinuities___Ta: 784,64,1
+NodeSize Discontinuities___Ta: 80,24
+
+
+Include 0,LinkModule Agentive_AGI,3,2,0,0,Module\Agentive AGI.ana
+
+NodeLocation Agentive_AGI: 1096,208,1
+NodeSize Agentive_AGI: 48,24
+
+
+Include 0,LinkModule System_becomes_incor,3,2,0,0,Module\System becomes incorrigible.ana
+
+NodeLocation System_becomes_incor: 408,360,1
+NodeSize System_becomes_incor: 72,32
+
+
+Include 0,LinkModule AI_improves_continuo,3,2,0,0,Module\AI improves continuously.ana
+
+NodeLocation AI_improves_continuo: 232,424,1
+NodeSize AI_improves_continuo: 64,24
+
+
+Include 0,LinkModule Humans_economically_,3,2,0,0,Module\Humans are economically outcompeted.ana
+
+NodeLocation Humans_economically_: 1040,72,1
+NodeSize Humans_economically_: 80,32
+
+
+Include 0,LinkModule Synthesized_utility_,2,2,0,0,Module\Synthesizing preferences into a utility function.ana
+
+NodeLocation Synthesized_utility_: 1296,64,1
+NodeSize Synthesized_utility_: 80,24
+
+
+Include 0,LinkModule Many_powerful_AIs,3,2,0,0,Module\Many powerful AIs.ana
+
+NodeLocation Many_powerful_AIs: 104,424,1
+NodeSize Many_powerful_AIs: 48,32
+
+
+Include 0,LinkModule Default__Correct_cou,3,2,0,0,Module\Use feedback loops to correct course as we go.ana
+
+NodeLocation Default__Correct_cou: 656,128,1
+NodeSize Default__Correct_cou: 80,24
+
+
+Include 0,LinkModule Target_loading_fails,3,2,0,0,Module\Target loading fails.ana
+
+NodeLocation Target_loading_fails: 400,464,1
+NodeSize Target_loading_fails: 48,32
+
+
+Include 0,LinkModule Creeping_Failure,3,2,0,0,Module\Creeping Failure.ana
+
+NodeLocation Creeping_Failure: 912,336,1
+NodeSize Creeping_Failure: 48,24
+
+
+Include 0,LinkModule Corrigibility_basin,2,2,0,0,Module\Corrigibility.ana
+
+NodeLocation Corrigibility_basin: 128,128,1
+NodeSize Corrigibility_basin: 64,24
+
+
+Include 0,LinkModule Comprehensive_AI_Ser,3,2,0,0,Module\Comprehensive AI Services (before agentive AGI).ana
+
+NodeLocation Comprehensive_AI_Ser: 440,152,1
+NodeSize Comprehensive_AI_Ser: 72,40
+
+
+Include 0,LinkModule Agentive_AGI_context,3,2,0,0,Module\Context for agentive AGI is more secure.ana
+
+NodeLocation Agentive_AGI_context: 1304,128,1
+NodeSize Agentive_AGI_context: 88,24
+
+
+Include 0,LinkModule Foundational_researc,2,2,0,0,Module\Foundational or deconfusion research.ana
+
+NodeLocation Foundational_researc: 656,192,1
+NodeSize Foundational_researc: 80,24
+
+
+Include 0,LinkModule Incorrigible_Superin,3,2,0,0,Module\Incorrigible goal-directed superintelligence.ana
+
+NodeLocation Incorrigible_Superin: 912,200,1
+NodeSize Incorrigible_Superin: 80,32
+
+
+Include 0,LinkModule Proof_level_assuranc,2,2,0,0,Module\(Near) proof-level assurance of alignment.ana
+
+NodeLocation Proof_level_assuranc: 1424,192,1
+NodeSize Proof_level_assuranc: 80,24
+
+
+Include 0,LinkModule Prosaic_Alignment,3,2,0,0,Module\ML Safety or Prosaic Alignment.ana
+
+NodeLocation Prosaic_Alignment: 144,256,1
+NodeSize Prosaic_Alignment: 80,24
+
+
+Include 0,LinkModule Alignment_harder_tha,3,2,0,0,Module\Alignment is much harder than, or does not overlap much with, capability gain.ana
+
+NodeLocation Alignment_harder_tha: 400,272,1
+NodeSize Alignment_harder_tha: 80,40
+
+
+Include 0,LinkModule ML_scales_to_AGI,3,2,0,0,Module\ML scales to AGI.ana
+
+NodeLocation ML_scales_to_AGI: 1272,328,1
+NodeSize ML_scales_to_AGI: 48,24
+
+
+Include 0,LinkModule Convergent_instrumen,3,2,0,0,Module\Convergent instrumental subgoals.ana
+
+NodeLocation Convergent_instrumen: 280,152,1
+NodeSize Convergent_instrumen: 64,32
+
+
+Include 0,LinkModule Mesa_optimization,2,2,0,0,Module\Mesa-optimization.ana
+
+NodeLocation Mesa_optimization: 1272,208,1
+NodeSize Mesa_optimization: 56,24
+
+
+Include 0,LinkModule Inconspicuous_failur,3,2,0,0,Module\Inconspicuous failure.ana
+
+NodeLocation Inconspicuous_failur: 904,448,1
+NodeSize Inconspicuous_failur: 72,24
+
+
+Include 0,LinkModule Deep_insights_needed,3,2,0,0,Module\Deep insights needed.ana
+
+NodeLocation Deep_insights_needed: 1272,424,1
+NodeSize Deep_insights_needed: 48,32
+
+
+Module Hypothesis1
+Title: Hypothesis
+Author: bernsjp1
+Date: Tue, Feb 11, 2020 2:32 PM
+NodeLocation: 72,40,1
+NodeSize: 56,32
+FontStyle: Arial,15
+
+Close Hypothesis1
+
+Module Solution__Agenda__P1
+Title: Solution, Agenda, Proposal
+Author: bernsjp1
+Date: Tue, Feb 11, 2020 2:32 PM
+NodeLocation: 192,40,1
+NodeSize: 48,32
+NodeColor: 39321,65535,52425
+
+Close Solution__Agenda__P1
+
+Module Scenario__Concept__1
+Title: Scenario, Concept, Model
+Author: bernsjp1
+Date: Tue, Feb 11, 2020 2:32 PM
+NodeLocation: 304,40,1
+NodeSize: 48,32
+NodeColor: 52425,39321,65535
+
+Close Scenario__Concept__1
+
+Module Problem_leading_to_1
+Title: Problem leading to catastrophe
+Author: bernsjp1
+Date: Tue, Feb 11, 2020 2:32 PM
+NodeLocation: 424,40,1
+NodeSize: 56,32
+NodeColor: 65535,19661,38773
+
+Close Problem_leading_to_1
+
+Module Both_scenario_and_s1
+Title: Both scenario and solution
+Author: bernsjp1
+Date: Tue, Feb 11, 2020 2:32 PM
+NodeLocation: 560,40,1
+NodeSize: 64,32
+NodeColor: 1,34407,39321
+
+Close Both_scenario_and_s1
+
+Include 0,LinkModule For_AL_Master,2,2,0,0,For AL Master.ana
+
+NodeLocation For_AL_Master: 112,544,1
+NodeSize For_AL_Master: 48,24
+
+
+Close Primary_model
+

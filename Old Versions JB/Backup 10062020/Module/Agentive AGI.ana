@@ -1,0 +1,65 @@
+{ Analytica Model Agentive_AGI, encoding="UTF-8" }
+SoftwareVersion 5.3.3
+
+
+
+LinkModule Agentive_AGI
+Title: Agentive AGI
+Author: bernsjp1
+Date: Tue, Feb 4, 2020 1:06 PM
+NodeSize: 48,24
+NodeInfo: 1,,,,,,,0,,,,,,0
+DiagState: 2,957,500,944,484,17
+FontStyle: Arial,15
+FileInfo: 0,LinkModule Agentive_AGI,3,2,0,0,Agentive AGI.ana
+
+Chance Agentive_AGI3
+Title: Agentive AGI
+Definition: Incentive_for_Agent1 + Incidental_agentive1
+NodeLocation: 816,72,1
+NodeSize: 64,48
+ValueState: 2,1202,356,416,303,,PDFP
+GraphSetup: {!40400|Sys_PdfSmoothMethod:1}
+DisplayOutputs: Objective Foundational_or__dec, Objective Convergent_instrumen, Objective Comprehensive_AI_Ser, Objective Humans_are_economic1, Chance Recursive_self_impr1, Chance Clipboard_Recursive_
+
+Chance Convergent_rational1
+Title: Convergent rationality
+Definition: beta(2,2)
+NodeLocation: 304,376,1
+NodeSize: 64,48
+
+Chance Current_AI_R_D_extr1
+Title: Current AI R&D extrapolates to AI services
+Definition: beta(2,2)
+NodeLocation: 144,280,1
+NodeSize: 64,48
+ValueState: 2,986,127,416,303,1,PDFP
+GraphSetup: {!40400|Sys_PdfSmoothMethod:1}
+
+Chance Incentive_for_Agent1
+Title: Incentive for Agentive AI
+Definition: (1 - Current_AI_R_D_extr1)  + (1 - Modularity_over_Int1) 
+NodeLocation: 552,72,1
+NodeSize: 64,48
+ValueState: 2,959,588,400,315,1,PDFP
+GraphSetup: {!40400|Sys_PdfSmoothMethod:1}
+
+Chance Incidental_agentive1
+Title: Incidental agentive AGI
+Definition: Convergent_rational1 + Mesa_optimisation
+NodeLocation: 608,208,1
+NodeSize: 64,48
+DisplayOutputs: Objective Target_loading_fail1
+
+Chance Modularity_over_Int1
+Title: Modularity over Integration
+Definition: Beta( 2,2)
+NodeLocation: 112,152,1
+NodeSize: 64,48
+ValueState: 2,1196,4,416,303,1,PDFP
+GraphSetup: {!40400|Sys_PdfSmoothMethod:1}~
+Att_GraphValueRange Modularity_over_Int1:|1:1,,0,,,,,0,1,0
+{!40200|Att_GraphSetupSlices: [3,1,DensityIndex,1]}
+
+Close Agentive_AGI
+

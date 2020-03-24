@@ -1,0 +1,24 @@
+{ Analytica Model ML_scales_to_AGI, encoding="UTF-8" }
+SoftwareVersion 5.3.3
+
+
+
+LinkModule ML_scales_to_AGI
+Title: ML scales to AGI
+Author: bernsjp1
+Date: Thu, Feb 6, 2020 10:22 AM
+NodeSize: 48,24
+NodeInfo: 1,,,,,,,0,,,,,,0
+FontStyle: Arial,15
+FileInfo: 0,LinkModule ML_scales_to_AGI,3,2,0,0,Module\ML scales to AGI.ana
+
+Chance ML_scales_to_AGI1
+Title: ML scales to AGI
+Definition: beta(2,2)
+NodeLocation: 112,72,1
+NodeSize: 64,48
+ValueState: 2,52,58,416,303,,PDFP
+DisplayOutputs: Objective Foundational_or__dec
+
+Close ML_scales_to_AGI
+

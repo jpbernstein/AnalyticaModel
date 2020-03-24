@@ -1,0 +1,24 @@
+{ Analytica Model Deep_insights_needed, encoding="UTF-8" }
+SoftwareVersion 5.3.3
+
+
+
+LinkModule Deep_insights_needed
+Title: Deep insights needed
+Author: bernsjp1
+Date: Thu, Feb 6, 2020 10:28 AM
+NodeSize: 48,32
+NodeInfo: 1,,,,,,,0,,,,,,0
+FontStyle: Arial,15
+FileInfo: 0,LinkModule Deep_insights_needed,3,2,0,0,Module\Deep insights needed.ana
+
+Chance Deep_insights_neede1
+Title: Deep insights needed
+Definition: (1-ML_scales_to_AGI1)
+NodeLocation: 112,72,1
+NodeSize: 64,48
+ValueState: 2,52,58,416,303,,PDFP
+DisplayOutputs: Objective Foundational_or__dec
+
+Close Deep_insights_needed
+

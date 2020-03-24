@@ -1,0 +1,49 @@
+{ Analytica Model AI_improves_continu2, encoding="UTF-8" }
+SoftwareVersion 5.3.3
+
+
+{ System Variables with non-default values: }
+SampleSize := 1000
+TypeChecking := 1
+Checking := 1
+SaveOptions := 2
+SaveValues := 0
+
+{!-50299|DiagramColor Model: 65535,65535,65535}
+{!-50299|DiagramColor Module: 65535,65535,65535}
+{!-50299|DiagramColor LinkModule: 65535,65535,65535}
+{!-50299|DiagramColor Library: 65535,65535,65535}
+{!-50299|DiagramColor LinkLibrary: 65535,65535,65535}
+{!-50299|DiagramColor Form: 65535,65535,65535}
+NodeInfo FormNode: 1,0,0,,0,0,,,,0,,,0
+{!-50299|NodeColor Text: 62258,62258,62258}
+
+
+
+Model AI_improves_continu2
+Title: AI improves continuously roadmap
+Author: bernsjp1
+Date: Wed, Feb 5, 2020 2:53 PM
+FontStyle: Arial,15
+FileInfo: 0,Model AI_improves_continu2,2,2,0,0,C:\Users\bernsjp1\Box\AI Forecasting\Analytica\JB Working Model\AI improves continuously roadmap.ana
+
+Include 0,LinkModule AI_improves_continuo,2,2,0,0,AI improves continuously.ana
+
+NodeLocation AI_improves_continuo: 728,240,1
+NodeSize AI_improves_continuo: 64,24
+
+
+Include 0,LinkModule Discontinuity,2,2,0,0,Discontinuity.ana
+
+NodeLocation Discontinuity: 424,288,1
+NodeSize Discontinuity: 64,24
+
+
+Include 0,LinkModule Agentive_AGI,2,2,0,0,Agentive AGI.ana
+
+NodeLocation Agentive_AGI: 144,296,1
+NodeSize Agentive_AGI: 48,24
+
+
+Close AI_improves_continu2
+

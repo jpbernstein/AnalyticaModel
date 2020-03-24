@@ -1,0 +1,25 @@
+{ Analytica Model Humans_economically_, encoding="UTF-8" }
+SoftwareVersion 5.3.3
+
+
+
+LinkModule Humans_economically_
+Title: Humans economically outcompeted
+Author: bernsjp1
+Date: Thu, Feb 6, 2020 9:59 AM
+NodeSize: 80,32
+NodeInfo: 1,,,,,,,0,,,,,,0
+NodeColor: 65535,19661,38773
+FontStyle: Arial,15
+FileInfo: 0,LinkModule Humans_economically_,3,2,0,0,Module\Humans are economically outcompeted.ana
+
+Objective Humans_are_economic1
+Title: Humans are economically outcompeted
+Definition: Creeping_Failure + AI_improves_continuo + Agentive_AGI2 + Many_powerful_AIs
+NodeLocation: 104,56,1
+NodeSize: 56,32
+ValueState: 2,68,74,416,303,1,PDFP
+DisplayInputs: LinkModule Creeping_Failure, Objective AI_improves_continu1, LinkModule Many_powerful_AIs
+
+Close Humans_economically_
+

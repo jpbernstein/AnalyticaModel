@@ -1,0 +1,133 @@
+{ Analytica Model ML_scales_to_AGI, encoding="UTF-8" }
+SoftwareVersion 5.3.3
+
+
+
+LinkModule ML_scales_to_AGI
+Title: ML scales to AGI
+Author: bernsjp1
+Date: Thu, Feb 6, 2020 10:22 AM
+NodeSize: 48,24
+NodeInfo: 1,,,,,,,0,,,,,,0
+DiagState: 2,17,-17,1317,584,17
+FontStyle: Arial,15
+FileInfo: 0,LinkModule ML_scales_to_AGI,3,2,0,0,Module\ML scales to AGI.ana
+
+Chance ML_can_scale_to_AGI_
+Title: ML can scale to AGI.
+Definition: beta(2,2)
+NodeLocation: 1280,480,1
+NodeSize: 64,48
+ValueState: 2,52,58,416,303,,PDFP
+Aliases: Alias Al827494205
+DisplayInputs: Chance RL_can_scale_to_AGI_, Chance There_is_a_gap_betwe, Chance One__or_zero_shot_le, Chance AI_can_be_robust_to_, Chance Deep_Learning_s_abst, Variable Online_learning_can1
+DisplayOutputs: Chance ML_based_AGI_can_be_, Chance Currently_developed_
+
+Chance RL_can_scale_to_AGI_
+Title: RL can scale to AGI.
+NodeLocation: 640,472,1
+NodeSize: 48,32
+DisplayInputs: Chance MDP_can_sufficiently
+DisplayOutputs: Chance ML_can_scale_to_AGI_
+
+Chance There_is_a_gap_betwe
+Title: There is a gap between ML and AGI that can be closed with a finite increase in computation. (a)
+NodeLocation: 584,328,1
+NodeSize: 64,80
+DisplayOutputs: Chance ML_can_scale_to_AGI_
+
+Chance MDP_can_sufficiently
+Title: MDP can sufficiently describe the world.
+NodeLocation: 496,472,1
+NodeSize: 56,40
+DisplayInputs: Chance Discrete_spaces_can_
+DisplayOutputs: Chance RL_can_scale_to_AGI_
+
+Chance Discrete_spaces_can_
+Title: Discrete spaces can effectively characterize continuous spaces.
+NodeLocation: 328,472,1
+NodeSize: 72,56
+DisplayInputs: Chance Environment_complexi
+DisplayOutputs: Chance MDP_can_sufficiently
+
+Chance One__or_zero_shot_le
+Title: One- or zero-shot learning can be feasible (b)
+NodeLocation: 592,608,1
+NodeSize: 56,56
+DisplayOutputs: Chance ML_can_scale_to_AGI_
+
+Chance Environment_complexi
+Title: Environment complexity can be measured. (c)
+NodeLocation: 128,472,1
+NodeSize: 64,40
+DisplayOutputs: Chance Discrete_spaces_can_
+
+Chance AI_can_be_robust_to_
+Title: AI can be robust to distributional shifts of the data.
+NodeLocation: 704,184,1
+NodeSize: 56,56
+DisplayOutputs: Chance ML_can_scale_to_AGI_
+
+Chance Narrow_view_optimiza
+Title: Narrow view optimization leads to broad view catastrophe (d)
+NodeLocation: 1192,320,1
+NodeSize: 72,56
+DisplayOutputs: Chance ML_based_AGI_can_be_
+
+Chance ML_based_AGI_can_be_
+Title: ML-based AGI can be safe.
+NodeLocation: 1456,280,1
+NodeSize: 56,32
+DisplayInputs: Chance ML_can_scale_to_AGI_, Chance Narrow_view_optimiza, Chance ML_systems_can_avoid, Chance Mechanistic_Transpar, Variable Inverse_Reinforceme1
+
+Text Te232777021
+Title: No
+NodeLocation: 1296,292,-1
+NodeSize: 24,12
+
+Chance ML_systems_can_avoid
+Title: ML systems can avoid reward hacking.
+NodeLocation: 1352,88,1
+NodeSize: 56,40
+DisplayOutputs: Chance ML_based_AGI_can_be_
+
+Text Te1576842557
+Description: (a) This can be further decomposed; requires exploration of what that gap qualitatively consists of.~
+(b) These three nodes are actively being researched, and require decomposition based off specifics of that domain knowledge.~
+(c) Environment complexity measurements could foreseeably ease the difficulty of characterizing continuous spaces, by introducing a quantifiable term to optimize.~
+(d) Certainly applies outside of ML, too.
+NodeLocation: 192,92,-1
+NodeSize: 192,92
+NodeInfo: 1,,,,1
+
+Chance Mechanistic_Transpar
+Title: Mechanistic Transparency can be achieved (e)
+NodeLocation: 1144,200,1
+NodeSize: 64,40
+DisplayOutputs: Chance ML_based_AGI_can_be_
+
+Chance Deep_Learning_s_abst
+Title: Deep Learning's abstractions can link to reality in a generalizable fashion.
+NodeLocation: 888,776,1
+NodeSize: 80,56
+DisplayOutputs: Chance ML_can_scale_to_AGI_
+
+Variable Inverse_Reinforceme1
+Title: Inverse Reinforcement Learning can assist learning (b)
+NodeLocation: 1168,80,1
+NodeSize: 64,56
+DisplayOutputs: Chance ML_based_AGI_can_be_
+
+Variable Online_learning_can1
+Title: Online learning can be effective for feature learning (b)
+NodeLocation: 720,704,1
+NodeSize: 72,40
+DisplayOutputs: Chance ML_can_scale_to_AGI_
+
+Text Te1404278589
+Title: No
+NodeLocation: 1368,532,-1
+NodeSize: 24,12
+
+Close ML_scales_to_AGI
+

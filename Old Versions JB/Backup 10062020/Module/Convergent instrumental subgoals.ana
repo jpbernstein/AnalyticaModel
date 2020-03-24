@@ -1,0 +1,24 @@
+{ Analytica Model Convergent_instrumen, encoding="UTF-8" }
+SoftwareVersion 5.3.3
+
+
+
+LinkModule Convergent_instrumen
+Title: Convergent instrumental subgoals
+Author: bernsjp1
+Date: Thu, Feb 6, 2020 10:27 AM
+NodeSize: 64,32
+NodeInfo: 1,,,,,,,0,,,,,,0
+NodeColor: 52425,39321,65535
+FontStyle: Arial,15
+FileInfo: 0,LinkModule Convergent_instrumen,3,2,0,0,Module\Convergent instrumental subgoals.ana
+
+Objective Convergent_instrume1
+Title: Convergent instrumental subgoals
+Definition: Agentive_AGI2
+NodeLocation: 104,56,1
+NodeSize: 56,32
+DisplayInputs: Chance Agentive_AGI3
+
+Close Convergent_instrumen
+

@@ -1,0 +1,23 @@
+{ Analytica Model Inconspicuous_failur, encoding="UTF-8" }
+SoftwareVersion 5.3.3
+
+
+
+LinkModule Inconspicuous_failur
+Title: Inconspicuous failure
+Author: bernsjp1
+Date: Thu, Feb 6, 2020 10:28 AM
+NodeSize: 72,24
+NodeInfo: 1,,,,,,,0,,,,,,0
+FontStyle: Arial,15
+FileInfo: 0,LinkModule Inconspicuous_failur,3,2,0,0,Module\Inconspicuous failure.ana
+
+Chance Inconspicuous_failu1
+Title: Inconspicuous failure
+Definition: Agentive_AGI3  + Mesa_optimisation
+NodeLocation: 112,72,1
+NodeSize: 64,48
+DisplayOutputs: Objective Foundational_or__dec
+
+Close Inconspicuous_failur
+

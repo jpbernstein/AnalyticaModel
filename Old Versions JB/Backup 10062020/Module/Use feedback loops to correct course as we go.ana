@@ -1,0 +1,30 @@
+{ Analytica Model Use_feedback_loops_t, encoding="UTF-8" }
+SoftwareVersion 5.3.3
+
+
+
+LinkModule Use_feedback_loops_t
+Title: Use feedback loops to correct course as we go
+Author: bernsjp1
+Date: Thu, Feb 6, 2020 10:01 AM
+NodeSize: 64,56
+NodeInfo: 1,,,,,,,0,,,,,,0
+NodeColor: 39321,65535,52425
+FontStyle: Arial,15
+FileInfo: 0,LinkModule Use_feedback_loops_t,3,2,0,0,Module\Use feedback loops to correct course as we go.ana
+
+Objective Use_feedback_loops_1
+Title: Use feedback loops to correct course as we go
+Definition: AI_improves_continu1 + Many_powerful_AIs1
+NodeLocation: 112,64,1
+NodeSize: 64,40
+
+Alias Al1505369661
+Title: Broad basin for corrigibility
+Definition: 1
+NodeLocation: 296,360,1
+NodeSize: 64,48
+Original: Broad_basin_for_corr
+
+Close Use_feedback_loops_t
+

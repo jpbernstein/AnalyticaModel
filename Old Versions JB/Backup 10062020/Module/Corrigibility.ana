@@ -1,0 +1,126 @@
+{ Analytica Model Corrigibility, encoding="UTF-8" }
+SoftwareVersion 5.3.3
+
+
+
+LinkModule Corrigibility
+Title: Corrigibility
+Author: bernsjp1
+Date: Wed, Feb 5, 2020 9:44 AM
+NodeSize: 56,24
+NodeInfo: 1,,,,,,,0,,,,,,0
+DiagState: 2,-1092,380,1810,789,17
+FontStyle: Arial,15
+FileInfo: 0,LinkModule Corrigibility,2,2,0,0,Corrigibility.ana
+
+Chance Broad_basin_for_corr
+Title: Broad basin for corrigibility
+Definition: beta(2,2)
+NodeLocation: 296,360,1
+NodeSize: 64,48
+ValueState: 2,52,58,416,303,,PDFP
+DisplayOutputs: Objective Synthesising_prefere, Objective Target_loading_fail1, Objective System_becomes_inco1
+
+Chance Corrigibility_Achiev
+Title: Corrigibility Achievable?
+NodeLocation: 776,448,1
+NodeSize: 56,24
+DisplayInputs: Chance Build_agents_that_pr, Chance Corrigibility_Formal, Chance Agent_designed_in_a_, Chance Agent_not_deceptive, Chance AI_can_determine_sid, Chance Humans_can_share_the
+DisplayOutputs: Chance Act_based_corrigibil, Chance Instrumental_corrigi, Chance Corrigibility_affect, Chance Corrigibility_affec1, Chance Agent_seeks_to_prese
+
+Chance Act_based_corrigibil
+Title: Act-based corrigibility?
+NodeLocation: 1200,496,1
+NodeSize: 56,24
+DisplayInputs: Chance Corrigibility_Achiev
+DisplayOutputs: Chance Robustness_of_corrig
+
+Chance Instrumental_corrigi
+Title: Instrumental corrigibility?
+NodeLocation: 968,608,1
+NodeSize: 56,24
+DisplayInputs: Chance Corrigibility_Achiev
+DisplayOutputs: Chance Robustness_of_corrig
+
+Chance Build_agents_that_pr
+Title: Build agents that prefer to build other agents with overseer's preferences?
+NodeLocation: 552,576,1
+NodeSize: 80,56
+DisplayOutputs: Chance Corrigibility_Achiev
+
+Chance Corrigibility_Formal
+Title: Corrigibility Formalizable?
+NodeLocation: 536,464,1
+NodeSize: 64,24
+DisplayOutputs: Chance Corrigibility_Achiev
+
+Chance Corrigibility_affect
+Title: Corrigibility affects AI cooperating with other AIs
+NodeLocation: 1024,512,1
+NodeSize: 56,56
+DisplayInputs: Chance Corrigibility_Achiev
+DisplayOutputs: Chance Robustness_of_corrig
+
+Chance Corrigibility_affec1
+Title: Corrigibility affects AI efficiency
+NodeLocation: 864,680,1
+NodeSize: 56,32
+DisplayInputs: Chance Corrigibility_Achiev, Chance Agent_not_deceptive
+DisplayOutputs: Chance Robustness_of_corrig
+
+Chance Robustness_of_corrig
+Title: Robustness of corrigibility?
+NodeLocation: 1400,568,1
+NodeSize: 56,32
+DisplayInputs: Chance Act_based_corrigibil, Chance Instrumental_corrigi, Chance Corrigibility_affect, Chance Corrigibility_affec1, Chance Agent_seeks_to_prese
+
+Chance Agent_designed_in_a_
+Title: Agent designed in a way with no preference/pressure to interfere with programmer attempts to modify
+Definition: beta(2,2)
+NodeLocation: 568,368,1
+NodeSize: 96,64
+ValueState: 2,1068,78,416,303,,PDFP
+DisplayOutputs: Chance Corrigibility_Achiev
+
+Chance Agent_not_deceptive
+Title: Agent not deceptive
+NodeLocation: 736,608,1
+NodeSize: 48,24
+DisplayOutputs: Chance Corrigibility_Achiev, Chance Corrigibility_affec1
+
+Chance Agent_seeks_to_prese
+Title: Agent seeks to preserve corrigibility
+NodeLocation: 1216,424,1
+NodeSize: 56,32
+DisplayInputs: Chance Corrigibility_Achiev
+DisplayOutputs: Chance Robustness_of_corrig
+
+Chance AI_can_determine_sid
+Title: AI can determine side effects of action
+NodeLocation: 552,248,1
+NodeSize: 56,40
+DisplayOutputs: Chance Corrigibility_Achiev
+
+Chance Humans_can_share_the
+Title: Humans can share their preferences in an intelligible way to agent
+NodeLocation: 712,248,1
+NodeSize: 72,56
+DisplayOutputs: Chance Corrigibility_Achiev
+
+Chance Safely_communicate_A
+Title: Safely communicate AI's predicted result without risk to operator/humanity
+NodeLocation: 952,160,1
+NodeSize: 80,56
+
+Chance AI_reason_internally
+Title: AI reason internally from programmer's external view
+NodeLocation: 440,136,1
+NodeSize: 64,40
+
+Chance Testing_mechanisms_f
+Title: Testing mechanisms for corrigibility?
+NodeLocation: 1320,184,1
+NodeSize: 56,40
+
+Close Corrigibility
+

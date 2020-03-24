@@ -1,0 +1,55 @@
+{ Analytica Model Incorrigible_Superin, encoding="UTF-8" }
+SoftwareVersion 5.3.3
+
+
+
+LinkModule Incorrigible_Superin
+Title: Incorrigible Superintelligence
+Author: bernsjp1
+Date: Thu, Feb 6, 2020 10:21 AM
+NodeSize: 80,32
+NodeInfo: 1,,,,,,,0,,,,,,0
+DiagState: 2,671,29,750,469,17
+NodeColor: 65535,19661,38773
+FontStyle: Arial,15
+FileInfo: 0,LinkModule Incorrigible_Superin,3,2,0,0,Module\Incorrigible goal-directed superintelligence.ana
+
+Objective Incorrigible_goal_d1
+Title: Incorrigible goal-directed superintelligence
+Definition: Convergent_instrume1+System_becomes_inco1
+NodeLocation: 792,176,1
+NodeSize: 72,32
+Aliases: Alias Al1387083581, Alias Al1772959549
+
+Alias Al226309949
+Title: Convergent instrumental subgoals
+Definition: 1
+NodeLocation: 624,136,1
+NodeSize: 56,32
+NodeColor: 52425,39321,65535
+Original: Convergent_instrume1
+
+Alias Al486356797
+Title: System becomes incorrigible
+Definition: 1
+NodeLocation: 632,280,1
+NodeSize: 56,32
+NodeColor: 52425,39321,65535
+Original: System_becomes_inco1
+
+Alias Al788739901
+Title: Discontinuity from AGI
+Definition: 1
+NodeLocation: 424,344,1
+NodeSize: 64,32
+Original: Discontinuity_from_A
+
+Alias Al37959485
+Title: Agentive AGI
+Definition: 1
+NodeLocation: 416,104,1
+NodeSize: 64,32
+Original: Agentive_AGI3
+
+Close Incorrigible_Superin
+

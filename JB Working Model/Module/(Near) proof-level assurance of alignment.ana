@@ -1,0 +1,30 @@
+{ Analytica Model Proof_level_assuranc, encoding="UTF-8" }
+SoftwareVersion 5.3.3
+
+
+
+LinkModule Proof_level_assuranc
+Title: Proof-level assurance
+Author: bernsjp1
+Date: Thu, Feb 6, 2020 10:14 AM
+NodeSize: 80,24
+NodeInfo: 1,,,,,,,0,,,,,,0
+NodeColor: 39321,65535,52425
+FontStyle: Arial,15
+FileInfo: 0,LinkModule Proof_level_assuranc,2,2,0,0,Module\(Near) proof-level assurance of alignment.ana
+
+Objective Ob2
+Title: (Near) proof-level assurance of alignment
+Definition: (1-Broad_basin_for_corr) + Inconspicuous_failu1
+NodeLocation: 104,64,1
+NodeSize: 56,40
+
+Alias Al1088132925
+Title: Va20
+Definition: 1
+NodeLocation: 496,64,1
+NodeSize: 48,24
+Original: Va20
+
+Close Proof_level_assuranc
+

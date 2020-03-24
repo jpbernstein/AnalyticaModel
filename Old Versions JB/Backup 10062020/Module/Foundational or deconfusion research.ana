@@ -1,0 +1,24 @@
+{ Analytica Model Foundational_or_deco, encoding="UTF-8" }
+SoftwareVersion 5.3.3
+
+
+
+LinkModule Foundational_or_deco
+Title: Foundational or deconfusion research
+Author: bernsjp1
+Date: Thu, Feb 6, 2020 10:21 AM
+NodeSize: 64,40
+NodeInfo: 1,,,,,,,0,,,,,,0
+NodeColor: 39321,65535,52425
+FontStyle: Arial,15
+FileInfo: 0,LinkModule Foundational_or_deco,2,2,0,0,Module\Foundational or deconfusion research.ana
+
+Objective Foundational_or__dec
+Title: Foundational or "deconfusion" research
+Definition: (1-ML_scales_to_AGI) + Deep_insights_needed + Agentive_AGI2 + Inconspicuous_failur
+NodeLocation: 112,64,1
+NodeSize: 64,40
+DisplayInputs: Chance ML_scales_to_AGI1, Chance Deep_insights_neede1, Chance Inconspicuous_failu1, Chance Agentive_AGI3
+
+Close Foundational_or_deco
+

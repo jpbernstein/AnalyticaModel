@@ -1,0 +1,405 @@
+{ Analytica Model Corrigibility_basin, encoding="UTF-8" }
+SoftwareVersion 5.3.3
+
+
+
+LinkModule Corrigibility_basin
+Title: Corrigibility basin
+Author: bernsjp1
+Date: Wed, Feb 5, 2020 9:44 AM
+NodeSize: 64,24
+NodeInfo: 1,,,,,,,0,,,,,,0
+DiagState: 2,0,0,1349,590,17
+FontStyle: Arial,15
+FileInfo: 0,LinkModule Corrigibility_basin,2,2,0,0,C:\Users\bernsjp1\Box\AI Forecasting\Analytica\JB Working Model\Module\Corrigibility_BC.ana
+Att__DiagramPrintSca: 100,1,1,1,1,1,2794,2159,15,0
+
+Chance Corrigibility_leads_
+Title: Corrigibility leads to intent alignment
+Definition: beta(2,2)
+NodeLocation: 1136,88,1
+NodeSize: 64,48
+ValueState: 2,52,58,416,303,,PDFP
+DisplayInputs: Chance Robust_corrigibility, Chance Value_drift_during_c
+DisplayOutputs: Objective System_becomes_inco1, Objective Synthesising_prefere, Objective Target_loading_fail1
+
+Chance Corrigibility_can_b1
+Title: Corrigibility can be achieved. (b)
+NodeLocation: 312,248,1
+NodeSize: 56,32
+DisplayInputs: Chance Corrigibility_can_be, Chance Agent_cannot_hide_mo, Chance Oversight_of_agent_d, Chance AI_can_grasp_moral_u, Chance AI_can_hold_a_meta_u, Chance AI_can_determine_sid
+DisplayOutputs: Chance Corrigibility_does_n, Chance Robust_corrigibility
+
+Chance Instrumental_corrigi
+Title: Instrumental corrigibility can be achieved.
+NodeLocation: 432,76,1
+NodeSize: 64,28
+
+Chance Corrigibility_can_be
+Title: Corrigibility can be formalized.
+NodeLocation: 80,112,1
+NodeSize: 64,24
+DisplayOutputs: Chance Corrigibility_can_b1
+
+Chance Corrigibility_does_n
+Title: Corrigibility does not significantly impede AI performance.
+NodeLocation: 1136,264,1
+NodeSize: 64,64
+DisplayInputs: Chance Corrigibility_can_b1
+
+Chance AIs_can_be_risk_sens
+Title: AIs can be risk sensitive.
+NodeLocation: 1096,456,1
+NodeSize: 48,32
+DisplayInputs: Chance AI_can_determine_sid
+
+Text Te1195382077
+Description: (b) A corrigible agent cooperates with creator intervention according to <a href="https://intelligence.org/files/Corrigibility.pdf">MIRI</a>. Alternative definition can be found on the <a href="https://www.alignmentforum.org/posts/fkLYhTQteAu5SinAc/corrigibility">AIAF</a>.
+NodeLocation: 184,44,-1
+NodeSize: 176,36
+NodeInfo: 1,,,,1
+
+Text Te1101616445
+Description: TBD: How they fit in the chart
+NodeLocation: 432,60,-1
+NodeSize: 72,52
+NodeInfo: 1,,,,1
+
+Module Agent_Transparency
+Title: Agent Transparency
+Author: bernsjp1
+Date: Fri, Mar 13, 2020 10:09 AM
+NodeLocation: 152,416,1
+NodeSize: 64,24
+DiagState: 2,11,212,784,394,17
+
+Chance Agent_can_be_designe
+Title: Agent can be designed in a way to not influence programmer.
+Definition: beta(2,2)
+NodeLocation: 192,96,1
+NodeSize: 72,40
+ValueState: 2,1068,78,416,303,,PDFP
+DisplayOutputs: Chance Agent_cannot_hide_mo
+
+Chance Agent_cannot_hide_mo
+Title: Agent cannot hide motives nor be deceptive
+NodeLocation: 504,176,1
+NodeSize: 64,40
+DisplayInputs: Chance Agent_can_be_designe, Chance Agents_cannot_protec
+DisplayOutputs: Chance Corrigibility_can_b1
+
+Chance Agents_cannot_protec
+Title: Agents cannot protect utility functions from modification
+NodeLocation: 200,240,1
+NodeSize: 64,40
+DisplayOutputs: Chance Agent_cannot_hide_mo
+
+Close Agent_Transparency
+
+Module Goal_Clarity
+Title: Goal Clarity
+Author: bernsjp1
+Date: Fri, Mar 13, 2020 10:09 AM
+NodeLocation: 96,320,1
+NodeSize: 48,24
+DiagState: 2,2,121,824,466,17
+
+Chance Agents_can_prefer_to
+Title: Agents can prefer to build subagents with the overseer's preferences (d)
+NodeLocation: 400,136,1
+NodeSize: 80,56
+DisplayOutputs: Chance Oversight_of_agent_d
+
+Chance Humans_can_share_the
+Title: Humans can share their preferences in an intelligible way to agent.
+NodeLocation: 192,376,1
+NodeSize: 72,56
+DisplayOutputs: Chance Preferences_can_be_o
+
+Chance AI_s_predicted_resul
+Title: AI's predicted result can be safely communicated to the operator.
+Description: If the AI's results can be safely communicated to the operator, then there's a "safety check" going on before any actions are made. Source from AF forthcoming...
+NodeLocation: 120,184,1
+NodeSize: 80,56
+NodeColor: 65535,59795,19661
+DisplayOutputs: Chance Oversight_of_agent_d
+
+Chance Oversight_of_agent_d
+Title: Oversight of agent development can be scalable.
+NodeLocation: 624,232,1
+NodeSize: 56,56
+DisplayInputs: Chance Agents_can_prefer_to, Chance AI_s_predicted_resul, Chance Preferences_can_be_o
+DisplayOutputs: Chance Corrigibility_can_b1
+
+Chance Preferences_can_be_o
+Title: Preferences can be optimized
+NodeLocation: 296,272,1
+NodeSize: 56,32
+NodeColor: 65535,59795,19661
+DisplayInputs: Chance Humans_can_share_the
+DisplayOutputs: Chance Oversight_of_agent_d
+
+Chance AI_can_grasp_moral_u
+Title: AI can grasp moral uncertainty
+NodeLocation: 560,80,1
+NodeSize: 56,32
+DisplayOutputs: Chance Corrigibility_can_b1
+
+Chance AI_can_hold_a_meta_u
+Title: AI can hold a meta-utility function
+NodeLocation: 448,376,1
+NodeSize: 48,40
+NodeColor: 65535,59795,19661
+DisplayOutputs: Chance Corrigibility_can_b1
+
+Text Te9759549
+Description: (d) As opposed to an agent building subagents with its (the agent's) preferences.
+NodeLocation: 76,48,-1
+NodeSize: 76,48
+
+Text Te1606178621
+Title: Not sure of the thinking underlying this
+NodeLocation: 120,276,-1
+NodeSize: 80,28
+NodeInfo: 1,,,,,,1
+NodeFont: Arial,10
+
+Text Te645683005
+Title: Are preferences logical, and we optimize them by satisfying them? Or are preferences like utility, which we maximise? Up for debate, but we should clarify.
+NodeLocation: 456,284,-1
+NodeSize: 96,44
+NodeInfo: 1,,,,,,1
+NodeFont: Arial,10
+
+Text Te310531901
+Title: Or data exists/can be collected on human preferences
+NodeLocation: 76,420,-1
+NodeSize: 68,28
+NodeInfo: 1,,,,,,1
+NodeFont: Arial,10
+
+Text Te864180029
+Title: What for?
+NodeLocation: 580,388,-1
+NodeSize: 68,28
+NodeInfo: 1,,,,,,1
+NodeFont: Arial,10
+
+Text Te742545213
+Title: Agents _can_ prefer to build ...
+NodeLocation: 340,84,-1
+NodeSize: 68,28
+NodeInfo: 1,,,,,,1
+NodeFont: Arial,10
+
+Close Goal_Clarity
+
+Module Impact_Clarity
+Title: Impact Clarity
+Author: bernsjp1
+Date: Fri, Mar 13, 2020 10:09 AM
+NodeLocation: 608,336,1
+NodeSize: 48,24
+DiagState: 2,18,70,824,469,17
+
+Chance AI_can_determine_sid
+Title: AI can determine side effects of action
+NodeLocation: 416,232,1
+NodeSize: 56,40
+DisplayInputs: Chance AI_can_reason_intern, Chance An_impact_regularize
+DisplayOutputs: Chance Corrigibility_can_b1, Chance AIs_can_be_risk_sens
+
+Chance AI_can_reason_intern
+Title: AI can reason internally from programmer's external view (c)
+NodeLocation: 424,72,1
+NodeSize: 64,56
+DisplayOutputs: Chance AI_can_determine_sid
+
+Chance An_impact_regularize
+Title: An impact regularizer can be created. (a)
+NodeLocation: 280,168,1
+NodeSize: 64,32
+NodeColor: 65535,59795,19661
+DisplayInputs: Chance Impact_measurement_c
+DisplayOutputs: Chance AI_can_determine_sid
+
+Chance Impact_measurement_c
+Title: Impact measurement can be created
+NodeLocation: 88,160,1
+NodeSize: 64,32
+NodeColor: 65535,59795,19661
+DisplayOutputs: Chance An_impact_regularize
+
+Text Te39119677
+Description: (a) An impact regularizer is a way of penalizing changes to the environment so that agents can minimize side effects from their decisions.~
+(c) This simplifies how the AI would interact with the programmer. See <a href="https://www.alignmentforum.org/posts/tDXFRfkvijTzs2Mmr/where-s-the-turing-machine-a-step-towards-ontology">here and its sublinks</a>.
+NodeLocation: 172,60,-1
+NodeSize: 172,60
+NodeInfo: 1,,,,1
+
+Text Te2122045245
+Description: This connection between impact measures and corrigibility is novel to me. Is the idea that: the better an agent can measure and understand its impact, the better it can recognise when it might be doing something wrong/dangerous and defer to an overseer? I think it makes sense, but I'd like to hear about your thinking and sources for this.
+NodeLocation: 660,292,-1
+NodeSize: 148,92
+
+Text Te872142653
+Description: I'm not sure if this is the best way to express it. Several somewhat-viable impact measures have been proposed, but when do we decide it's adequate? 
+NodeLocation: 156,272,-1
+NodeSize: 100,64
+
+Close Impact_Clarity
+
+Module Act_based_corrigibi1
+Title: Act-based corrigibility can be achieved
+Author: bernsjp1
+Date: Fri, Mar 13, 2020 10:09 AM
+NodeLocation: 424,160,1
+NodeSize: 56,40
+DiagState: 2,-188,180,824,469,17
+
+Chance Combination_of_benig
+Title: Combination of benign agents creates a benign agent
+NodeLocation: 120,192,1
+NodeSize: 64,40
+NodeColor: 65535,59795,19661
+DisplayInputs: Variable Benign_act_based_age
+DisplayOutputs: Chance Benign_act_based_ag1
+
+Chance Benign_act_based_ag1
+Title: Benign act-based agents converge
+NodeLocation: 104,328,1
+NodeSize: 56,40
+NodeColor: 65535,59795,19661
+DisplayInputs: Chance Combination_of_benig
+DisplayOutputs: Chance Robust_corrigibility
+
+Variable Benign_act_based_age
+Title: Benign act-based agent can be created
+NodeLocation: 144,64,1
+NodeSize: 56,40
+DisplayOutputs: Chance Combination_of_benig
+
+Text Te1186191165
+Description: Converge on what?
+NodeLocation: 120,408,-1
+NodeSize: 48,24
+
+Text Te1974720317
+Description: Does this refer to iterated distillation and amplification, or more general? I think "combination" should be clarified
+NodeLocation: 288,232,-1
+NodeSize: 88,56
+
+Close Act_based_corrigibi1
+
+Module Broad_Basin_for_Corr
+Title: Broad Basin for Corrigibility
+Author: bernsjp1
+Date: Fri, Mar 13, 2020 10:09 AM
+NodeLocation: 600,200,1
+NodeSize: 56,32
+DiagState: 2,16,95,824,434,17
+
+Chance Robust_corrigibility
+Title: Robust corrigibility can be achieved.
+NodeLocation: 272,232,1
+NodeSize: 56,40
+DisplayInputs: Chance Corrigibility_can_b1, Chance Benign_act_based_ag1, Chance Agent_can_seek_to_pr, Chance Test_mechanisms_that, Chance In_place_safety_mech, Chance Agent_combine_differ, Chance Agents_help_figure_o
+DisplayOutputs: Chance Corrigibility_leads_
+
+Chance Agent_can_seek_to_pr
+Title: Agent can seek to preserve corrigibility
+NodeLocation: 128,224,1
+NodeSize: 56,40
+DisplayOutputs: Chance Robust_corrigibility
+
+Chance Test_mechanisms_that
+Title: Test mechanisms that target corrigibility can be created.
+NodeLocation: 400,144,1
+NodeSize: 56,64
+DisplayOutputs: Chance Robust_corrigibility
+
+Chance In_place_safety_mech
+Title: In-place safety mechanisms can be self-repaired.
+NodeLocation: 400,304,1
+NodeSize: 56,56
+DisplayOutputs: Chance Robust_corrigibility
+
+Chance Agent_combine_differ
+Title: Agent combine different utility functions in safe manner (e)
+NodeLocation: 240,360,1
+NodeSize: 64,56
+NodeColor: 65535,59795,19661
+DisplayOutputs: Chance Robust_corrigibility
+
+Chance Value_drift_during_c
+Title: Value drift during capability amplification can be prevented
+NodeLocation: 88,120,1
+NodeSize: 72,40
+DisplayOutputs: Chance Corrigibility_leads_
+
+Chance Agents_help_figure_o
+Title: Agents help figure out how to aid with the correction process
+NodeLocation: 88,344,1
+NodeSize: 72,56
+DisplayOutputs: Chance Robust_corrigibility
+
+Text Te60091197
+Description: (e) Otherwise, utility function merging may result in being knocked out of the corrigible behavior.
+NodeLocation: 152,32,-1
+NodeSize: 152,32
+NodeInfo: 1,,,,1
+
+Alias Al1169484605
+Title: Human supervision can be sufficient for teaching preferences
+Definition: 1
+NodeLocation: 600,72,1
+NodeSize: 72,56
+Original: Human_supervision_ca
+
+Text Te1486608189
+Description: I would add a node for: it is easier to predict whether an agent is being misled than to devise a strategy for deception. Paul assumes this in arguing that act-based corrigibility is robust.
+NodeLocation: 640,264,-1
+NodeSize: 104,72
+
+Text Te308008765
+Description: Be more specific about "safe" - e.g. "corrigibility can be preserved after merging utility functions"
+NodeLocation: 416,456,-1
+NodeSize: 104,72
+
+Close Broad_Basin_for_Corr
+
+Chance Human_supervision_ca
+Title: Human supervision can be sufficient for teaching preferences
+NodeLocation: 672,72,1
+NodeSize: 72,56
+Aliases: Alias Al1169484605
+
+Text Te1506563901
+Description: An alternative to formalizing corrigibility may just be verifying it - i.e. we know corrigibility when we see it.
+NodeLocation: 108,208,-1
+NodeSize: 92,48
+NodeFont: Arial,10
+
+Text Te1567381309
+Description: A broad basin makes it more likely that corrigibility can be achieved _in practice_. So there could be an arrow pointing the opposite way. Maybe distinguish 'corrigibility is theoretically coherent and possible' vs. 'a robustly corrigible AI is developed'
+NodeLocation: 380,388,-1
+NodeSize: 116,84
+NodeFont: Arial,10
+
+Text Te1519114045
+Description: RE instrumental corrigibility - I think it is an undesirable thing, going by "is instrumental corrigibility robust?" <a href="https://ai-alignment.com/corrigibility-3039e668638">here</a>. The possibility of it makes the basin of attraction larger (it's another incentive for an agent to be corrigible, but for the wrong reasons). Then to account for it being undesirable, I would connect it to "robust corrigibility can be achieved". This connection would represent a negative influence, if Paul is right.
+NodeLocation: 844,408,-1
+NodeSize: 148,104
+
+Text Te1088149309
+Description: These two nodes would then influence "we should prioritise building corrigible AI" or similar
+NodeLocation: 1260,176,-1
+NodeSize: 76,56
+
+Text Te252172093
+Description: Unsure what this means
+NodeLocation: 1128,432,-1
+NodeSize: 104,40
+
+Close Corrigibility_basin
+

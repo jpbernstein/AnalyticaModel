@@ -1,0 +1,152 @@
+{ Analytica Model Primary_model, encoding="UTF-8" }
+SoftwareVersion 5.3.3
+
+
+
+LinkModule Primary_model
+Author: englaal1
+Date: Thu, Jan 30, 2020 11:28 AM
+DiagState: 2,42,51,1652,835,17
+FontStyle: Arial,15
+FileInfo: 0,LinkModule Primary_model,2,2,0,0,C:\Users\bernsjp1\Box\AI Forecasting\Analytica\JB Working Model\Master.ana
+
+Include 0,LinkModule Discontinuity,3,2,0,0,Module\Discontinuity.ana
+
+NodeLocation Discontinuity: 552,1280,1
+NodeSize Discontinuity: 64,24
+
+
+Include 0,LinkModule Agentive_AGI,3,2,0,0,Module\Agentive AGI.ana
+
+NodeLocation Agentive_AGI: 808,936,1
+NodeSize Agentive_AGI: 48,24
+
+
+Include 0,LinkModule System_becomes_incor,3,2,0,0,Module\System becomes incorrigible.ana
+
+NodeLocation System_becomes_incor: 752,1120,1
+NodeSize System_becomes_incor: 72,32
+
+
+Include 0,LinkModule AI_improves_continuo,3,2,0,0,Module\AI improves continuously.ana
+
+NodeLocation AI_improves_continuo: 536,1176,1
+NodeSize AI_improves_continuo: 64,24
+
+
+Include 0,LinkModule Humans_are_economica,3,2,0,0,Module\Humans are economically outcompeted.ana
+
+NodeLocation Humans_are_economica: 560,1088,1
+NodeSize Humans_are_economica: 64,32
+
+
+Include 0,LinkModule Synthesizing_prefere,2,2,0,0,Module\Synthesizing preferences into a utility function.ana
+
+NodeLocation Synthesizing_prefere: 720,1304,1
+NodeSize Synthesizing_prefere: 64,40
+
+
+Include 0,LinkModule Many_powerful_AIs,3,2,0,0,Module\Many powerful AIs.ana
+
+NodeLocation Many_powerful_AIs: 344,1136,1
+NodeSize Many_powerful_AIs: 48,32
+
+
+Include 0,LinkModule Use_feedback_loops_t,3,2,0,0,Module\Use feedback loops to correct course as we go.ana
+
+NodeLocation Use_feedback_loops_t: 408,1328,1
+NodeSize Use_feedback_loops_t: 64,56
+
+
+Include 0,LinkModule Target_loading_fails,3,2,0,0,Module\Target loading fails.ana
+
+NodeLocation Target_loading_fails: 736,1216,1
+NodeSize Target_loading_fails: 48,32
+
+
+Include 0,LinkModule Creeping_Failure,3,2,0,0,Module\Creeping Failure.ana
+
+NodeLocation Creeping_Failure: 408,1048,1
+NodeSize Creeping_Failure: 48,24
+
+
+Include 0,LinkModule Corrigibility,2,2,0,0,Module\Corrigibility.ana
+
+NodeLocation Corrigibility: 888,1336,1
+NodeSize Corrigibility: 56,24
+
+
+Include 0,LinkModule Comprehensive_AI_Ser,3,2,0,0,Module\Comprehensive AI Services (before agentive AGI).ana
+
+NodeLocation Comprehensive_AI_Ser: 648,808,1
+NodeSize Comprehensive_AI_Ser: 72,40
+
+
+Include 0,LinkModule Context_for_agentive,3,2,0,0,Module\Context for agentive AGI is more secure.ana
+
+NodeLocation Context_for_agentive: 448,944,1
+NodeSize Context_for_agentive: 56,40
+
+
+Include 0,LinkModule Foundational_or_deco,2,2,0,0,Module\Foundational or deconfusion research.ana
+
+NodeLocation Foundational_or_deco: 1032,1232,1
+NodeSize Foundational_or_deco: 64,40
+
+
+Include 0,LinkModule Incorrigible_goal_di,3,2,0,0,Module\Incorrigible goal-directed superintelligence.ana
+
+NodeLocation Incorrigible_goal_di: 632,992,1
+NodeSize Incorrigible_goal_di: 80,32
+
+
+Include 0,LinkModule Mo1,2,2,0,0,Module\(Near) proof-level assurance of alignment.ana
+
+NodeLocation Mo1: 896,1200,1
+NodeSize Mo1: 56,56
+
+
+Include 0,LinkModule ML_safety_or_prosaic,3,2,0,0,Module\ML Safety or Prosaic Alignment.ana
+
+NodeLocation ML_safety_or_prosaic: 1064,1320,1
+NodeSize ML_safety_or_prosaic: 56,40
+
+
+Include 0,LinkModule Alignment_is_much_ha,3,2,0,0,Module\Alignment is much harder than, or does not overlap much with, capability gain.ana
+
+NodeLocation Alignment_is_much_ha: 1144,976,1
+NodeSize Alignment_is_much_ha: 72,64
+
+
+Include 0,LinkModule ML_scales_to_AGI,3,2,0,0,Module\ML scales to AGI.ana
+
+NodeLocation ML_scales_to_AGI: 1160,1176,1
+NodeSize ML_scales_to_AGI: 48,24
+
+
+Include 0,LinkModule Convergent_instrumen,3,2,0,0,Module\Convergent instrumental subgoals.ana
+
+NodeLocation Convergent_instrumen: 616,904,1
+NodeSize Convergent_instrumen: 64,32
+
+
+Include 0,LinkModule Mesa_optimization,2,2,0,0,Module\Mesa-optimization.ana
+
+NodeLocation Mesa_optimization: 928,920,1
+NodeSize Mesa_optimization: 56,24
+
+
+Include 0,LinkModule Inconspicuous_failur,3,2,0,0,Module\Inconspicuous failure.ana
+
+NodeLocation Inconspicuous_failur: 944,1008,1
+NodeSize Inconspicuous_failur: 72,24
+
+
+Include 0,LinkModule Deep_insights_needed,3,2,0,0,Module\Deep insights needed.ana
+
+NodeLocation Deep_insights_needed: 1056,1096,1
+NodeSize Deep_insights_needed: 48,32
+
+
+Close Primary_model
+
