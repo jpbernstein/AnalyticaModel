@@ -11,7 +11,7 @@ NodeSize: 80,24
 NodeInfo: 1,,,,,,,0,,,,,,0
 NodeColor: 39321,65535,52425
 FontStyle: Arial,15
-FileInfo: 0,LinkModule Proof_level_assuranc,2,2,0,0,Module\(Near) proof-level assurance of alignment.ana
+FileInfo: 0,LinkModule Proof_level_assuranc,2,2,0,0,U:\AnalyticaModel\JB Working Model\Module\(Near) proof-level assurance of alignment.ana
 
 Objective Ob2
 Title: (Near) proof-level assurance of alignment
@@ -25,6 +25,18 @@ Definition: 1
 NodeLocation: 496,64,1
 NodeSize: 48,24
 Original: Va20
+
+Decision De1
+NodeLocation: 328,312,1
+NodeSize: 48,24
+
+Variable Va1
+NodeLocation: 456,320,1
+NodeSize: 48,24
+
+Chance Ch1
+NodeLocation: 640,312,1
+NodeSize: 48,24
 
 Close Proof_level_assuranc
 
