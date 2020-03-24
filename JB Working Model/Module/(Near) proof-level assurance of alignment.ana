@@ -22,13 +22,9 @@ NodeSize: 56,40
 Alias Al1088132925
 Title: Va20
 Definition: 1
-NodeLocation: 496,64,1
-NodeSize: 48,24
-Original: Va20
-
-Decision De1
 NodeLocation: 328,312,1
 NodeSize: 48,24
+Original: Va20
 
 Variable Va1
 NodeLocation: 456,320,1
@@ -36,7 +32,19 @@ NodeSize: 48,24
 
 Chance Ch1
 NodeLocation: 640,312,1
+NodeSize: 48,16
+
+Function Fu1(param1)
+NodeLocation: 296,264,1
 NodeSize: 48,24
+
+Constant Co1
+NodeLocation: 440,216,1
+NodeSize: 48,24
+
+Index In1
+NodeLocation: 632,208,1
+NodeSize: 48,16
 
 Close Proof_level_assuranc
 
